@@ -17,11 +17,6 @@ from time import gmtime, strftime
 
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
-
 try:
     import pandas as pd
 except:
@@ -162,3 +157,8 @@ html(
 #   DDS ... development distribution score (the smaller the number the better; 0 means no data available)
 #   PM .. previous month (0 means either no downloads or not tracked/shared from the repository owner)
 #   PY .. previous year (0 means either no issues or not tracked/shared from the repository owner)
+
+st.title("🎈 My new app")
+st.write(
+    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+)
