@@ -1,3 +1,4 @@
+
 #
 # Update package history based on latest available statistics from ecosyste.ms and anaconda
 #
@@ -9,40 +10,18 @@
 url_api = 'https://ost.ecosyste.ms/api/v1/projects/esd'
 
 # import required packages
-import os.path
-import json
-import io
+# import os.path
+# import json
+# import io
 from datetime import datetime, timedelta
-from time import gmtime, strftime
-
+# from time import gmtime, strftime
 import streamlit as st
+import pandas as pd
+# from urllib.request import urlopen
+import requests
 
-try:
-    import pandas as pd
-except:
-    !pip install pandas
-    import pandas as pd
-
-try:
-    from urllib.request import urlopen
-except:
-    !pip install urllib
-    from urllib.request import urlopen
-try:
-    import requests
-except:
-    !pip install requests
-    import requests
-
-try:
-    import itables
-    from itables import init_notebook_mode
-    from itables import to_html_datatable
-except:
-    !pip install itables
-    import itables
-    from itables import init_notebook_mode
-    from itables import to_html_datatable
+# from itables.streamlit import init_notebook_mode
+from streamlit import to_html_datatable
 
 # define variables
 names = []
@@ -141,8 +120,14 @@ df.drop(columns=[
     'Category', 'Sub Category', 'Language',
 ], axis=1, errors='ignore', inplace=True)
 
+st.title("🎈 My new app")
+st.write(
+    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+)
+
 # show the nice table
-html(
+# st.html()
+st.write(
 #    itables.show(
     to_html_datatable(
         # df_extract.loc[:, df_extract.columns != 'Repository'],
@@ -158,8 +143,3 @@ html(
 #   DDS ... development distribution score (the smaller the number the better; 0 means no data available)
 #   PM .. previous month (0 means either no downloads or not tracked/shared from the repository owner)
 #   PY .. previous year (0 means either no issues or not tracked/shared from the repository owner)
-
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
