@@ -6,20 +6,17 @@
 # License: MIT / CC0 1.0
 #
 
-# define the path of the CSV file listing the packages to assess
-url_api = 'https://ost.ecosyste.ms/api/v1/projects/esd'
-
 # import required packages
 import requests
 from datetime import datetime, timedelta
 from pandas import DataFrame
 from streamlit import html, title, write, set_page_config
-# from itables import init_notebook_mode, to_html_datatable
 from itables.streamlit import interactive_table
-# from itables.streamlit import to_html_datatable
 
-# init_notebook_mode(connected=False)
+# define the path of the CSV file listing the packages to assess
+url_api = 'https://ost.ecosyste.ms/api/v1/projects/esd'
 
+# use the screen in wide format
 set_page_config(layout="wide")
 
 # define variables
@@ -46,6 +43,7 @@ json_url = url_api
 r = requests.get(json_url)
 all_data = r.json()
 
+# loop through the JSON file just received
 for i in range(len(all_data)):
     json_data = all_data[i]
     package_downloads = 0
@@ -105,7 +103,7 @@ df['Dependents'] = total_dependent_repos_counts
 df['PM Downloads'] = download_counts
 df['PY Issues']= past_year_issues_counts
 
-# adjust some details
+# adjust some license details
 df.loc[df['Project Name'] == 'Antares Simulator', 'License'] = 'mpl-2.0'
 df.loc[df['Project Name'] == 'FINE', 'License'] = 'mit'
 df.loc[df['Project Name'] == 'Minpower', 'License'] = 'mit'
@@ -116,19 +114,17 @@ df.loc[df['Project Name'] == 'PyPowSyBl', 'Language'] = 'Python'
 
 # delete some columns not needed yet
 df.drop(columns=[
-    'Category', 'Sub Category', 'Language',
+    'Category', 'Sub Category', 'Language', 'License'
 ], axis=1, errors='ignore', inplace=True)
 
-title('OET\'s ESD analysis app')
-write('')
-write(
-     'Repository to support analyzing Energy System Modelling (ESM) tools based on git data and other publicilly available data (e.g., ecosyste.ms and opensustain.tech).'
-)
-write(
-    "The whole analysis is available at OET's GitHub repository [github.com/open-energy-transition/open-esm-analysis](https://github.com/open-energy-transition/open-esm-analysis/)."
-)
-write('')
+# start the output
+title("OET's ESD analysis app")
+write("")
+write("Repository to support analyzing Energy System Modelling (ESM) tools based on git data and other publicilly available data (e.g., ecosyste.ms and opensustain.tech).")
+write("The whole analysis is available at OET's GitHub repository [github.com/open-energy-transition/open-esm-analysis](https://github.com/open-energy-transition/open-esm-analysis/).")
+write("")
 
+# add the interactive table
 interactive_table(
     df,
     # caption='Countries',
@@ -138,9 +134,10 @@ interactive_table(
     order=[[0, "asc"]]
 )
 
-write ('')
-write ('Remark:')
-write ('  Contribs .. contributors')
-write ('  DDS ... development distribution score (the smaller the number the better; 0 means no data available)')
-write ('  PM .. previous month (0 means either no downloads or not tracked/shared from the repository owner)')
-write ('  PY .. previous year (0 means either no issues or not tracked/shared from the repository owner)')
+# add some comments about some columns
+write ("")
+write ("Remark:")
+write ("  Contribs .. contributors")
+write ("  DDS ... development distribution score (the smaller the number the better; 0 means no data available)")
+write ("  PM .. previous month (0 means either no downloads or not tracked/shared from the repository owner)")
+write ("  PY .. previous year (0 means either no issues or not tracked/shared from the repository owner)")
