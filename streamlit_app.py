@@ -10,20 +10,17 @@
 url_api = 'https://ost.ecosyste.ms/api/v1/projects/esd'
 
 # import required packages
-from datetime import datetime, timedelta
-import streamlit as st
-from pandas import DataFrame
 import requests
-from streamlit import html
-from itables import init_notebook_mode, to_html_datatable
+from datetime import datetime, timedelta
+from pandas import DataFrame
+from streamlit import html, title, write, set_page_config
+# from itables import init_notebook_mode, to_html_datatable
+from itables.streamlit import interactive_table
+# from itables.streamlit import to_html_datatable
 
-init_notebook_mode()
+# init_notebook_mode(connected=False)
 
-# import os.path
-# import json
-# import io
-# from time import gmtime, strftime
-# from urllib.request import urlopen
+set_page_config(layout="wide")
 
 # define variables
 names = []
@@ -122,26 +119,33 @@ df.drop(columns=[
     'Category', 'Sub Category', 'Language',
 ], axis=1, errors='ignore', inplace=True)
 
-st.title('OET\'s ESD analysis app')
-st.write('')
-st.write(
+title('OET\'s ESD analysis app')
+write('')
+write(
      'Repository to support analyzing Energy System Modelling (ESM) tools based on git data and other publicilly available data (e.g., ecosyste.ms and opensustain.tech).'
 )
-st.write(
+write(
     "The whole analysis is available at OET's GitHub repository [github.com/open-energy-transition/open-esm-analysis](https://github.com/open-energy-transition/open-esm-analysis/)."
 )
-st.write('')
+write('')
 
 # show the nice table
-html(
-# st.write(
-    to_html_datatable(
-        # df_extract.loc[:, df_extract.columns != 'Repository'],
-        df,
-        buttons=["copyHtml5", "csvHtml5", "excelHtml5"],
-        lengthMenu=[25, 50],
-        order=[[0, "asc"]]
-    ),
+#html(
+#    to_html_datatable(
+#        df,
+#        buttons=["copyHtml5", "csvHtml5", "excelHtml5"],
+#        lengthMenu=[25, 50],
+#        order=[[0, "asc"]]
+#    ),
+#)
+
+interactive_table(
+    df,
+    caption='Countries',
+    select=True,
+    lengthMenu=[25, 50],
+    buttons=['copyHtml5', 'csvHtml5', 'excelHtml5', 'colvis'],
+    order=[[0, "asc"]]
 )
 
 # Remark:
