@@ -1,19 +1,14 @@
-# 🎈 Blank app template
+# OET's ESD analysis app
 
-A simple Streamlit app template for you to modify!
+Repository to support analyzing Energy System Modelling (ESM) tools based on git data and other publicilly available data (e.g., ecosyste.ms and opensustain.tech).
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+The whole analysis is available at OET's GitHub repository [![open-energy-transition/open-esm-analysis](https://github.com/open-energy-transition/open-esm-analysis)]].
 
 ### How to run it on your own machine
 
 1. Install the requirements
-
-   ```
    $ pip install -r requirements.txt
-   ```
 
 2. Run the app
-
-   ```
    $ streamlit run streamlit_app.py
-   ```
+
