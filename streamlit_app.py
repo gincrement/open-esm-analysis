@@ -81,7 +81,6 @@ for i in range(len(all_data)):
     develop_distr_scores.append(("%.3f" % json_data['commits']['dds']))
     past_year_issues_counts.append(json_data['issues_stats']['past_year_issues_count'])
     creates.append(datetime.strptime(json_data['repository']['created_at'], '%Y-%m-%dT%H:%M:%S.%fZ').strftime('%Y/%m'))
-    # updates.append(datetime.strptime(json_data['repository']['updated_at'], '%Y-%m-%dT%H:%M:%S.%fZ').strftime('%Y/%m'))
     updates.append(datetime.strptime(latest_release_published_at, '%Y-%m-%dT%H:%M:%S.%fZ').strftime('%Y/%m'))
 
 # create a dataframe containing all collected data
