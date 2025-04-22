@@ -10,18 +10,20 @@
 url_api = 'https://ost.ecosyste.ms/api/v1/projects/esd'
 
 # import required packages
+from datetime import datetime, timedelta
+import streamlit as st
+from pandas import DataFrame
+import requests
+from streamlit import html
+from itables import init_notebook_mode, to_html_datatable
+
+init_notebook_mode()
+
 # import os.path
 # import json
 # import io
-from datetime import datetime, timedelta
 # from time import gmtime, strftime
-import streamlit as st
-import pandas as pd
 # from urllib.request import urlopen
-import requests
-
-# from itables.streamlit import init_notebook_mode
-from streamlit import to_html_datatable
 
 # define variables
 names = []
@@ -88,7 +90,7 @@ for i in range(len(all_data)):
     updates.append(datetime.strptime(latest_release_published_at, '%Y-%m-%dT%H:%M:%S.%fZ').strftime('%Y/%m'))
 
 # create a dataframe containing all collected data
-df = pd.DataFrame()
+df = DataFrame()
 df['Project Name'] = names
 df['Project Name'] = names
 df['Category'] = categories
@@ -120,21 +122,25 @@ df.drop(columns=[
     'Category', 'Sub Category', 'Language',
 ], axis=1, errors='ignore', inplace=True)
 
-st.title("🎈 My new app")
+st.title('OET\'s ESD analysis app')
+st.write('')
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+     'Repository to support analyzing Energy System Modelling (ESM) tools based on git data and other publicilly available data (e.g., ecosyste.ms and opensustain.tech).'
 )
+st.write(
+    "The whole analysis is available at OET's GitHub repository [github.com/open-energy-transition/open-esm-analysis](https://github.com/open-energy-transition/open-esm-analysis/)."
+)
+st.write('')
 
 # show the nice table
-# st.html()
-st.write(
-#    itables.show(
+html(
+# st.write(
     to_html_datatable(
         # df_extract.loc[:, df_extract.columns != 'Repository'],
         df,
-        #buttons=["copyHtml5", "csvHtml5", "excelHtml5"],
-        #lengthMenu=[25, 50],
-        #order=[[0, "asc"]]
+        buttons=["copyHtml5", "csvHtml5", "excelHtml5"],
+        lengthMenu=[25, 50],
+        order=[[0, "asc"]]
     ),
 )
 
