@@ -129,27 +129,18 @@ write(
 )
 write('')
 
-# show the nice table
-#html(
-#    to_html_datatable(
-#        df,
-#        buttons=["copyHtml5", "csvHtml5", "excelHtml5"],
-#        lengthMenu=[25, 50],
-#        order=[[0, "asc"]]
-#    ),
-#)
-
 interactive_table(
     df,
-    caption='Countries',
-    select=True,
+    # caption='Countries',
+    #select=True,
     lengthMenu=[25, 50],
     buttons=['copyHtml5', 'csvHtml5', 'excelHtml5', 'colvis'],
     order=[[0, "asc"]]
 )
 
-# Remark:
-#   Contribs .. contributors
-#   DDS ... development distribution score (the smaller the number the better; 0 means no data available)
-#   PM .. previous month (0 means either no downloads or not tracked/shared from the repository owner)
-#   PY .. previous year (0 means either no issues or not tracked/shared from the repository owner)
+write ('')
+write ('Remark:')
+write ('  Contribs .. contributors')
+write ('  DDS ... development distribution score (the smaller the number the better; 0 means no data available)')
+write ('  PM .. previous month (0 means either no downloads or not tracked/shared from the repository owner)')
+write ('  PY .. previous year (0 means either no issues or not tracked/shared from the repository owner)')
