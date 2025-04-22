@@ -143,12 +143,13 @@ df.drop(columns=[
 
 # show the nice table
 html(
-    itables.show(
+#    itables.show(
+    to_html_datatable(
         # df_extract.loc[:, df_extract.columns != 'Repository'],
         df,
-        buttons=["copyHtml5", "csvHtml5", "excelHtml5"],
-        lengthMenu=[25, 50],
-        order=[[0, "asc"]]
+        #buttons=["copyHtml5", "csvHtml5", "excelHtml5"],
+        #lengthMenu=[25, 50],
+        #order=[[0, "asc"]]
     ),
 )
 
