@@ -10,7 +10,7 @@
 import requests
 from datetime import datetime, timedelta
 from pandas import DataFrame
-from streamlit import html, title, write, set_page_config, subheader
+from streamlit import html, title, write, set_page_config, subheader, page_link
 from itables.streamlit import interactive_table
 
 # define the path of the CSV file listing the packages to assess
@@ -119,12 +119,12 @@ df.drop(columns=[
 # start the output
 title ("OET's ESD analysis app")
 write ("Repository to support analyzing Energy System Modelling (ESM) tools based on git data and other publicilly available data (e.g., ")
-st.page_link("https://ecosyste.ms/", label="ecosyste.ms")
+page_link("https://ecosyste.ms/", label="ecosyste.ms")
 write (" and ")
-st.page_link("https://opensustain.tech/", label="opensustain.tech")
+page_link("https://opensustain.tech/", label="opensustain.tech")
 write (".")
 write ("The whole analysis is available at OET's GitHub repository ")
-st.page_link("https://github.com/open-energy-transition/open-esm-analysis/", label="open-esm-analysis")
+page_link("https://github.com/open-energy-transition/open-esm-analysis/", label="open-esm-analysis")
 write (".")
 subheader ("Smarter Investments in Open Energy Planning: How Data Can Guide Decision-Makers")
 write ("The global energy transition is moving fast, but so are the challenges in directing time and resources effectively. Achieving international climate goals will require around 4.5 trillion in annual investments by the early 2030s. To optimize infrastructure investments, grid operations and policy decisions, open-source tools are becoming the 'goat' in the room with increasing adoption across all sectors (ref to <a href='https://www.linkedin.com/posts/entso-e_energytransition-opensource-innovation-activity-7293296246813851649-2ynL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB8VqvQBiD-xO3KcGAhxNnzGWGUnox2Mxb8'>ENTSO-E post on LinkedIn</a>")
