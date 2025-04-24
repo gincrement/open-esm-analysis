@@ -10,7 +10,7 @@
 import requests
 from datetime import datetime, timedelta
 from pandas import DataFrame
-from streamlit import html, title, write, set_page_config, subheader, page_link
+from streamlit import html, title, write, set_page_config, subheader, page_link, markdown
 from itables.streamlit import interactive_table
 
 # define the path of the CSV file listing the packages to assess
@@ -122,14 +122,14 @@ write ()
 write ("Repository to support analyzing Energy System Modelling (ESM) tools based on git data and other publicilly available data (e.g., <a href='https://ecosyste.ms/' target='_new'>ecosyste.ms</a> and <a href='https://opensustain.tech/' target='_new'>opensustain.tech</a>.", unsafe_allow_html=True)
 write ("The whole analysis is available at OET's GitHub repository <a href='https://github.com/open-energy-transition/open-esm-analysis/' target='_new'>open-esm-analysis</a>.", unsafe_allow_html=True)
 subheader ("Smarter Investments in Open Energy Planning: How Data Can Guide Decision-Makers")
-write ("The global energy transition is moving fast, but so are the challenges in directing time and resources effectively. Achieving international climate goals will require around 4.5 trillion in annual investments by the early 2030s. To optimize infrastructure investments, grid operations and policy decisions, open-source tools are becoming the 'goat' in the room with increasing adoption across all sectors (see e.g. <a href='https://www.linkedin.com/posts/entso-e_energytransition-opensource-innovation-activity-7293296246813851649-2ynL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB8VqvQBiD-xO3KcGAhxNnzGWGUnox2Mxb8'>ENTSO-E post on LinkedIn</a>).", unsafe_allow_html=True)
+markdown ("The global energy transition is moving fast, but so are the challenges in directing time and resources effectively. Achieving international climate goals will require around **4.5 trillion in annual investments** by the early 2030s. To optimize infrastructure investments, grid operations and policy decisions, open-source tools are becoming the 'goat' in the room with increasing adoption across all sectors (see e.g. <a href='https://www.linkedin.com/posts/entso-e_energytransition-opensource-innovation-activity-7293296246813851649-2ynL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB8VqvQBiD-xO3KcGAhxNnzGWGUnox2Mxb8'>ENTSO-E post on LinkedIn</a>).", unsafe_allow_html=True)
 write ("But with an ever-growing number of open-source (OS) energy tools, the question remains:")
-write ("<b>How do decision-makers—whether researchers, funders, or grid operators—select the right tools for their needs?</b>")
+markdown ("**How do decision-makers - whether researchers, funders, or grid operators - select the right tools for their needs?**")
 write ("The answer lies in data combined with experience.")
 subheader ("The Challenge: Identifying Reliable and Impactful Tools")
 write ("Funders and users alike need to distinguish between active, well-maintained tools and those that might no longer be viable. While qualitative reviews (user feedback, case studies, etc.) are valuable, quantitative metrics offer critical signals about a tool’s reliability, sustainability, and adoption.")
 write ("The table below highlights key statistics for several leading OS energy planning tools, offering a snapshot of their development activity, usage, and maintenance.")
-write ("Table 1: Selected Open-Source ESM Tools - Key Data Indicators")
+markdown ("**Table 1: Selected Open-Source ESM Tools - Key Data Indicators (Data: ecosystem.ms)**")
 
 # add the interactive table
 interactive_table(
@@ -142,6 +142,9 @@ interactive_table(
 )
 
 # add some comments about some columns
+write ("(Last udpate:. 18. Feb. 2025)")
+write (datetime.datetime.now().strftime("%d. %b. %Y"))
+write ("")
 write ("(Citations: Papers referencing the tool; Created: first repository commit; Updated: last repository commit; Citations: identified publications; Stars: GitHub bookmarks; Contributors: active developers; DDS: development distribution score (the smaller the number the better; but 0 means no data available); Forks: number of Git forks; Dependents: packages dependent on this project; PM Downloads: package installs; PY Issues: bugs reported in the past year.)")
 write ("")
 subheader("Key Takeaways from the Data")
