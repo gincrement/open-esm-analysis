@@ -128,8 +128,7 @@ subheader ("The Challenge: Identifying Reliable and Impactful Tools")
 write ("Funders and users alike need to distinguish between active, well-maintained tools and those that might no longer be viable. While qualitative reviews (user feedback, case studies, etc.) are valuable, quantitative metrics offer critical signals about a tool’s reliability, sustainability, and adoption.")
 markdown ("**Table 1** highlights key statistics for several leading OS energy planning tools, offering a snapshot of their development activity, usage, and maintenance.")
 write ("")
-markdown ("**Table 1: Selected Open-Source ESM Tools - Key Data Indicators (Data: ecosystem.ms)**")
-write (datetime.now().strftime("%d. %b. %Y"))
+markdown ("**Table 1: Selected Open-Source ESM Tools - Key Data Indicators (Data: ecosystem.ms)**" + datetime.now().strftime("%d. %b. %Y"))
 
 # add the interactive table
 interactive_table(
