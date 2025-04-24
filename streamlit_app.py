@@ -128,7 +128,7 @@ subheader ("The Challenge: Identifying Reliable and Impactful Tools")
 write ("Funders and users alike need to distinguish between active, well-maintained tools and those that might no longer be viable. While qualitative reviews (user feedback, case studies, etc.) are valuable, quantitative metrics offer critical signals about a tool’s reliability, sustainability, and adoption.")
 markdown ("**Table 1** highlights key statistics for several leading OS energy planning tools, offering a snapshot of their development activity, usage, and maintenance.")
 write ("")
-markdown ("**Table 1: Selected Open-Source ESM Tools - Key Data Indicators (Data: ecosystem.ms)**" + datetime.now().strftime("%d. %b. %Y"))
+markdown ("**Table 1: Selected Open-Source ESM Tools - Key Data Indicators** (Data: ecosystem.ms; Last Update: " + datetime.now().strftime("%d. %b. %Y") + ")")
 
 # add the interactive table
 interactive_table(
@@ -142,15 +142,13 @@ interactive_table(
 
 # add some comments about some columns
 write ("")
-write ("(Citations: Papers referencing the tool; Created: first repository commit; Updated: last repository commit; Citations: identified publications; Stars: GitHub bookmarks; Contributors: active developers; DDS: development distribution score (the smaller the number the better; but 0 means no data available); Forks: number of Git forks; Dependents: packages dependent on this project; PM Downloads: package installs; PY Issues: bugs reported in the past year.)")
+markdown ("*(Citations: Papers referencing the tool; Created: first repository commit; Updated: last repository commit; Citations: identified publications; Stars: GitHub bookmarks; Contributors: active developers; DDS: development distribution score (the smaller the number the better; but 0 means no data available); Forks: number of Git forks; Dependents: packages dependent on this project; PM Downloads: package installs; PY Issues: bugs reported in the past year.)*")
 write ("")
-subheader("Key Takeaways from the Data")
-write ("<ul>")
-write ("  <li><b>Adoption Signals Matter</b>: High download counts, active contributors, and ongoing issue resolutions suggest healthy, well-maintained projects. However, GitHub stars alone can be misleading—some highly starred projects have stalled development.</li>")
-write ("  <li><b>Sustainability Risks</b>: Projects with fewer than 10 contributors face a higher risk of abandonment. Also depending on packages with a small number of contributors might be a risk for the project. Funders should be wary of investing in tools that lack a committed maintainer base.</li>")
-write ("  <li><b>Transparency Gaps</b>: Some projects do not disclose key statistics (e.g., download counts), which may indicate poor release management and hinder long-term usability.</li>")
-write ("  <li><b>Interoperability Potential</b>: Many tools serve niche roles, but interoperability—how well they integrate with others—is becoming a crucial factor for large-scale adoption.</li>")
-write ("</ul>")
+subheader ("Key Takeaways from the Data")
+markdown ("- <b>Adoption Signals Matter</b>: High download counts, active contributors, and ongoing issue resolutions suggest healthy, well-maintained projects. However, GitHub stars alone can be misleading—some highly starred projects have stalled development.")
+markdown ("- <b>Sustainability Risks</b>: Projects with fewer than 10 contributors face a higher risk of abandonment. Also depending on packages with a small number of contributors might be a risk for the project. Funders should be wary of investing in tools that lack a committed maintainer base.")
+markdown ("- <b>Transparency Gaps</b>: Some projects do not disclose key statistics (e.g., download counts), which may indicate poor release management and hinder long-term usability.")
+markdown ("- <b>Interoperability Potential</b>: Many tools serve niche roles, but interoperability—how well they integrate with others—is becoming a crucial factor for large-scale adoption.")
 write ("")
 subheader("Beyond Data: The Need for Qualitative Assessments")
 write ("While data helps filter out unreliable tools, deeper investigation is needed to ensure a tool is the right fit. Some key qualitative factors to consider:")
