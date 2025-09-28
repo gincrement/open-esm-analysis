@@ -46,6 +46,7 @@ emlab_generation,https://github.com/emlab/emlab-generation,EMLab-Generation,open
 emma,https://github.com/emma-model/emma,EMMA,"lf-energy-landscape,pre-compiled",
 emprise,https://github.com/philipphaertel/emprise,EMPRISE,pre-compiled,
 enerflow,https://github.com/rebase-energy/enflow,"enerflow,enflow","opensustain-tech,pre-compiled",
+energy_access_explorer_(eae),https://github.com/energyaccessexplorer,Energy Access Explorer (EAE),openmod,
 energy_policy_simulator,https://github.com/energyinnovation/eps-us,Energy Policy Simulator,"lf-energy-landscape,openmod",
 energy_py,https://github.com/adgefficiency/energy-py,energy-py,"lf-energy-landscape,opensustain-tech",
 energy_py_linear,https://github.com/adgefficiency/energy-py-linear,energy-py-linear,"lf-energy-landscape,opensustain-tech",
@@ -192,6 +193,7 @@ rustpower,https://github.com/chengts95/rustpower,rustpower,pre-compiled,
 sam,https://github.com/nrel/sam,"SAM,System Advisor Model,System Advisor Model (SAM)","lf-energy-landscape,openmod,opensustain-tech,pre-compiled","capacity-expansion,production-cost"
 sddpdso_jl,https://github.com/psrenergy/sddpdso.jl,SDDPDSO.jl,pre-compiled,
 secmod,https://git-ce.rwth-aachen.de/ltt/secmod,secmod,pre-compiled,
+sienna,https://github.com/nrel-sienna,Sienna,openmod,
 silver,https://gitlab.com/sesit/silver,"SILVER,silver","g-pst,pre-compiled",production-cost
 simona,https://github.com/ie3-institute/simona,SIMONA,opensustain-tech,
 simplus_grid_tool,https://github.com/future-power-networks/simplus-grid-tool,Simplus-Grid-Tool,pre-compiled,
