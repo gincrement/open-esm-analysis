@@ -52,6 +52,7 @@ https://github.com/emlab/emlab-generation: https://repos.ecosyste.ms/api/v1/host
 https://github.com/emma-model/emma: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/emma-model%2FEMMA
 https://github.com/energy-innovation/eps-us: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/EnergyInnovation%2Feps-us
 https://github.com/energy-modelling-toolkit/dispa-set: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/energy-modelling-toolkit%2FDispa-SET
+https://github.com/energyaccessexplorer: not-found
 https://github.com/energyinnovation/eps-us: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/EnergyInnovation%2Feps-us
 https://github.com/energymodelsx/energymodelsbase.jl: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/EnergyModelsX%2FEnergyModelsBase.jl
 https://github.com/energyrt/energyrt: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/optimal2050%2FenergyRt
@@ -126,6 +127,7 @@ https://github.com/mzy2240/esa: https://repos.ecosyste.ms/api/v1/hosts/GitHub/re
 https://github.com/niclasmattsson/supergrid: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/niclasmattsson%2FSupergrid
 https://github.com/nreca-bts/omf: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/nreca-bts%2Fomf
 https://github.com/nrel-distribution-suites/erad: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/NREL-Distribution-Suites%2Ferad
+https://github.com/nrel-sienna: not-found
 https://github.com/nrel-sienna/powersimulations.jl: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/NREL-Sienna%2FPowerSimulations.jl
 https://github.com/nrel-sienna/powersimulationsdynamics.jl: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/NREL-Sienna%2FPowerSimulationsDynamics.jl
 https://github.com/nrel-sienna/powersystemsinvestments.jl: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/NREL-Sienna%2FPowerSystemsInvestments.jl
