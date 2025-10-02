@@ -25,7 +25,7 @@ ENTRIES_TO_KEEP = [
     "language",
     "license",
     "created_at",
-    "updated_at",
+    "pushed_at",
     "commit_stats.dds",
     "commit_stats.total_committers",
     "homepage",
