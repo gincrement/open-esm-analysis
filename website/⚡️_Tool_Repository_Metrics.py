@@ -26,7 +26,7 @@ OET_LOGO_ABBREVIATED = "https://raw.githubusercontent.com/open-energy-transition
 
 COLUMN_NAME_MAPPING: dict[str, str] = {
     "created_at": "Created",
-    "updated_at": "Updated",
+    "pushed_at": "Updated",
     "stargazers_count": "Stars",
     "commit_stats.total_committers": "Contributors",
     "commit_stats.dds": "DDS",
@@ -39,6 +39,7 @@ COLUMN_NAME_MAPPING: dict[str, str] = {
 
 COLUMN_DTYPES: dict[str, Callable] = {
     "created_at": pd.to_datetime,
+    "pushed_at": pd.to_datetime,
     "updated_at": pd.to_datetime,
     "stargazers_count": pd.to_numeric,
     "commit_stats.total_committers": pd.to_numeric,
@@ -122,6 +123,9 @@ def create_vis_table(tool_stats_dir: Path, user_stats_dir: Path) -> pd.DataFrame
     df["Score"] = pd.Series(
         np.random.choice([0, 100], size=len(df.index)), index=df.index
     )
+    # Fill empty dates in "pushed_at" with equivalent entries from "updated_at"
+    df["pushed_at"] = df["pushed_at"].fillna(df["updated_at"])
+
     df_vis = df.rename(columns=COLUMN_NAME_MAPPING)[
         EXTRA_COLUMNS + list(COLUMN_NAME_MAPPING.values())
     ]
