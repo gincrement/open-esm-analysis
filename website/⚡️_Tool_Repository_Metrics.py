@@ -745,7 +745,7 @@ def conclusion():
 def footer():
     """Footer content for the Streamlit app."""
     st.divider()
-    _, col1, col2, col3, _ = st.columns([1, 1, 1, 1, 1])
+    _, col1, col2, col3, col4, _ = st.columns([1, 2, 2, 2, 2, 1])
     col1.image(OET_LOGO_FULL_NAME, width=300)
     col2.markdown(
         """
@@ -758,6 +758,11 @@ def footer():
         """
         Built by [Open Energy Transition](https://openenergytransition.org/), with support by [Breakthrough Energy GRIDS](https://www.breakthroughenergy.org/).
         The information provided in this dashboard is for informational purposes only and does not constitute professional advice.
+        """
+    )
+    col4.markdown(
+        """
+        `openmod-tracker.org` is not officially affiliated with and has not been endorsed by the [Open Energy Modelling (openmod) Initiative](https://openmod-initiative.org/) community.
         """
     )
 
