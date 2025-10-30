@@ -8,8 +8,14 @@ SPDX-License-Identifier: MIT
 
 [![REUSE status](https://api.reuse.software/badge/github.com/open-energy-transition/openmod-tracker/)](https://api.reuse.software/info/github.com/open-energy-transition/openmod-tracker/)
 
-Repository for analyzing the maturity and adoption of open-source Energy System Modelling (ESM) tools using Git and other publicly available data.
-The result of the analysis is available in an [online dashboard](https://openmod-tracker.org/).
+Built by [Open Energy Transition](https://openenergytransition.org/), with support by [Breakthrough Energy GRIDS](https://www.breakthroughenergy.org/), this project aims to provide consistent, up-to-date metrics across a range of open energy system modelling tools.
+
+The result of the analysis is available in our [online dashboard](https://openmod-tracker.org/).
+
+>[!NOTE]
+>Although we share the same aim -
+>that opening up energy models improves quality, transparency, and credibility, leading to better research and policy advice -
+>this repository and `openmod-tracker.org` are not affiliated with and have not been endorsed by the [Open Energy Modelling (openmod) Initiative](https://openmod-initiative.org/) community.
 
 ## Features
 

@@ -36,7 +36,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 2025-10-06
 
-- Fixed: a bug in the "Updated" field. It now correctly reports the date-time of the most recent change to a tool's repository. However, this change can be a push to any branch, not just the main or published branch.
+### Added
+
+- Disclaimer about our relationship with the Open Energy Modelling Initiative (openmod-initiative) (#143).
+
+### Fixed
+
+- a bug in the "Updated" field. It now correctly reports the date-time of the most recent change to a tool's repository. However, this change can be a push to any branch, not just the main or published branch (#116).
 
 ## 2025-09-23
 
