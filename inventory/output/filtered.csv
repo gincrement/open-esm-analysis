@@ -86,7 +86,6 @@ gridpack,https://github.com/gridoptics/gridpack,GridPACK,opensustain-tech,power-
 gridpath,https://github.com/blue-marble/gridpath,"GridPath,gridpath","lf-energy-landscape,opensustain-tech,pre-compiled","capacity-expansion,production-cost"
 grimsel_flex,https://github.com/arthurrinaldi/grimsel,GRIMSEL-FLEX,openmod,
 h2integrate,https://github.com/nrel/h2integrate,H2Integrate,opensustain-tech,
-helics,https://github.com/gmlc-tdc/helics,"HELICS,Hierarchical Engine for Large-scale Infrastructure Co-Simulation","lf-energy-landscape,opensustain-tech,pre-compiled",
 heron,https://github.com/idaholab/heron,HERON,pre-compiled,
 highres_europe,https://github.com/highres-model/highres-europe,highRES-Europe,pre-compiled,
 hope,https://github.com/hope-model-project/hope,HOPE,pre-compiled,
@@ -220,7 +219,7 @@ transient_lib,https://github.com/transient-official/transient-lib,transient-lib,
 tulipa_energy_model,https://github.com/tulipaenergy/tulipaenergymodel.jl,"Tulipa Energy Model,TulipaEnergyModel.jl","opensustain-tech,pre-compiled",
 urbs,https://github.com/tum-ens/urbs,"URBS,urbs","lf-energy-landscape,openmod,opensustain-tech,pre-compiled",capacity-expansion
 usensys,https://github.com/usensys/usensys,USENSYS,openmod,
-veragrid,https://github.com/sanpen/veragrid,VeraGrid,opensustain-tech,
+veragrid,https://github.com/sanpen/veragrid,VeraGrid,opensustain-tech,power-flow
 villasframework,https://github.com/villasframework/node,VILLASframework,"lf-energy-landscape,pre-compiled",
 wpgnn_and_playgen,https://github.com/nrel/wpgnn,WPGNN and PLayGen,lf-energy-landscape,
 zen_garden,https://github.com/zen-universe/zen-garden,ZEN-garden,pre-compiled,
