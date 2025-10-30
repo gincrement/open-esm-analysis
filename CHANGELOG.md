@@ -25,7 +25,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+### Added
+
+- Non-github project cloning to use in sonarcloud project analysis workflow.
+- First set of sonarcloud project metrics (#63).
+
+### Fixed
+
+- Repository forking/syncing scripts and sonarcloud project creator when used in anger.
+
+## 2025-10-06
 
 ### Added
 

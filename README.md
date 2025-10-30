@@ -104,8 +104,8 @@ We manage forks of all GitHub repositories within our own GitHub organisation in
 
 #### Forking Repositories
 
-The `code_quality/fork_repos.py` script forks GitHub repositories to the specified organization and keeps existing forks in sync with their upstream repositories.
-An appropriate GitHub token for the organisation, with write access, must be provided at runtime.
+Running `pixi run python code_quality/fork_repos.py` forks GitHub repositories to the specified organization and keeps existing forks in sync with their upstream repositories.
+An appropriate GitHub token for the organisation, with repository "Administrator" and "Contents" read/write access, must be stored as `GITHUB_TOKEN` in a local `.env` file at runtime.
 
 The script will:
 
@@ -117,8 +117,15 @@ The script will:
 
 #### Running code quality assessment
 
-The `code_quality/sonarcloud.py create` method will create SonarQube cloud platform projects for each of the forked repositories.
-The `code_quality/sonarcloud.py get-stats` method will access the code quality statistics for all existing SonarQube cloud platform projects.
+Running `pixi run python code_quality/sonarcloud.py create openmod-tracker` will create SonarQube cloud platform projects for each of the forked repositories.
+For newly created projects, you will then need to trigger an assessment manually on SonarQube as there is no way to do so via the API.
+Clicking on the project name is sufficient to start a project.
+
+Running `pixi run python code_quality/sonarcloud.py get-metrics openmod-tracker code_quality/outputs/metrics.csv` will update the code quality statistics for all existing SonarQube cloud platform projects.
+
+>[!NOTE]
+>Only Python and C projects can be analysed automatically by SonarQube.
+>Stats will therefore not be available for other other project types.
 
 ### Our data processing approach
 
