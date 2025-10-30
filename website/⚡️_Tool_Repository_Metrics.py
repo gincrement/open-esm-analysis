@@ -876,7 +876,7 @@ def main(df: pd.DataFrame):
     if len(df_filtered) > 0:
         st.dataframe(
             df_filtered,
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
             column_config=col_config,
             column_order=col_config.keys(),
