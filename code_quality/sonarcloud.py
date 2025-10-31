@@ -158,7 +158,7 @@ def create(org: str):
     """
     git_client = GitAPI(org)
     repos = git_client.repos
-    for repo in tqdm(repos, total=len(repos), desc="Creating projects"):
+    for repo in tqdm(repos.values(), total=len(repos), desc="Creating projects"):
         if not has_bindings(repo.html_url):
             project_key = create_project(repo)
             click.echo(
@@ -173,11 +173,12 @@ def create(org: str):
 @click.argument(
     "output_path",
     type=click.Path(exists=False, file_okay=True, dir_okay=False, path_type=Path),
+    default="code_quality/output/metrics.csv",
 )
 @click.option(
     "--metrics",
     type=str,
-    default="sqale_rating,reliability_rating,security_rating,effort_to_reach_maintainability_rating_a,duplicated_lines_density,security_hotspots_to_review_status",
+    default="sqale_rating,reliability_rating,security_rating,duplicated_lines_density,sqale_index,reliability_remediation_effort,security_remediation_effort",
     show_default=True,
     help="Comma-separated list of SonarCloud metrics to retrieve. To view metric key options visit <https://sonarcloud.io/api/metrics/search>",
 )

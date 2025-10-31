@@ -33,11 +33,7 @@ COLUMN_NAME_MAPPING: dict[str, str] = {
     "forks_count": "Forks",
     "dependent_repos_count": "Dependents",
     "last_month_downloads": "1 Month Downloads",
-    "category": "Category",
-    "language": "Language",
-    "reliability_rating": "Reliability",
-    "security_rating": "Security",
-    "sqale_rating": "Maintainability",
+    "remediation": "Hours to remediate issues",
 }
 
 COLUMN_DTYPES: dict[str, Callable] = {
@@ -60,6 +56,7 @@ NUMBER_FORMAT: dict[str, str] = {
     "Forks": "localized",
     "Dependents": "localized",
     "1 Month Downloads": "localized",
+    "Hours to remediate issues": "%d",
 }
 
 COLUMN_HELP: dict[str, str] = {
@@ -76,9 +73,7 @@ COLUMN_HELP: dict[str, str] = {
     "Score": "The tool score is a weighted average of all numeric metrics, after scaling those metrics to similar ranges.",
     "Interactions": "The cumulative sum of interactions with the repository in the past 6 months at a weekly resolution. Interactions include new stars, issues, forks, and pull requests. Data only available for GitHub-hosted repositories.",
     "Language": "The programming language in which the majority of the tool source code is written.",
-    "Reliability": "Code reliability rating from SonarCloud: 🟢 A (best) to 🔴 E (worst).",
-    "Security": "Code security rating from SonarCloud: 🟢 A (best) to 🔴 E (worst).",
-    "Maintainability": "Code maintainability rating from SonarCloud: 🟢 A (best) to 🔴 E (worst).",
+    "Hours to remediate issues": "Estimated hours required to fix all maintainability, security, and reliability issues in the codebase (as estimated by [SonarCloud](https://sonarcloud.io/organizations/openmod-tracker)).",
 }
 
 EXTRA_COLUMNS = ["name_with_url", "Docs", "Score", "Interactions"]
@@ -178,17 +173,20 @@ def _create_code_quality_cols(
     ratings_for_tools = pd.merge(
         df, ratings_pivot, right_index=True, left_on="html_url"
     )
+    # Convert sqale_index to hours from the SonarCloud scale (1 unit = 20 hours)
+    ratings_for_tools["sqale_index"] /= 20
 
-    emoji_map = {
-        1: "🟢",  # A
-        2: "🟡",  # B
-        3: "🟠",  # C
-        4: "🟠",  # D
-        5: "🔴",  # E
-    }
-    results = ratings_for_tools.loc[
-        :, ratings_for_tools.columns.str.endswith("_rating")
-    ].replace(emoji_map)
+    results = (
+        ratings_for_tools[
+            [
+                "sqale_index",
+                "reliability_remediation_effort",
+                "security_remediation_effort",
+            ]
+        ]
+        .sum(axis=1)
+        .to_frame("remediation")
+    )
     return results
 
 
@@ -922,15 +920,6 @@ def main(df: pd.DataFrame):
             "Docs", display_text="📖", help=COLUMN_HELP["Docs"]
         ),
         "Score": score_col_config,
-        "Reliability": st.column_config.TextColumn(
-            "Reliability", help=COLUMN_HELP["Reliability"], width="small"
-        ),
-        "Security": st.column_config.TextColumn(
-            "Security", help=COLUMN_HELP["Security"], width="small"
-        ),
-        "Maintainability": st.column_config.TextColumn(
-            "Maintainability", help=COLUMN_HELP["Maintainability"], width="small"
-        ),
         "Interactions": st.column_config.BarChartColumn(
             "6 Month Interactions",
             y_min=0,

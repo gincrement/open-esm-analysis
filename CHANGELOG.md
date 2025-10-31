@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Code quality metrics in dashboard(reliability, security, maintainability).
+- Code quality metrics in dashboard (reliability, security, maintainability) (#63).
 - Non-github project cloning to use in sonarcloud project analysis workflow.
 - First set of sonarcloud project metrics (#63).
 
