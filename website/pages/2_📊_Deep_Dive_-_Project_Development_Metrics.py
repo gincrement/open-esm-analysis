@@ -657,8 +657,12 @@ def main():
     # Get date range from the data
     min_date = filtered_interactions[["merged", "created", "closed"]].min().min().date()
     max_date = filtered_interactions[["merged", "created", "closed"]].max().max().date()
+
     default_range = (min_date, max_date)
-    current_range = st.session_state.get("selected_date_range_dev", default_range)
+    initial_min = (max_date - pd.DateOffset(years=1)).date()
+    current_range = st.session_state.get(
+        "selected_date_range_dev", (max(min_date, initial_min), max_date)
+    )
     # Date range selector
     start_date, end_date = st.sidebar.slider(
         "Select date range:",
@@ -669,6 +673,7 @@ def main():
         label_visibility="visible",
         help="Filter interactions by date range. Adjust the slider to focus on a specific time period.",
     )
+
     if default_range != (start_date, end_date):
         # Update filtered interactions based on date range
         filtered_interactions = date_filter(
