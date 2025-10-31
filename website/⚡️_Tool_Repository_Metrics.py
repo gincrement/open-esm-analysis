@@ -33,7 +33,6 @@ COLUMN_NAME_MAPPING: dict[str, str] = {
     "forks_count": "Forks",
     "dependent_repos_count": "Dependents",
     "last_month_downloads": "1 Month Downloads",
-    "remediation": "Hours to remediate issues",
 }
 
 COLUMN_DTYPES: dict[str, Callable] = {
@@ -56,7 +55,6 @@ NUMBER_FORMAT: dict[str, str] = {
     "Forks": "localized",
     "Dependents": "localized",
     "1 Month Downloads": "localized",
-    "Hours to remediate issues": "%d",
 }
 
 COLUMN_HELP: dict[str, str] = {
@@ -73,7 +71,6 @@ COLUMN_HELP: dict[str, str] = {
     "Score": "The tool score is a weighted average of all numeric metrics, after scaling those metrics to similar ranges.",
     "Interactions": "The cumulative sum of interactions with the repository in the past 6 months at a weekly resolution. Interactions include new stars, issues, forks, and pull requests. Data only available for GitHub-hosted repositories.",
     "Language": "The programming language in which the majority of the tool source code is written.",
-    "Hours to remediate issues": "Estimated hours required to fix all maintainability, security, and reliability issues in the codebase (as estimated by [SonarCloud](https://sonarcloud.io/organizations/openmod-tracker)).",
 }
 
 EXTRA_COLUMNS = ["name_with_url", "Docs", "Score", "Interactions"]
@@ -129,9 +126,6 @@ def create_vis_table(
     df["Score"] = pd.Series(
         np.random.choice([0, 100], size=len(df.index)), index=df.index
     )
-    df = pd.concat([df, _create_code_quality_cols(code_quality_df, df)], axis=1)
-    # Build quality ratings from code quality metrics (metrics ending with _rating)
-    # Create separate columns for Reliability, Security, and Maintainability
     # Fill empty dates in "pushed_at" with equivalent entries from "updated_at"
     df["pushed_at"] = df["pushed_at"].fillna(df["updated_at"])
 
@@ -140,54 +134,6 @@ def create_vis_table(
     ]
 
     return df_vis
-
-
-def _create_code_quality_cols(
-    code_quality_df: pd.DataFrame, df: pd.DataFrame
-) -> pd.DataFrame:
-    """Create code quality columns for the visualization DataFrame.
-
-    Args:
-        code_quality_df (pd.DataFrame): DataFrame containing code quality metrics.
-        df (pd.DataFrame): Main DataFrame to which code quality columns will be added.
-
-    Returns:
-        pd.DataFrame: DataFrame of code quality columns added.
-    """
-    cq = code_quality_df.reset_index()
-    ratings_pivot = cq.pivot(index="repo", columns="metric", values="value")
-
-    # Match repos by tool name - metrics CSV uses tool names like "AdOpT-NET0"
-    # The df has a 'name' column with comma-separated names, we'll match against all names
-    # Create mapping from normalized names to df index
-    def get_url(name):
-        found = df.loc[df["html_url"].str.endswith(name), "html_url"]
-        if not found.empty:
-            return found.iloc[0]
-        else:
-            return None
-
-    ratings_pivot.index = ratings_pivot.index.map(get_url)
-
-    # Map to df index using tool names
-    ratings_for_tools = pd.merge(
-        df, ratings_pivot, right_index=True, left_on="html_url"
-    )
-    # Convert sqale_index to hours from the SonarCloud scale (1 unit = 20 hours)
-    ratings_for_tools["sqale_index"] /= 20
-
-    results = (
-        ratings_for_tools[
-            [
-                "sqale_index",
-                "reliability_remediation_effort",
-                "security_remediation_effort",
-            ]
-        ]
-        .sum(axis=1)
-        .to_frame("remediation")
-    )
-    return results
 
 
 def _create_user_interactions_timeseries(
