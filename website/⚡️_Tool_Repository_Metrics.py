@@ -33,6 +33,8 @@ COLUMN_NAME_MAPPING: dict[str, str] = {
     "forks_count": "Forks",
     "dependent_repos_count": "Dependents",
     "last_month_downloads": "1 Month Downloads",
+    "category": "Category",
+    "language": "Language",
 }
 
 COLUMN_DTYPES: dict[str, Callable] = {
@@ -81,15 +83,12 @@ NOT_OPEN_SOURCE_LANGUAGES = ["gams", "matlab", "jetbrains mps", "powerbuilder", 
 
 
 @st.cache_data
-def create_vis_table(
-    tool_stats_dir: Path, user_stats_dir: Path, code_quality_metrics_dir: Path
-) -> pd.DataFrame:
+def create_vis_table(tool_stats_dir: Path, user_stats_dir: Path) -> pd.DataFrame:
     """Create the tool table with columns renamed and filtered ready for visualisation.
 
     Args:
         tool_stats_dir (Path): The directory in which to find tool list and stats.
         user_stats_dir (Path): The directory in which to find tool user stats.
-        code_quality_metrics_dir (Path): The directory in which to find code quality metrics.
 
     Returns:
         pd.DataFrame: Filtered and column renamed tool table.
@@ -131,7 +130,6 @@ def create_vis_table(
     df_vis = df.rename(columns=COLUMN_NAME_MAPPING)[
         EXTRA_COLUMNS + list(COLUMN_NAME_MAPPING.values())
     ]
-
     return df_vis
 
 
@@ -747,7 +745,7 @@ def conclusion():
 def footer():
     """Footer content for the Streamlit app."""
     st.divider()
-    _, col1, col2, col3, col4, _ = st.columns([1, 2, 2, 2, 2, 1])
+    _, col1, col2, col3, col4, _ = st.columns([1, 3, 3, 3, 3, 1])
     col1.image(OET_LOGO_FULL_NAME, width=300)
     col2.markdown(
         """
@@ -883,7 +881,7 @@ def main(df: pd.DataFrame):
     if len(df_filtered) > 0:
         st.dataframe(
             df_filtered,
-            width="stretch",
+            use_container_width=True,
             hide_index=True,
             column_config=col_config,
             column_order=col_config.keys(),
@@ -910,7 +908,6 @@ if __name__ == "__main__":
     proj_dir = Path(__file__).parent.parent
     tool_stats_dir = proj_dir / "inventory" / "output"
     user_stats_dir = proj_dir / "user_analysis" / "output"
-    code_quality_metrics_dir = proj_dir / "code_quality" / "output"
     readme_path = proj_dir / "README.md"
 
     st.set_page_config(
@@ -930,7 +927,7 @@ if __name__ == "__main__":
         icon_image=OET_LOGO_ABBREVIATED,
     )
 
-    df_vis = create_vis_table(tool_stats_dir, user_stats_dir, code_quality_metrics_dir)
+    df_vis = create_vis_table(tool_stats_dir, user_stats_dir)
     g = git.cmd.Git()
     latest_changes = g.log("-1", "--pretty=%cs", tool_stats_dir / "stats.csv")
 
