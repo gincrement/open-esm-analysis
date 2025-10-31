@@ -341,7 +341,7 @@ def daily_interactions_timeline(df: pd.DataFrame):
     )
     st.plotly_chart(
         fig_cumulative,
-        use_container_width=True,
+        width="stretch",
         key="cumulative_metrics_plot",
         config=FIG_CONFIG,
     )
@@ -352,7 +352,7 @@ def daily_interactions_timeline(df: pd.DataFrame):
     # Create open counts chart
     fig_open = plot_open_metrics(df, resolution=resolution, color_map=color_map)
     st.plotly_chart(
-        fig_open, use_container_width=True, key="open_metrics_plot", config=FIG_CONFIG
+        fig_open, width="stretch", key="open_metrics_plot", config=FIG_CONFIG
     )
 
 
@@ -539,7 +539,7 @@ def resolution_histograms(df: pd.DataFrame, global_df: pd.DataFrame | None = Non
         )
         cols[interaction].plotly_chart(
             fig,
-            use_container_width=True,
+            width="stretch",
             config=FIG_CONFIG,
             key=f"{interaction}_resolution_histogram",
         )
@@ -601,7 +601,7 @@ def engagement_histograms(df: pd.DataFrame, global_df: pd.DataFrame | None = Non
         )
         cols[interaction].plotly_chart(
             fig,
-            use_container_width=True,
+            width="stretch",
             config=FIG_CONFIG,
             key=f"{interaction}_engagement_histogram",
         )

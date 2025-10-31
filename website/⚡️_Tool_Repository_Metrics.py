@@ -560,11 +560,7 @@ def dist_plot(col: pd.Series, slider_range: tuple[float, float]) -> None:
 
     config = {"displayModeBar": False, "staticPlot": True}
     st.sidebar.plotly_chart(
-        fig,
-        selection_mode=[],
-        use_container_width=True,
-        key=f"{col.name}_chart",
-        config=config,
+        fig, selection_mode=[], width="stretch", key=f"{col.name}_chart", config=config
     )
 
 
@@ -881,7 +877,7 @@ def main(df: pd.DataFrame):
     if len(df_filtered) > 0:
         st.dataframe(
             df_filtered,
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
             column_config=col_config,
             column_order=col_config.keys(),
