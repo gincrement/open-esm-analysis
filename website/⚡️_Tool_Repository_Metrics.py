@@ -70,7 +70,9 @@ COLUMN_HELP: dict[str, str] = {
     "Docs": "Link to tool documentation.",
     "Score": "The tool score is a weighted average of all numeric metrics, after scaling those metrics to similar ranges.",
     "Interactions": "The cumulative sum of interactions with the repository in the past 6 months at a weekly resolution. Interactions include new stars, issues, forks, and pull requests. Data only available for GitHub-hosted repositories.",
-    "Language": "The programming language in which the majority of the tool source code is written.",
+    "Language": "The programming language in which the majority of the tool _source code_ is written. "
+    "It is an indicator of potential licensing issues (if the language is proprietary) and development community size. "
+    "This may not be the language same as the interface language used by the tool.",
 }
 
 EXTRA_COLUMNS = ["name_with_url", "Docs", "Score", "Interactions"]
@@ -95,9 +97,6 @@ def create_vis_table(
     stats_df = pd.read_csv(tool_stats_dir / "stats.csv", index_col="id")
     tools_df = pd.read_csv(tool_stats_dir / "filtered.csv", index_col="id")
     docs_df = pd.read_csv(tool_stats_dir / "docs.csv", index_col="id")
-    code_quality_df = pd.read_csv(
-        code_quality_metrics_dir / "metrics.csv", index_col=["repo", "metric"]
-    )
     df = pd.merge(left=stats_df, right=tools_df, right_index=True, left_index=True)
     df["Interactions"] = (
         _create_user_interactions_timeseries(user_stats_dir)
