@@ -102,8 +102,13 @@ def filter_interactions(
         Filtered DataFrame containing interactions matching the criteria.
     """
     bot_patterns = [
-        "bot",
+        "-bot",
         "actions",
+        "dependabot",
+        "JuliaTagBot",
+        "pudlbot",
+        "codebot",
+        "renovate",
         "sonarqubecloud",
         "codecov",
         "coveralls",
@@ -120,7 +125,7 @@ def filter_interactions(
         selected_repos = [
             item["repo"] for item in repo_to_tool_map if item["name"] in selected_tools
         ]
-        df = df[df["repo"].isin(selected_repos)]
+        df = df[df.repo.str.contains("|".join(selected_repos), case=False)]
     return df
 
 

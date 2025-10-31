@@ -46,9 +46,9 @@ depends-on = ["get-repo-users"]
 
 [tasks.classify-users]
 cmd = "python $PIXI_PROJECT_ROOT/user_analysis/classify_users.py --user-details user_analysis/output/user_details.csv --out-path user_analysis/output/user_classifications.csv"
-inputs = ["user_analysis/output/user_details.csv"]
+inputs = ["user_analysis/output/user_details.csv", "user_analysis/output/organizations.csv"]
 outputs = ["user_analysis/output/user_classifications.csv"]
-depends-on = ["get-repo-users"]
+depends-on = ["get-user-details"]
 
 [dependencies]
 pandas = ">=2.2.3,<3"
