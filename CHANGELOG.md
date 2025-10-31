@@ -32,6 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Go direct to source to get Julia package download statistics (since `juliapkgstats` webpage has been periodically down).
 - Repository forking/syncing scripts and sonarcloud project creator when used in anger.
 
 ## 2025-10-06

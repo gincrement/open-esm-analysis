@@ -5,6 +5,8 @@
 
 """Utility functions to support rendering the web app."""
 
+from pathlib import Path
+
 import pandas as pd
 import streamlit as st
 
@@ -60,3 +62,34 @@ def init_state(key, default, subkey: str | None = None):
         set_state(key, get_state(key, default))
     else:
         set_state(key, get_state(key, default)[subkey], subkey)
+
+
+@st.cache_data
+def map_repo_to_tool(user_stats_df: pd.DataFrame, repo_col: str) -> list[dict]:
+    """Map repository names to tool names.
+
+    Args:
+        user_stats_df (pd.DataFrame): User stats dataframe.
+        repo_col (str): Name of the column containing repository names.
+
+    Returns:
+        list[dict]: List of dictionaries mapping repository names to tool names.
+    """
+    available_repos = set(
+        (",".join(user_stats_df[repo_col].str.lower().values)).split(",")
+    )
+    tools_df = pd.read_csv(
+        Path(__file__).parent.parent / "inventory" / "output" / "filtered.csv"
+    )
+    urls = {repo: "https://github.com/" + repo.lower() for repo in available_repos}
+    repo_to_tool_map = [
+        {
+            "repo": repo,
+            "name": tools_df.loc[tools_df.url == urls[repo], "name"]
+            .item()
+            .split(",")[0],
+        }
+        for repo, url in urls.items()
+        if url in tools_df.url.values
+    ]
+    return repo_to_tool_map
