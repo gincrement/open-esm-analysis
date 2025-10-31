@@ -10,9 +10,39 @@ from pathlib import Path
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-from util import map_repo_to_tool
 
 KEEP_TOP = 15
+
+
+@st.cache_data
+def map_repo_to_tool(user_stats_df: pd.DataFrame, repo_col: str) -> list[dict]:
+    """Map repository names to tool names.
+
+    Args:
+        user_stats_df (pd.DataFrame): User stats dataframe.
+        repo_col (str): Name of the column containing repository names.
+
+    Returns:
+        list[dict]: List of dictionaries mapping repository names to tool names.
+    """
+    available_repos = set(
+        (",".join(user_stats_df[repo_col].str.lower().values)).split(",")
+    )
+    tools_df = pd.read_csv(
+        Path(__file__).parent.parent / "inventory" / "output" / "filtered.csv"
+    )
+    urls = {repo: "https://github.com/" + repo.lower() for repo in available_repos}
+    repo_to_tool_map = [
+        {
+            "repo": repo,
+            "name": tools_df.loc[tools_df.url == urls[repo], "name"]
+            .item()
+            .split(",")[0],
+        }
+        for repo, url in urls.items()
+        if url in tools_df.url.values
+    ]
+    return repo_to_tool_map
 
 
 def create_vis_table(user_stats_dir: Path) -> pd.DataFrame:

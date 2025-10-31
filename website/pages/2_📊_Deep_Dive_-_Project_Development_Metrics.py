@@ -13,7 +13,6 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
-from util import get_state, map_repo_to_tool
 
 FIG_CONFIG = {"displayModeBar": False, "doubleClick": False, "scrollZoom": False}
 RESOLUTION_CONVERTER = {"Daily": "D", "Weekly": "W", "Monthly": "ME"}
@@ -32,6 +31,37 @@ OPEN_METRICS = [
     "New PR Comments",
     "New PR Reviews",
 ]
+
+
+@st.cache_data
+def map_repo_to_tool(user_stats_df: pd.DataFrame, repo_col: str) -> list[dict]:
+    """Map repository names to tool names.
+
+    Args:
+        user_stats_df (pd.DataFrame): User stats dataframe.
+        repo_col (str): Name of the column containing repository names.
+
+    Returns:
+        list[dict]: List of dictionaries mapping repository names to tool names.
+    """
+    available_repos = set(
+        (",".join(user_stats_df[repo_col].str.lower().values)).split(",")
+    )
+    tools_df = pd.read_csv(
+        Path(__file__).parent.parent / "inventory" / "output" / "filtered.csv"
+    )
+    urls = {repo: "https://github.com/" + repo.lower() for repo in available_repos}
+    repo_to_tool_map = [
+        {
+            "repo": repo,
+            "name": tools_df.loc[tools_df.url == urls[repo], "name"]
+            .item()
+            .split(",")[0],
+        }
+        for repo, url in urls.items()
+        if url in tools_df.url.values
+    ]
+    return repo_to_tool_map
 
 
 @st.cache_data
@@ -628,7 +658,7 @@ def main():
     min_date = filtered_interactions[["merged", "created", "closed"]].min().min().date()
     max_date = filtered_interactions[["merged", "created", "closed"]].max().max().date()
     default_range = (min_date, max_date)
-    current_range = get_state("selected_date_range_dev", default_range)
+    current_range = st.session_state.get("selected_date_range_dev", default_range)
     # Date range selector
     start_date, end_date = st.sidebar.slider(
         "Select date range:",
