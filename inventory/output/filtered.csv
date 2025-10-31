@@ -218,6 +218,7 @@ transactive_energy_service_system,https://github.com/slacgismo/tess,Transactive 
 transient_lib,https://github.com/transient-official/transient-lib,transient-lib,pre-compiled,
 tulipa_energy_model,https://github.com/tulipaenergy/tulipaenergymodel.jl,"Tulipa Energy Model,TulipaEnergyModel.jl","opensustain-tech,pre-compiled",
 tz_osemosys,https://github.com/transition-zero/tz-osemosys,tz-osemosys,pre-compiled,
+unitcommitment_jl,https://github.com/anl-ceeesa/unitcommitment.jl,UnitCommitment.jl,pre-compiled,
 urbs,https://github.com/tum-ens/urbs,"URBS,urbs","lf-energy-landscape,openmod,opensustain-tech,pre-compiled",capacity-expansion
 usensys,https://github.com/usensys/usensys,USENSYS,openmod,
 veragrid,https://github.com/sanpen/veragrid,VeraGrid,opensustain-tech,power-flow
