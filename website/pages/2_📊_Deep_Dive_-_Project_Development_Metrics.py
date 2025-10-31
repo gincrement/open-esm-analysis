@@ -607,20 +607,27 @@ def engagement_histograms(df: pd.DataFrame, global_df: pd.DataFrame | None = Non
         )
 
 
-def main():
+def preamble():
+    """Text to show before the user data plots."""
+    st.markdown(
+        """
+        Activity on source code repositories can tell us about how tools are being developed and maintained.
+        Here we analyse interactions on GitHub repositories for energy modelling tools, including
+        [stars](https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars),
+        [forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks),
+        [issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues),
+        [pull requests (PRs)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests),
+        and [commits](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits).
+        We also look at key contributors to these repositories.
+        Together, this information can help us understand how actively a tool is being developed, how responsive maintainers are to feedback, and how engaged the community is around a tool's development.
+
+        Use the filters on the left to change the time period of these interactions, select specific tools to analyse, and filter out known "bot" activity (interactions from automated accounts).
+        """
+    )
+
+
+def main(df_vis: pd.DataFrame):
     """Main function for the Project Development Metrics page."""
-    st.set_page_config(
-        page_title="Project Development Metrics", page_icon="📊", layout="wide"
-    )
-
-    st.title("Project Development Metrics")
-    st.text(
-        "Track the development activity and key contributors for energy modelling tools. "
-        "Analyse metrics such as stars, forks, issues, pull requests, and response times."
-    )
-    user_stats_dir = Path(__file__).parent.parent.parent / "user_analysis" / "output"
-    df_vis = create_vis_table(user_stats_dir)
-
     repo_to_tool_map = map_repo_to_tool(df_vis, "repo")
 
     # Sidebar filters
@@ -713,4 +720,14 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    st.set_page_config(
+        page_title="Project Development Metrics", page_icon="📊", layout="wide"
+    )
+
+    st.title("Project Development Metrics")
+
+    user_stats_dir = Path(__file__).parent.parent.parent / "user_analysis" / "output"
+    df_vis = create_vis_table(user_stats_dir)
+
+    preamble()
+    main(df_vis)
