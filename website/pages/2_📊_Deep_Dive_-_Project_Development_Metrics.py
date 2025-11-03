@@ -65,21 +65,20 @@ def map_repo_to_tool(user_stats_df: pd.DataFrame, repo_col: str) -> list[dict]:
 
 
 @st.cache_data
-def create_vis_table(user_stats_dir: Path) -> pd.DataFrame:
+def create_vis_table(filepath: Path) -> pd.DataFrame:
     """Load and prepare user interactions data.
 
     Args:
-        user_stats_dir: Path to directory containing user analysis output files.
+        filepath: Path to user interactions data file.
 
     Returns:
         DataFrame containing user interactions with parsed datetime columns.
     """
     # Check if user analysis data exists
-    user_interactions = user_stats_dir / "user_interactions.csv"
-
-    df = pd.read_csv(
-        user_interactions, parse_dates=["created", "closed", "merged"]
-    ).dropna(subset=["username", "repo"], how="any")
+    df = pd.read_csv(filepath, parse_dates=["created", "closed", "merged"]).dropna(
+        subset=["username", "repo"], how="any"
+    )
+    st.session_state["interaction_df"] = df
 
     return df
 
@@ -263,11 +262,11 @@ def plot_open_metrics(df: pd.DataFrame, resolution: str, color_map: dict) -> go.
     _df.loc[:, "closed"] = _df["closed"].fillna(_df["merged"])
     created_df = get_totals(_df, "created", resample).cumsum()
     closed_df = get_totals(_df, "closed", resample).cumsum()
-    open_df = (
-        created_df.subtract(closed_df, fill_value=0)
-        .where(lambda x: x >= 0)
-        .rename(columns=lambda x: x.replace("Total ", "Open "))
+    closed_df_full = closed_df.reindex(created_df.index).ffill().fillna(0)
+    open_df = created_df.subtract(closed_df_full).rename(
+        columns=lambda x: x.replace("Total ", "Open ")
     )
+    assert (open_df >= 0).all().all(), "Open counts contain negative values!"
     extra_dfs = []
     for subtype in ["comment", "review"]:
         _df = get_totals(
@@ -405,15 +404,14 @@ def get_complete_time(df: pd.DataFrame, interaction: str, time_col: str) -> pd.S
         time_col: Name of the completion date column ('merged' or 'closed').
 
     Returns:
-        Series containing completion times in days, filtered to exclude values >= 365 days.
+        Series containing completion times in days.
     """
     # Calculate time to merge for PRs
     data = df.loc[(df.interaction == interaction) & (df["subtype"] == "author")].dropna(
         subset=[time_col]
     )
     complete_time = (data[time_col] - data["created"]).dt.total_seconds() / (24 * 3600)
-    complete_time_filtered = complete_time[complete_time < 365]
-    return complete_time_filtered
+    return complete_time
 
 
 def plot_histogram(
@@ -474,7 +472,7 @@ def plot_histogram(
     return fig
 
 
-def get_engagement(df: pd.DataFrame, interaction: str) -> pd.Series:
+def _get_engagement(df: pd.DataFrame, interaction: str) -> pd.Series:
     """Calculate engagement metrics for PRs or issues.
 
     Args:
@@ -564,33 +562,19 @@ def engagement_histograms(df: pd.DataFrame, global_df: pd.DataFrame | None = Non
     *Engagement* refers to the number of comments, reactions, and reviews made on a PR or issue before it is closed or merged.
     Higher engagement can indicate more thorough reviews and feedback in PRs and active problem-solving and collaboration in Issues.
     """)
-    pr_interactions = df.loc[(df.interaction == "pr")]
-    if not pr_interactions.merged.isna().all():
-        n_merged = len(
-            pr_interactions[
-                (pr_interactions.subtype == "author")
-                & (pr_interactions.closed.notna() | pr_interactions.merged.notna())
-            ][["repo", "number"]].drop_duplicates()
-        )
-        n_reviewed = len(
-            pr_interactions[(pr_interactions.subtype == "review")][
-                ["repo", "number"]
-            ].drop_duplicates()
-        )
-        perc_prs_reviewed = (n_reviewed / n_merged) * 100
-        st.caption(
-            f"{perc_prs_reviewed:.1f}% of PRs received at least one review before being merged/closed."
-        )
+    _prs_with_reviews_caption(df)
     col_engagement_1, col_engagement_2 = st.columns(2)
     cols = {"pr": col_engagement_1, "issue": col_engagement_2}
     for interaction in cols.keys():
-        engagement_time = get_engagement(df, interaction)
+        engagement_time = _get_engagement(df, interaction)
+
         if engagement_time.empty:
             cols[interaction].info("No engagement data available.")
             continue
 
         if global_df is not None:
-            global_engagement_time = get_engagement(global_df, interaction).median()
+            global_engagement_time = _get_engagement(global_df, interaction).median()
+
         else:
             global_engagement_time = None
         fig = plot_histogram(
@@ -604,6 +588,31 @@ def engagement_histograms(df: pd.DataFrame, global_df: pd.DataFrame | None = Non
             width="stretch",
             config=FIG_CONFIG,
             key=f"{interaction}_engagement_histogram",
+        )
+
+
+def _prs_with_reviews_caption(df: pd.DataFrame) -> None:
+    """Calculate and display percentage of PRs reviewed before merge."""
+
+    def __reviewed_before_merge(df: pd.DataFrame) -> bool | float:
+        is_merged = df[
+            (df.subtype == "author") & (df.closed.notna() | df.merged.notna())
+        ]
+        reviews = df[df.subtype == "review"]
+        if is_merged.empty:
+            return float("nan")
+        return False if reviews.empty else True
+
+    pr_interactions = df.loc[(df.interaction == "pr")]
+    merged_and_reviewed = pr_interactions.groupby(["repo", "number"]).apply(
+        __reviewed_before_merge, include_groups=False
+    )
+    if not merged_and_reviewed.isna().all():
+        perc_prs_reviewed = (
+            merged_and_reviewed.sum() / len(merged_and_reviewed.dropna()) * 100
+        )
+        st.caption(
+            f"{perc_prs_reviewed:.1f}% of PRs received at least one review before being merged/closed."
         )
 
 
@@ -727,7 +736,10 @@ if __name__ == "__main__":
     st.title("Project Development Metrics")
 
     user_stats_dir = Path(__file__).parent.parent.parent / "user_analysis" / "output"
-    df_vis = create_vis_table(user_stats_dir)
+    # We're sharing this cached data with the main page, but we have to account for it being loaded for the first time here.
+    df_vis = st.session_state.get(
+        "df_interactions", create_vis_table(user_stats_dir / "user_interactions.csv")
+    )
 
     preamble()
     main(df_vis)

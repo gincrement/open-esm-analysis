@@ -26,6 +26,7 @@ def get_file_paths() -> list[str]:
     return [MAIN_PAGE] + file_paths
 
 
+@pytest.mark.limit_memory("500 MB")
 @pytest.mark.parametrize("file_path", get_file_paths())
 def test_smoke_page(file_path):
     """This will run a basic test on each page in the pages folder to check that no exceptions are raised while the app runs."""
