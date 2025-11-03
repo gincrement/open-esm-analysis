@@ -100,9 +100,10 @@ serve = "streamlit run $PIXI_PROJECT_ROOT/website/⚡️_Tool_Repository_Metrics
 
 [feature.test.dependencies]
 pytest = ">=8.4.1"
+pytest-xdist = ">=3.8.0"
 
 [feature.test.tasks]
-test = "pytest"
+test = "pytest -nauto"
 
 [environments]
 app = ["app"]
