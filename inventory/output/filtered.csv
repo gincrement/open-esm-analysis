@@ -185,7 +185,7 @@ reho,https://github.com/ipese/reho,REHO,pre-compiled,
 reise_jl,https://github.com/breakthrough-energy/reise.jl,REISE.jl,"lf-energy-landscape,pre-compiled",
 remix,https://gitlab.com/dlr-ve/esy/remix/framework,"REMix,REMix,remix","g-pst,pre-compiled,lf-energy-landscape,opensustain-tech","capacity-expansion,production-cost"
 renpass,https://github.com/fraukewiese/renpass,"Renpass,renpass","openmod,pre-compiled",
-reopt_jl,https://github.com/nrel/reopt.jl,REopt.jl,pre-compiled,
+reopt_jl,https://github.com/nrel/reopt.jl,REopt.jl,pre-compiled,capacity-expansion
 resolve,https://github.com/e3-/resolve,resolve,"opensustain-tech,pre-compiled",
 revub,https://github.com/vub-hydr/revub,REVUB,lf-energy-landscape,
 rheia,https://github.com/rheia-framework/rheia,RHEIA,openmod,
@@ -204,7 +204,7 @@ simses,https://gitlab.lrz.de/open-ees-ses/simses,SimSES,openmod,
 smartgridtoolbox,https://gitlab.com/smartgridtoolbox/smartgridtoolbox,SmartGridToolbox,opensustain-tech,
 sms++,https://gitlab.com/smspp/smspp-project,SMS++,openmod,
 softx_2020_61,https://github.com/elseviersoftwarex/softx_2020_61,SOFTX_2020_61,pre-compiled,
-spineopt_jl,https://github.com/spine-tools/spineopt.jl,SpineOpt.jl,"lf-energy-landscape,openmod,opensustain-tech,pre-compiled",
+spineopt_jl,https://github.com/spine-tools/spineopt.jl,SpineOpt.jl,"lf-energy-landscape,openmod,opensustain-tech,pre-compiled","capacity-expansion,production-cost"
 ssmd,https://git.rwth-aachen.de/acs/public/simulation/ssmd,ssmd,pre-compiled,
 starlite,https://github.com/iit-energysystemmodels/starlite,StarLite,pre-compiled,
 stelmod,https://github.com/frkunz/stelmod,"StELMOD,stELMOD","openmod,pre-compiled",
