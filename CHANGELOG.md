@@ -25,6 +25,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+### Added
+
+- Dashboard app smoke tests (incl. memory peak checks).
+- Dashboard processing method unit tests.
+
+### Fixed
+
+- High peak memory consumption on loading dashboard.
+- Incorrect % PRs reviewed calculation in dev metrics dashboard page.
+
 ## 2025-10-31
 
 ### Changed
