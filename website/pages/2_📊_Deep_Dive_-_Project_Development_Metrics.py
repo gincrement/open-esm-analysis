@@ -269,10 +269,14 @@ def plot_open_metrics(df: pd.DataFrame, resolution: str, color_map: dict) -> go.
     created_df = get_totals(_df, "created", resample).cumsum()
     closed_df = get_totals(_df, "closed", resample).cumsum()
     closed_df_full = closed_df.reindex(created_df.index).ffill().fillna(0)
-    open_df = created_df.subtract(closed_df_full).rename(
-        columns=lambda x: x.replace("Total ", "Open ")
+    open_df = (
+        created_df.subtract(closed_df_full)
+        .rename(columns=lambda x: x.replace("Total ", "Open "))
+        .fillna(0)
     )
+
     assert (open_df >= 0).all().all(), "Open counts contain negative values!"
+
     extra_dfs = []
     for subtype in ["comment", "review"]:
         _df = get_totals(
@@ -599,24 +603,16 @@ def engagement_histograms(df: pd.DataFrame, global_df: pd.DataFrame | None = Non
 
 def _prs_with_reviews_caption(df: pd.DataFrame) -> None:
     """Calculate and display percentage of PRs reviewed before merge."""
-
-    def __reviewed_before_merge(df: pd.DataFrame) -> bool | float:
-        is_merged = df[
-            (df.subtype == "author") & (df.closed.notna() | df.merged.notna())
-        ]
-        reviews = df[df.subtype == "review"]
-        if is_merged.empty:
-            return float("nan")
-        return False if reviews.empty else True
-
-    pr_interactions = df.loc[(df.interaction == "pr")]
-    merged_and_reviewed = pr_interactions.groupby(["repo", "number"]).apply(
-        __reviewed_before_merge, include_groups=False
-    )
-    if not merged_and_reviewed.isna().all():
-        perc_prs_reviewed = (
-            merged_and_reviewed.sum() / len(merged_and_reviewed.dropna()) * 100
-        )
+    df_pr = df.loc[(df.interaction == "pr")]
+    cols = ["repo", "number"]
+    is_reviewed = df_pr.loc[df_pr.subtype == "review", cols].drop_duplicates()
+    is_closed = df_pr.loc[
+        (df_pr.subtype == "author") & (df_pr.closed.notna() | df_pr.merged.notna()),
+        cols,
+    ].drop_duplicates()
+    merged_and_reviewed = pd.merge(is_reviewed, is_closed, on=cols, how="inner")
+    if not is_closed.empty:
+        perc_prs_reviewed = len(merged_and_reviewed) / len(is_closed) * 100
         st.caption(
             f"{perc_prs_reviewed:.1f}% of PRs received at least one review before being merged/closed."
         )
