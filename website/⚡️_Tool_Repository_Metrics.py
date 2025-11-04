@@ -133,6 +133,24 @@ def create_vis_table(tool_stats_dir: Path, user_stats_dir: Path) -> pd.DataFrame
     return df_vis
 
 
+@st.cache_data
+def interaction_df(filepath: Path) -> pd.DataFrame:
+    """Load and prepare user interactions data.
+
+    Args:
+        filepath: Path to user interactions csv.
+
+    Returns:
+        DataFrame containing user interactions with parsed datetime columns.
+    """
+    # Check if user analysis data exists
+    df = pd.read_csv(filepath, parse_dates=["created", "closed", "merged"]).dropna(
+        subset=["username", "repo"], how="any"
+    )
+    util.set_state("interaction_df", df)
+    return df
+
+
 def _create_user_interactions_timeseries(
     tool_data_dir: Path, resolution: str = "7d", n_months: int = 6
 ) -> pd.Series:
@@ -148,33 +166,31 @@ def _create_user_interactions_timeseries(
             Streamlit table bar plot compatible data stored in a pandas Series.
             This is not a data structure that pandas really supports as the dtype is list-like.
     """
-    user_df = pd.read_csv(
-        tool_data_dir / "user_interactions.csv", parse_dates=["created"]
+    user_df = util.get_state(
+        "interaction_df", interaction_df(tool_data_dir / "user_interactions.csv")
     )
-    interactions = (
-        user_df.groupby([user_df.created, user_df.repo])
-        .count()["interaction"]
-        .unstack("repo")
-        .resample(resolution)
-        .sum()
-        .T
-    )
-    last_6me_interactions = interactions.loc[
-        :,
-        interactions.columns.tz_localize(None).to_pydatetime()
-        > (pd.to_datetime("now") - pd.DateOffset(months=n_months)),
-    ].cumsum(axis=1)
+    use_df_6me = user_df.loc[
+        user_df.created.dt.tz_localize(None)
+        > (pd.to_datetime("now") - pd.DateOffset(months=n_months))
+    ]
 
     map_repo = {
-        idx: "https://github.com/" + idx.lower() for idx in last_6me_interactions.index
+        idx: "https://github.com/" + idx.lower() for idx in use_df_6me.repo.unique()
     }
-    last_6me_interactions.index = last_6me_interactions.index.map(map_repo)
-
-    streamlit_ready_interactions = last_6me_interactions.groupby(
-        last_6me_interactions.index
-    ).apply(lambda x: x.values[0])
-
-    return streamlit_ready_interactions
+    interactions = (
+        use_df_6me.groupby([use_df_6me.created, use_df_6me.repo])
+        .count()["interaction"]
+        .rename(index=map_repo, level="repo")
+        .groupby(
+            [pd.Grouper(level="created", freq=resolution), pd.Grouper(level="repo")]
+        )
+        .sum()
+        .unstack("created")
+        .fillna(0)
+        .groupby("repo")
+        .apply(lambda x: x.to_numpy()[0])
+    )
+    return interactions
 
 
 def numeric_range_filter(
