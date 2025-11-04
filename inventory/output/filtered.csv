@@ -78,7 +78,7 @@ gear_scoup,https://github.com/nrel/gear-scoup,Gear-SCouP,lf-energy-landscape,
 gelectrical,https://github.com/manuvarkey/gelectrical,GElectrical,opensustain-tech,
 genesys_mod,https://git.tu-berlin.de/genesysmod/genesys-mod-public,"GENeSYS-MOD,genesys-mod-public","lf-energy-landscape,openmod,opensustain-tech,pre-compiled",
 genx,https://github.com/genxproject/genx.jl,"GenX,GenX,GenX.jl","lf-energy-landscape,opensustain-tech,pre-compiled","capacity-expansion,production-cost"
-grid2op,https://github.com/grid2op/grid2op,grid2op,pre-compiled,power-flow
+grid2op,https://github.com/grid2op/grid2op,"Grid2Op,grid2op","opensustain-tech,pre-compiled",power-flow
 gridcal,https://github.com/sanpen/gridcal,GridCal,"lf-energy-landscape,openmod,pre-compiled",
 gridfm,https://github.com/gridfm/gridfm-graphkit,GridFM,opensustain-tech,
 gridlab_d,https://github.com/arras-energy/gridlabd,"GridLAB-D,gridlab-d ","opensustain-tech,pre-compiled",
@@ -185,7 +185,6 @@ reho,https://github.com/ipese/reho,REHO,pre-compiled,
 reise_jl,https://github.com/breakthrough-energy/reise.jl,REISE.jl,"lf-energy-landscape,pre-compiled",
 remix,https://gitlab.com/dlr-ve/esy/remix/framework,"REMix,REMix,remix","g-pst,pre-compiled,lf-energy-landscape,opensustain-tech","capacity-expansion,production-cost"
 renpass,https://github.com/fraukewiese/renpass,"Renpass,renpass","openmod,pre-compiled",
-reopt,https://github.com/nrel/reopt_lite_api,REopt,openmod,capacity-expansion
 reopt_jl,https://github.com/nrel/reopt.jl,REopt.jl,pre-compiled,
 resolve,https://github.com/e3-/resolve,resolve,"opensustain-tech,pre-compiled",
 revub,https://github.com/vub-hydr/revub,REVUB,lf-energy-landscape,
