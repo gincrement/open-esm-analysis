@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: CC0-1.0
 
-name: Tool database and stats updater
+name: Tool and user data updater
 
 on:
   schedule:
@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  get-stats:
+  update-dashboard-metrics:
     runs-on: ubuntu-latest
     permissions:
       contents: write
