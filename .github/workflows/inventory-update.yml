@@ -49,6 +49,8 @@ jobs:
           fi
 
       - name: Run pixi task
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: pixi run classify-users
 
       - name: Check for file changes
@@ -81,7 +83,7 @@ jobs:
 
       # Handle changes when running on main branch
       - name: Create PR for main branch changes
-        if: steps.check-changes.outputs.changes == 'true'
+        if: steps.check-changes.outputs.changes == 'true' && github.ref_name == 'main'
         run: |
           # Delete temporary files so they don't end up in the PR
           rm -f ids_before.txt ids_after.txt
