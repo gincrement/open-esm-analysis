@@ -497,7 +497,7 @@ class GitHubRepositoryCollector:
             {"username": contributor.login, "interaction": "contributor"}
             for contributor in repo_obj.get_contributors()
         ]
-        remaining_calls = self.client.rest_api.get_rate_limit().core.remaining
+        remaining_calls = self.client.rest_api.get_rate_limit().rate.remaining
         LOGGER.warning(f"Remaining REST API calls: {remaining_calls}.")
         return contributors
 
