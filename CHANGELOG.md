@@ -34,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Dev metrics timeseries defaults to non-cumulative.
+- Automated stats updater to run once a month and to include user data updates as well.
 
 ### Fixed
 
