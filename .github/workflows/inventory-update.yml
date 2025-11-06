@@ -9,10 +9,6 @@ on:
     # runs on the 5th of every month at 10pm.
     # Choice made to give anaconda download stats the opportunity to update for the previous month
     - cron: "0 22 5 * *"
-
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
