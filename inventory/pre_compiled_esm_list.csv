@@ -121,6 +121,9 @@ github.com/powsybl,simulation model
 github.com/psrenergy/SDDPDSO.jl,simulation model
 github.com/PyPSA/PyPSA,
 github.com/quintel/etengine,
+github.com/quintel/etsource,
+github.com/quintel/etmodel,
+github.com/quintel/pyetm,
 github.com/RahmanKhorramfar91/JPoNG,
 github.com/rebase-energy/enflow,simulation model
 github.com/rl-institut/multi-vector-simulator,
