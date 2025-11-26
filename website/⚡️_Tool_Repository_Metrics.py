@@ -35,7 +35,7 @@ COLUMN_NAME_MAPPING: dict[str, str] = {
     "last_month_downloads": "1 Month Downloads",
     "category": "Category",
     "language": "Language",
-    "license_category": "License Type"
+    "license_category": "License Type",
 }
 
 COLUMN_DTYPES: dict[str, Callable] = {
@@ -49,7 +49,7 @@ COLUMN_DTYPES: dict[str, Callable] = {
     "dependent_repos_count": pd.to_numeric,
     "last_month_downloads": pd.to_numeric,
     "category": lambda x: x.str.split(","),
-    "license_category": lambda x: x.astype("string")
+    "license_category": lambda x: x.astype("string"),
 }
 
 NUMBER_FORMAT: dict[str, str] = {
@@ -78,7 +78,7 @@ COLUMN_HELP: dict[str, str] = {
     "Language": "The programming language in which the majority of the tool _source code_ is written. "
     "It is an indicator of potential licensing issues (if the language is proprietary) and development community size. "
     "This may not be the language same as the interface language used by the tool.",
-    "License Type": "Tool categorization based on license and language: permissive (e.g., MIT, Apache), copyleft (e.g., GPL), or commercial (e.g., MATLAB, proprietary licenses)"
+    "License Type": "Tool categorization based on license and language: permissive (e.g., MIT, Apache), copyleft (e.g., GPL), or commercial (e.g., MATLAB, proprietary licenses)",
 }
 
 LICENSE_GROUPS: dict[str, list[str]] = {
@@ -101,12 +101,8 @@ LICENSE_GROUPS: dict[str, list[str]] = {
         "lgpl-3.0",
         "mpl-2.0",
     ],
-    "other": [
-        "other",
-    ],
-    "None": [
-        "none",
-    ],
+    "other": ["other"],
+    "None": ["none"],
 }
 
 EXTRA_COLUMNS = ["name_with_url", "Docs", "Score", "Interactions"]
@@ -140,7 +136,7 @@ def create_vis_table(tool_stats_dir: Path, user_stats_dir: Path) -> pd.DataFrame
     df["language"] = (
         df.language.replace({"Jupyter Notebook": "Python"}).str.lower().astype("string")
     )
-    
+
     df["license"] = df["license"].fillna("none").str.strip().str.lower()
 
     def categorize_license(row):
