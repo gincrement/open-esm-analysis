@@ -60,6 +60,7 @@ energysystemmodelling_jl,https://github.com/gamma-opt/energysystemmodelling.jl,E
 enflow,https://github.com/rebase-energy/enflow,enflow,"opensustain-tech,pre-compiled",
 eoles_elecres,https://github.com/behrangshirizadeh/eoles_elecres,EOLES elecRES,openmod,
 eoles_mv,https://github.com/behrangshirizadeh/eoles_mv,EOLES_mv,pre-compiled,
+epm,https://github.com/esmap-world-bank-group/epm,EPM,pre-compiled,
 erad,https://github.com/nrel-distribution-suites/erad,erad,pre-compiled,
 erf,https://github.com/erf-model/erf,ERF,lf-energy-landscape,
 esdl,https://github.com/energytransition/esdl,ESDL,"lf-energy-landscape,opensustain-tech",

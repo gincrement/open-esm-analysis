@@ -35,6 +35,7 @@ COLUMN_NAME_MAPPING: dict[str, str] = {
     "last_month_downloads": "1 Month Downloads",
     "category": "Category",
     "language": "Language",
+    "license_category": "License Type",
 }
 
 COLUMN_DTYPES: dict[str, Callable] = {
@@ -48,6 +49,7 @@ COLUMN_DTYPES: dict[str, Callable] = {
     "dependent_repos_count": pd.to_numeric,
     "last_month_downloads": pd.to_numeric,
     "category": lambda x: x.str.split(","),
+    "license_category": lambda x: x.astype("string"),
 }
 
 NUMBER_FORMAT: dict[str, str] = {
@@ -76,6 +78,31 @@ COLUMN_HELP: dict[str, str] = {
     "Language": "The programming language in which the majority of the tool _source code_ is written. "
     "It is an indicator of potential licensing issues (if the language is proprietary) and development community size. "
     "This may not be the language same as the interface language used by the tool.",
+    "License Type": "Tool categorization based on license and language: permissive (e.g., MIT, Apache), copyleft (e.g., GPL), or commercial (e.g., MATLAB, proprietary licenses)",
+}
+
+LICENSE_GROUPS: dict[str, list[str]] = {
+    "permissive": [
+        "apache-2.0",
+        "bsd-2-clause",
+        "bsd-3-clause",
+        "bsd-3-clause-clear",
+        "cc0-1.0",
+        "cc-by-4.0",
+        "mit",
+    ],
+    "copyleft": [
+        "agpl-3.0",
+        "eupl-1.2",
+        "gpl-2.0",
+        "gpl-3.0",
+        "gpl-3.0+",
+        "lgpl-2.1",
+        "lgpl-3.0",
+        "mpl-2.0",
+    ],
+    "other": ["other"],
+    "None": ["none"],
 }
 
 EXTRA_COLUMNS = ["name_with_url", "Docs", "Score", "Interactions"]
@@ -109,6 +136,23 @@ def create_vis_table(tool_stats_dir: Path, user_stats_dir: Path) -> pd.DataFrame
     df["language"] = (
         df.language.replace({"Jupyter Notebook": "Python"}).str.lower().astype("string")
     )
+
+    df["license"] = df["license"].fillna("none").str.strip().str.lower()
+
+    def categorize_license(row):
+        # Check license groups only
+        if row["license"] in LICENSE_GROUPS["permissive"]:
+            return "permissive"
+        elif row["license"] in LICENSE_GROUPS["copyleft"]:
+            return "copyleft"
+        elif row["license"] in LICENSE_GROUPS["other"]:
+            return "unknown"
+        elif row["license"] in LICENSE_GROUPS["None"]:
+            return "none"
+        else:
+            return "commercial"
+
+    df["license_category"] = df.apply(categorize_license, axis=1)
 
     # Add the tool name to the end of the URL after a `#`.
     # This allows us to use regex to show the tool name in a streamlit "link column" while still making the URL valid to direct users to the source code.

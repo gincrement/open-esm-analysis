@@ -175,6 +175,7 @@ power generation technologies: offshore and onshore wind power, solar photovolta
 
 storage (PHS), batteries and methanation combined with open-cycle gas turbines.ion combined with open-cycle gas turbines.",https://github.com/behrangshirizadeh/eoles_elecres,openmod,
 eoles_mv,EOLES_mv,,https://github.com/behrangshirizadeh/eoles_mv,pre-compiled,
+epm,EPM,,https://github.com/esmap-world-bank-group/epm,pre-compiled,
 erad,erad,,https://github.com/nrel-distribution-suites/erad,pre-compiled,
 erf,ERF,,https://github.com/erf-model/erf,lf-energy-landscape,
 esdl,ESDL,A modelling language created for the components in an energy system and their relations towards each other.,https://github.com/energytransition/esdl,lf-energy-landscape,
