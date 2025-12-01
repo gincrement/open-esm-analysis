@@ -175,6 +175,7 @@ power generation technologies: offshore and onshore wind power, solar photovolta
 
 storage (PHS), batteries and methanation combined with open-cycle gas turbines.ion combined with open-cycle gas turbines.",https://github.com/behrangshirizadeh/eoles_elecres,openmod,
 eoles_mv,EOLES_mv,,https://github.com/behrangshirizadeh/eoles_mv,pre-compiled,
+epm,EPM,,https://github.com/esmap-world-bank-group/epm,pre-compiled,
 erad,erad,,https://github.com/nrel-distribution-suites/erad,pre-compiled,
 erf,ERF,,https://github.com/erf-model/erf,lf-energy-landscape,
 esdl,ESDL,A modelling language created for the components in an energy system and their relations towards each other.,https://github.com/energytransition/esdl,lf-energy-landscape,
@@ -339,7 +340,7 @@ minpower,Minpower,An open source toolkit for students and researchers in power s
 minpower,minpower,,https://github.com/adamgreenhall/minpower,pre-compiled,
 moces,MOCES,"MOCES is a modeling tool that allows a simulative investigation of complex energy systems. It is build on top of the modeling language Modelica. It is not restricted to a specific modeling depth, neither spatial nor temporal. Nevertheless, in the time domain it focuses on dynamics with time constants larger then seconds and in the spatial domain it concentrates on the super ‘entity connected to the grid’ level.uper ‘entity connected to the grid’ level.",,openmod,
 model_energy,Model Energy,"This is the code for the online optimization of zero-direct-emission electricity systems with wind, solar and storage (using batteries and electrolysed hydrogen gas) to provide a baseload electricity demand, using the cost and other assumptions of your choice.",https://github.com/pypsa/whobs-server,lf-energy-landscape,
-modpowersystems,ModPowerSystems,,https://github.com/modpowersystems/modpowersystems,pre-compiled,
+modpowersystems,ModPowerSystems,,https://github.com/modelica-3rdparty/modpowersystems,pre-compiled,
 mosaik,mosaik,A flexible Smart Grid co-simulation framework.,https://gitlab.com/mosaik/mosaik,opensustain-tech,
 mosaik,Mosaik,"Mosaik is a flexible Smart Grid co-simulation framework.
 Mosaik allows you to reuse and combine existing simulation models and simulators to create large-scale Smart Grid scenarios – and by large-scale we mean thousands of simulated entities distributed over multiple simulator processes. These scenarios can then serve as test bed for various types of control strategies (e.g., multi-agent systems (MAS) or centralized control).
@@ -485,6 +486,7 @@ pvgenerator,pvgenerator,,https://git.rwth-aachen.de/acs/public/simulation/pvgene
 pvlib_python,Pvlib python,pvlib python is a community supported tool that provides a set of functions and classes for simulating the performance of photovoltaic energy systems.,https://github.com/pvlib/pvlib-python,openmod,
 pycity_scheduling,pycity_scheduling,"Python package pycity_scheduling is a framework for the effective development, testing, and assessment of optimization-based power scheduling algorithms for local multi-energy systems in city districts. The framework primarily targets the elaboration of coordination concepts that can efficiently solve the power dispatch problem on the city district level. Its target users are researchers in the field of smart grid applications and the deployment of operational flexibility for local energy systems.",https://git.rwth-aachen.de/acs/public/simulation/pycity_scheduling,g-pst,production-cost
 pycity_scheduling,pycity_scheduling,,https://git.rwth-aachen.de/acs/public/simulation/pycity_scheduling,pre-compiled,
+pyetm,pyetm,,https://github.com/quintel/pyetm,pre-compiled,
 pygreta,pyGRETA,Python Generator of REnewable Time series and mAps: a tool that generates high-resolution potential maps and time series for user-defined regions within the globe.,https://github.com/tum-ens/pygreta,lf-energy-landscape,
 pylesa,PyLESA,"PyLESA is an open source tool capable of modelling local energy systems containing both electrical and thermal technologies. It was developed with the aim of aiding the design of local energy systems. The focus of the tool is on modelling systems with heat pumps and thermal storage alongside time-of-use electricity tariffs and predictive control strategies. It is anticipated that the tool provides a framework for future development including electrical battery studies and participation in grid balancing mechanisms.
 This tool was developed as part of a PhD, ""Modelling and Design of Local Energy Systems Incorporating Heat Pumps, Thermal Storage, Future Tariffs, and Model Predictive Control "" by Andrew Lyden.odel Predictive Control "" by Andrew Lyden.",https://github.com/andrewlyden/pylesa,openmod,

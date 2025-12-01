@@ -49,10 +49,13 @@ class GitLabClientGL:
         """Create a GitLab client.
 
         Args:
-            token: Personal access token (PAT) for authentication. If not provided,
-                will attempt to read from environment variable ``GITLAB_TOKEN``.
-            base_url: Override for self-hosted GitLab API base (e.g. https://gitlab.example.com/api/v4).
+            token (str | None, optional):
+                Personal access token (PAT) for authentication.
+                If not provided, will attempt to read from environment variable ``GITLAB_TOKEN``.
+                Defaults to None.
+            base_url (str | None, optional): Override for self-hosted GitLab API base (e.g. https://gitlab.example.com/api/v4).
                 If omitted, uses environment variable ``GITLAB_BASE_URL`` or the public gitlab.com API.
+                Defaults to None.
         """
         self.base_url = (
             base_url or os.environ.get("GITLAB_BASE_URL") or DEFAULT_BASE_URL

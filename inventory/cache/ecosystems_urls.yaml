@@ -65,6 +65,7 @@ https://github.com/epri-dev/opender: https://repos.ecosyste.ms/api/v1/hosts/GitH
 https://github.com/epri-dev/opendss-c: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/epri-dev%2FOpenDSS-C
 https://github.com/epri-dev/storagevet: not-found
 https://github.com/erf-model/erf: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/erf-model%2FERF
+https://github.com/esmap-world-bank-group/epm: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ESMAP-World-Bank-Group%2FEPM
 https://github.com/etsap-times/times_model: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/etsap-TIMES%2FTIMES_model
 https://github.com/fabmid/open-energy-cell-simulation: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/fabmid%2FOpen-Energy-Cell-Simulation
 https://github.com/flexiblepower/powermatcher: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/flexiblepower%2Fpowermatcher
@@ -124,6 +125,7 @@ https://github.com/mbheinen/bpa-ipf-tsp: https://repos.ecosyste.ms/api/v1/hosts/
 https://github.com/mesmo-dev/mesmo: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/mesmo-dev%2Fmesmo
 https://github.com/microgrids-x/microgrids.py: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/Microgrids-X%2FMicrogrids.py
 https://github.com/microgridspy/microgridspy: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/MicroGridsPy%2FMicroGridsPy
+https://github.com/modelica-3rdparty/modpowersystems: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/modelica-3rdparty%2FModPowerSystems
 https://github.com/modpowersystems/modpowersystems: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ModPowerSystems%2FModPowerSystems
 https://github.com/mzy2240/esa: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/mzy2240%2FESA
 https://github.com/niclasmattsson/supergrid: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/niclasmattsson%2FSupergrid
@@ -181,6 +183,7 @@ https://github.com/pypsa/pypsa: https://repos.ecosyste.ms/api/v1/hosts/GitHub/re
 https://github.com/quasi-software: not-found
 https://github.com/quintel/etengine: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/quintel%2Fetengine
 https://github.com/quintel/etmodel: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/quintel%2Fetmodel
+https://github.com/quintel/pyetm: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/quintel%2Fpyetm
 https://github.com/rahmankhorramfar91/jpong: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/RahmanKhorramfar91%2FJPoNG
 https://github.com/rcuk-cee/energynumbers-balancing: not-found
 https://github.com/rebase-energy/enflow: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/rebase-energy%2Fenflow

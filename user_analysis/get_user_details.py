@@ -10,7 +10,7 @@ from pathlib import Path
 
 import click
 import pandas as pd
-from github_api import get_github_client, get_rate_limit_info, get_user_details_gh
+from github_api import GitHubClientGH, get_user_details_gh
 from gitlab_api import GitLabClientGL, get_user_details_gl
 from tqdm import tqdm
 
@@ -69,7 +69,7 @@ def cli(user_interactions: Path, outdir: Path, refresh_cache: bool):
         existing_orgs.to_csv(org_details_path)
 
     # Initialize clients
-    gh_client = get_github_client()
+    gh_client = GitHubClientGH()
     gl_client = GitLabClientGL()
 
     users_df = pd.read_csv(user_interactions)
@@ -92,7 +92,7 @@ def cli(user_interactions: Path, outdir: Path, refresh_cache: bool):
         # Route to appropriate API based on host
         if host == "gh":
             user_df, org_df = get_user_details_gh(username, repos, gh_client, wait=0)
-            remaining_calls = get_rate_limit_info(gh_client)[0]
+            remaining_calls = gh_client.get_rate_limit_info()[0]
             LOGGER.warning(f"Remaining GitHub API calls: {remaining_calls}.")
         elif host == "gl":
             user_df = get_user_details_gl(username, repos, gl_client)

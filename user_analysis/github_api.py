@@ -40,14 +40,17 @@ class RateLimit:
 class GitHubClientGH:
     """GitHub GraphQL/REST API client with rate limiting and pagination support."""
 
-    def __init__(self, token: str | None):
+    def __init__(self, token: str | None = None):
         """GitHub API client.
 
         Methods are centred on querying GraphQL API client.
         However, for convenience, we also include an attribute with which the REST API can be queried.
 
         Args:
-            token (str | None): GitHub API token.
+            token (str | None, optional):
+                GitHub API token.
+                If not provided, will attempt to read from environment variable ``GITHUB_TOKEN``.
+                Defaults to None.
         """
         self.base_url = "https://api.github.com/graphql"
 
@@ -98,16 +101,27 @@ class GitHubClientGH:
 
         return data["data"]
 
+    def get_rate_limit_info(self) -> tuple[int, int, int]:
+        """Get the current GitHub REST API rate limit status for the core resource.
+
+        Returns:
+            tuple: (remaining, limit, reset) where remaining is the number of requests left,
+                limit is the total allowed, and reset is the reset time as a unix timestamp.
+        """
+        rate = self.rest_api.get_rate_limit().rate
+        return rate.remaining, rate.limit, int(rate.reset.timestamp())
+
 
 class GitHubRepositoryCollectorGH:
     """Collects GitHub repository activity using GraphQL and REST APIs."""
 
-    def __init__(self, token: str | None):
+    def __init__(self, token: str | None = None):
         """GitHub repository data collector.
 
         Args:
-            token (str | None): GitHub API token.
+            token (str | None, optional): GitHub API token. Defaults to None.
         """
+        token = token or os.environ.get("GITHUB_TOKEN")
         self.client = GitHubClientGH(token)
         self.queries = self._load_queries()
 
@@ -521,51 +535,8 @@ class GitHubRepositoryCollectorGH:
         return results_df
 
 
-def get_github_client() -> Github:
-    """Get an authenticated PyGithub Github client using the GITHUB_TOKEN environment variable.
-
-    Returns:
-        Github: An authenticated PyGithub Github client (or unauthenticated if no token is set).
-    """
-    return Github(os.environ.get("GITHUB_TOKEN", None))
-
-
-def get_rate_limit_info(gh_client: Github) -> tuple[int, int, int]:
-    """Get the current GitHub API rate limit status for the core resource.
-
-    Args:
-        gh_client (Github): An authenticated PyGithub Github client.
-
-    Returns:
-        tuple: (remaining, limit, reset) where remaining is the number of requests left,
-               limit is the total allowed, and reset is the reset time as a unix timestamp.
-    """
-    rate = gh_client.get_rate_limit().rate
-    return rate.remaining, rate.limit, int(rate.reset.timestamp())
-
-
-def get_wait_per_call(gh_client: Github, unique_users: int) -> float:
-    """Calculate wait time per API call based on rate limit and number of users.
-
-    Args:
-        gh_client (Github): An authenticated PyGithub Github client.
-        unique_users (int): Number of unique users to process.
-
-    Returns:
-        float: Seconds to wait before making the next API call.
-    """
-    remaining, _, reset = get_rate_limit_info(gh_client)
-    now = int(time.time())
-    seconds_to_reset = max(reset - now, 1)
-    return (
-        max(seconds_to_reset / max(remaining, 1), 1)
-        if remaining < unique_users
-        else 0.0
-    )
-
-
 def get_user_details_gh(
-    username: str, repos: set[str], gh_client: Github, wait: float = 0.0
+    username: str, repos: set[str], gh_client: GitHubClientGH, wait: float = 0.0
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Get detailed information about a GitHub user using PyGithub.
 
@@ -585,7 +556,7 @@ def get_user_details_gh(
     if wait > 0:
         time.sleep(wait)
     try:
-        user = gh_client.get_user(username)
+        user = gh_client.rest_api.get_user(username)
         user_data = {
             "company": user.company,
             "blog": user.blog,
@@ -600,7 +571,7 @@ def get_user_details_gh(
         # Get user's README
         try:
             readme = (
-                gh_client.get_repo(f"{username}/{username}")
+                gh_client.rest_api.get_repo(f"{username}/{username}")
                 .get_readme()
                 .decoded_content.decode()
             )

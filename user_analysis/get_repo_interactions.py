@@ -16,18 +16,11 @@ from urllib.parse import urlparse
 
 import click
 import pandas as pd
-import util
-from dotenv import load_dotenv
 from github_api import GitHubRepositoryCollectorGH
 from gitlab_api import GitLabRepositoryCollectorGL
 from tqdm import tqdm
 
 LOGGER = logging.getLogger(__name__)
-
-# Load environment variables
-load_dotenv()
-
-PAGINATION_CACHE = util.read_yaml("pagination_cache", exists=False)
 
 COLS = [
     "username",
@@ -79,10 +72,10 @@ def cli(stats_file: Path, out_path: Path):
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     if out_path.exists():
-        existing_users = pd.read_csv(out_path)
+        existing_interactions = pd.read_csv(out_path)
     else:
-        existing_users = pd.DataFrame(columns=COLS, index=[])
-        existing_users.to_csv(out_path, index=False)
+        existing_interactions = pd.DataFrame(columns=COLS, index=[])
+        existing_interactions.to_csv(out_path, index=False)
 
     repos_df = pd.read_csv(stats_file, index_col="id")
 
@@ -121,12 +114,17 @@ def cli(stats_file: Path, out_path: Path):
         # Add host column
         df["host"] = host
 
-        existing_users = pd.concat([existing_users, df]).reindex(columns=COLS)
+        existing_interactions = pd.concat([existing_interactions, df]).reindex(
+            columns=COLS
+        )
 
         # Clean up data by removing data that has been downloaded already
         # and merging rows with updated data (e.g. issues/PRs that have since been closed/merged)
-        no_dups_users = (
-            existing_users[existing_users["repo"] == repo_path]
+        is_repo = (existing_interactions["repo"] == repo_path) & (
+            existing_interactions["host"] == host
+        )
+        no_dups_interactions = (
+            existing_interactions[is_repo]
             .groupby(
                 ["username", "interaction", "subtype", "number", "repo", "host"],
                 group_keys=False,
@@ -136,12 +134,15 @@ def cli(stats_file: Path, out_path: Path):
             .drop_duplicates()
             .dropna(subset=["username", "created", "repo"])
         )
-        existing_users = pd.concat(
-            [existing_users[existing_users["repo"] != repo_path], no_dups_users]
+        existing_interactions = pd.concat(
+            [existing_interactions[~is_repo], no_dups_interactions]
         )
-        existing_users["number"] = existing_users["number"].astype("Int32")
-        existing_users.sort_values(["repo", "created"]).to_csv(out_path, index=False)
-        util.dump_yaml("pagination_cache", PAGINATION_CACHE)
+        existing_interactions["number"] = existing_interactions["number"].astype(
+            "Int32"
+        )
+        existing_interactions.sort_values(["repo", "created"]).to_csv(
+            out_path, index=False
+        )
 
 
 if __name__ == "__main__":
