@@ -437,6 +437,53 @@ def top_users_display(df: pd.DataFrame):
 
                 {row["interaction_count"]} interactions"""),
             )
+            
+def top_contributing_orgs_display(df: pd.DataFrame, user_classifications_df: pd.DataFrame):
+    """Display top contributing organizations.
+    
+    Args:
+        df: DataFrame containing user interaction data (already filtered).
+        user_classifications_df: DataFrame containing username to company mappings.
+    """
+    st.subheader("Top Contributing Organizations")
+    
+    # Count interactions by user 
+    user_contributions = (
+        df.loc[df["interaction"].isin(["pr", "issue", "commit"])]
+        .groupby("username")
+        .size()
+        .reset_index(name="contributions")
+    )
+    
+    # Merge with company data
+    merged = user_contributions.merge(
+        user_classifications_df[["username", "company"]], 
+        on="username", 
+        how="left"
+    )
+    
+    # Group by organization
+    org_contributions = (
+        merged.groupby("company")["contributions"]
+        .agg(["sum", "count"])
+        .sort_values("sum", ascending=False)
+        .head(15)
+        .reset_index()
+    )
+    
+    # Plot
+    fig = px.bar(
+        org_contributions,
+        x="company",
+        y="sum",
+        title="Top Organizations by Contribution Volume",
+        labels={"sum": "Total Contributions", "count": "Contributors"},
+        hover_data={"count": True},
+        color="sum",
+        color_continuous_scale=px.colors.sequential.Viridis,
+    )
+    fig.update_layout(xaxis_tickangle=-45, xaxis={"title": "Organization"})
+    st.plotly_chart(fig, config=FIG_CONFIG, key="top_contributor_orgs")
 
 
 def get_complete_time(df: pd.DataFrame, interaction: str, time_col: str) -> pd.Series:
@@ -671,7 +718,7 @@ def preamble():
     )
 
 
-def main(df_vis: pd.DataFrame):
+def main(df_vis: pd.DataFrame, user_classifications_df: pd.DataFrame):
     """Main function for the Project Development Metrics page."""
     repo_to_tool_map = map_repo_to_tool(df_vis, "repo")
 
@@ -756,6 +803,7 @@ def main(df_vis: pd.DataFrame):
 
     daily_interactions_timeline(filtered_interactions)
     top_users_display(time_filtered_interactions)
+    top_contributing_orgs_display(time_filtered_interactions, user_classifications_df)
     resolution_histograms(time_filtered_interactions, time_filtered_global_interactions)
     engagement_histograms(time_filtered_interactions, time_filtered_global_interactions)
 
@@ -772,6 +820,8 @@ if __name__ == "__main__":
     df_vis = st.session_state.get(
         "df_interactions", create_vis_table(user_stats_dir / "user_interactions.csv")
     )
+    
+    user_classifications_df = pd.read_csv(user_stats_dir / "user_classifications.csv")
 
     preamble()
-    main(df_vis)
+    main(df_vis, user_classifications_df)
