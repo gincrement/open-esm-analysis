@@ -439,196 +439,119 @@ def top_users_display(df: pd.DataFrame):
             )
 
 
-def top_contributing_orgs_display(
-    df: pd.DataFrame, user_classifications_df: pd.DataFrame
-):
-    """Display top contributing organizations.
-
-    Args:
-        df: DataFrame containing user interaction data (already filtered).
-        user_classifications_df: DataFrame containing username to company mappings.
-    """
-    st.subheader("Top Contributing Organizations")
-
-    user_contributions = (
-        df.loc[df["interaction"].isin(["pr", "issue", "commit"])]
-        .groupby("username")
-        .size()
-        .reset_index(name="contributions")
-    )
-
-    merged = user_contributions.merge(
-        user_classifications_df[["username", "company"]], on="username", how="left"
-    )
-
-    org_contributions = (
-        merged.groupby("company")["contributions"]
-        .agg(["sum", "count"])
-        .sort_values("sum", ascending=False)
-        .head(15)
-        .reset_index()
-    )
-
-    fig = px.bar(
-        org_contributions,
-        x="company",
-        y="sum",
-        title="Top Organizations by Contribution Volume",
-        labels={"sum": "Total Contributions", "count": "Contributors"},
-        hover_data={"count": True},
-        color="sum",
-        color_continuous_scale=px.colors.sequential.Viridis,
-    )
-    fig.update_layout(xaxis_tickangle=-45, xaxis={"title": "Organization"})
-    st.plotly_chart(fig, config=FIG_CONFIG, key="top_contributor_orgs")
-
-
-def detailed_org_contributions_breakdown(
-    df: pd.DataFrame, user_classifications_df: pd.DataFrame
-):
+def detailed_org_contributions_breakdown(df: pd.DataFrame, user_classifications_df: pd.DataFrame):
     """Display detailed breakdown of organizational contributions by type.
-
-    Shows commits, issues, PRs, reviews, and comments with both absolute counts
-    and percentages for top contributing organizations.
-
+    
+    Shows top 3 organizations with expandable statistics in columns.
+    
     Args:
         df: DataFrame containing user interaction data (already filtered).
         user_classifications_df: DataFrame containing username to company mappings.
     """
-    st.subheader("Detailed Organizational Contribution Breakdown")
-    st.markdown("""
-    This shows the top organizations by contribution volume, broken down by activity type.
-    Hover over the bars to see detailed breakdowns, or view the table below for exact numbers.
-    """)
-
+    st.subheader("Top 3 Contributing Organizations")
+    
     contribution_types = {
-        "Commits": (df["interaction"] == "commit"),
-        "Issues Opened": (df["interaction"] == "issue") & (df["subtype"] == "author"),
-        "Issue Comments": (df["interaction"] == "issue") & (df["subtype"] == "comment"),
-        "PRs Opened": (df["interaction"] == "pr") & (df["subtype"] == "author"),
-        "PR Reviews": (df["interaction"] == "pr") & (df["subtype"] == "review"),
-        "PR Comments": (df["interaction"] == "pr") & (df["subtype"] == "comment"),
+        'Issues Opened': (df['interaction'] == 'issue') & (df['subtype'] == 'author'),
+        'PRs Opened': (df['interaction'] == 'pr') & (df['subtype'] == 'author'),
+        'Commits': (df['interaction'] == 'commit'),
+        'Issue Comments': (df['interaction'] == 'issue') & (df['subtype'] == 'comment'),
+        'Issue Reactions': (df['interaction'] == 'issue') & (df['subtype'] == 'reaction'),
+        'PR Comments': (df['interaction'] == 'pr') & (df['subtype'] == 'comment'),
+        'PR Reactions': (df['interaction'] == 'pr') & (df['subtype'] == 'reaction'),
+        'PR Reviews': (df['interaction'] == 'pr') & (df['subtype'] == 'review'),
     }
 
     user_contributions_list = []
     for contrib_type, mask in contribution_types.items():
         contrib_counts = (
-            df.loc[mask].groupby("username").size().reset_index(name=contrib_type)
+            df.loc[mask]
+            .groupby('username')
+            .size()
+            .reset_index(name=contrib_type)
         )
         user_contributions_list.append(contrib_counts)
-
+    
     user_contributions = user_contributions_list[0]
     for contrib_df in user_contributions_list[1:]:
-        user_contributions = user_contributions.merge(
-            contrib_df, on="username", how="outer"
-        )
-
+        user_contributions = user_contributions.merge(contrib_df, on='username', how='outer')
+    
     user_contributions = user_contributions.fillna(0)
-
+    
     contrib_cols = list(contribution_types.keys())
-    user_contributions["Total"] = user_contributions[contrib_cols].sum(axis=1)
-
+    user_contributions['Total'] = user_contributions[contrib_cols].sum(axis=1)
+    
     merged = user_contributions.merge(
-        user_classifications_df[["username", "company"]], on="username", how="left"
+        user_classifications_df[['username', 'company']], 
+        on='username', 
+        how='left'
     )
-
+    
     org_contributions = (
-        merged.groupby("company")[contrib_cols + ["Total"]]
+        merged.groupby('company')[contrib_cols]
         .sum()
-        .sort_values("Total", ascending=False)
-        .head(15)
+        .sort_values(by=contrib_cols, ascending=False)
     )
-
-    contributor_counts = merged.groupby("company").size()
-    org_contributions["Contributors"] = contributor_counts
-
-    plot_df = org_contributions[contrib_cols].reset_index()
-    plot_df_melted = plot_df.melt(
-        id_vars="company", var_name="Contribution Type", value_name="Count"
+    
+    org_contributions['Total'] = org_contributions[contrib_cols].sum(axis=1)
+    org_contributions = org_contributions.sort_values('Total', ascending=False).head(3)
+    
+    org_contributions['Feedback Given'] = (
+        org_contributions['Issue Comments'] + 
+        org_contributions['Issue Reactions'] + 
+        org_contributions['PR Comments'] + 
+        org_contributions['PR Reactions'] + 
+        org_contributions['PR Reviews']
     )
-
-    fig = px.bar(
-        plot_df_melted,
-        x="company",
-        y="Count",
-        color="Contribution Type",
-        title="Top 15 Organizations by Contribution Volume",
-        labels={"Count": "Number of Contributions", "company": "Organization"},
-        color_discrete_sequence=px.colors.qualitative.Set3,
-    )
-    fig.update_layout(
-        xaxis_tickangle=-45,
-        xaxis={"title": "Organization"},
-        legend={
-            "title": "Contribution Type",
-            "orientation": "v",
-            "yanchor": "top",
-            "y": 1,
-            "xanchor": "left",
-            "x": 1.02,
-        },
-        hovermode="x unified",
-    )
-    st.plotly_chart(fig, config=FIG_CONFIG, key="detailed_org_contributions_stacked")
-
-    st.subheader("Contribution Table: Absolute Values and Percentages")
-
-    display_df = org_contributions.reset_index()
-
-    display_cols = ["company", "Total", "Contributors"] + contrib_cols
-    display_df = display_df[display_cols]
-
-    for col in contrib_cols:
-        total_col = org_contributions[col].sum()
-        if total_col > 0:
-            display_df[f"{col} %"] = (display_df[col] / total_col * 100).round(1)
-        else:
-            display_df[f"{col} %"] = 0.0
-
-    final_cols = ["company", "Total", "Contributors"]
-    for col in contrib_cols:
-        final_cols.extend([col, f"{col} %"])
-
-    display_df = display_df[final_cols]
-
-    display_df = display_df.rename(
-        columns={
-            "company": "Organization",
-            "Total": "Total Contributions",
-            "Contributors": "# Contributors",
-        }
-    )
-
-    st.dataframe(
-        display_df.style.format(
-            {
-                col: "{:.0f}"
-                for col in display_df.columns
-                if col not in ["Organization"] and "%" not in col
-            }
-        ).format({col: "{:.1f}%" for col in display_df.columns if "%" in col}),
-        use_container_width=True,
-        hide_index=True,
-    )
-
-    with st.expander("📊 Summary Statistics"):
-        col1, col2, col3 = st.columns(3)
-
-        with col1:
-            st.metric("Total Organizations", len(org_contributions))
-            st.metric(
-                "Total Contributors", int(org_contributions["Contributors"].sum())
-            )
-
-        with col2:
-            st.metric("Total Commits", int(org_contributions["Commits"].sum()))
-            st.metric("Total PRs", int(org_contributions["PRs Opened"].sum()))
-
-        with col3:
-            st.metric("Total Issues", int(org_contributions["Issues Opened"].sum()))
-            st.metric("Total Reviews", int(org_contributions["PR Reviews"].sum()))
-
-
+    
+    totals = {
+        'Total': org_contributions['Total'].sum(),
+        'Issues Opened': org_contributions['Issues Opened'].sum(),
+        'PRs Opened': org_contributions['PRs Opened'].sum(),
+        'Commits': org_contributions['Commits'].sum(),
+        'Feedback Given': org_contributions['Feedback Given'].sum(),
+    }
+    
+    cols = st.columns(3)
+    
+    for idx, (org_name, row) in enumerate(org_contributions.iterrows()):
+        with cols[idx]:
+            
+            formatted_name = str(org_name).title()
+            if len(formatted_name) > 30:
+                formatted_name = formatted_name[:27] + "..."
+            
+            st.markdown(f"### {formatted_name}")
+            
+            with st.expander("View Statistics"):
+                
+                total_count = int(row['Total'])
+                total_total = totals['Total']
+                total_pct = (total_count / total_total * 100) if total_total > 0 else 0
+                st.markdown(f"**Total contributions:** {total_count:,} / {total_total:,} ({total_pct:.1f}%)")
+                
+                st.markdown("---")  
+                
+                issues_count = int(row['Issues Opened'])
+                issues_total = totals['Issues Opened']
+                issues_pct = (issues_count / issues_total * 100) if issues_total > 0 else 0
+                st.markdown(f"**Issues raised:** {issues_count:,} / {issues_total:,} ({issues_pct:.1f}%)")
+                
+                prs_count = int(row['PRs Opened'])
+                prs_total = totals['PRs Opened']
+                prs_pct = (prs_count / prs_total * 100) if prs_total > 0 else 0
+                st.markdown(f"**Pull requests opened:** {prs_count:,} / {prs_total:,} ({prs_pct:.1f}%)")
+                
+                commits_count = int(row['Commits'])
+                commits_total = totals['Commits']
+                commits_pct = (commits_count / commits_total * 100) if commits_total > 0 else 0
+                st.markdown(f"**Commits:** {commits_count:,} / {commits_total:,} ({commits_pct:.1f}%)")
+                
+                feedback_count = int(row['Feedback Given'])
+                feedback_total = totals['Feedback Given']
+                feedback_pct = (feedback_count / feedback_total * 100) if feedback_total > 0 else 0
+                st.markdown(f"**Feedback given:** {feedback_count:,} / {feedback_total:,} ({feedback_pct:.1f}%)")
+                
+                
 def get_complete_time(df: pd.DataFrame, interaction: str, time_col: str) -> pd.Series:
     """Calculate time to completion for PRs or issues.
 
@@ -946,7 +869,6 @@ def main(df_vis: pd.DataFrame, user_classifications_df: pd.DataFrame):
 
     daily_interactions_timeline(filtered_interactions)
     top_users_display(time_filtered_interactions)
-    top_contributing_orgs_display(time_filtered_interactions, user_classifications_df)
     detailed_org_contributions_breakdown(
         time_filtered_interactions, user_classifications_df
     )
