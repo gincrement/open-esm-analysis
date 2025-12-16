@@ -439,119 +439,133 @@ def top_users_display(df: pd.DataFrame):
             )
 
 
-def detailed_org_contributions_breakdown(df: pd.DataFrame, user_classifications_df: pd.DataFrame):
+def detailed_org_contributions_breakdown(
+    df: pd.DataFrame, user_classifications_df: pd.DataFrame
+):
     """Display detailed breakdown of organizational contributions by type.
-    
+
     Shows top 3 organizations with expandable statistics in columns.
-    
+
     Args:
         df: DataFrame containing user interaction data (already filtered).
         user_classifications_df: DataFrame containing username to company mappings.
     """
     st.subheader("Top 3 Contributing Organizations")
-    
+
     contribution_types = {
-        'Issues Opened': (df['interaction'] == 'issue') & (df['subtype'] == 'author'),
-        'PRs Opened': (df['interaction'] == 'pr') & (df['subtype'] == 'author'),
-        'Commits': (df['interaction'] == 'commit'),
-        'Issue Comments': (df['interaction'] == 'issue') & (df['subtype'] == 'comment'),
-        'Issue Reactions': (df['interaction'] == 'issue') & (df['subtype'] == 'reaction'),
-        'PR Comments': (df['interaction'] == 'pr') & (df['subtype'] == 'comment'),
-        'PR Reactions': (df['interaction'] == 'pr') & (df['subtype'] == 'reaction'),
-        'PR Reviews': (df['interaction'] == 'pr') & (df['subtype'] == 'review'),
+        "Issues Opened": (df["interaction"] == "issue") & (df["subtype"] == "author"),
+        "PRs Opened": (df["interaction"] == "pr") & (df["subtype"] == "author"),
+        "Commits": (df["interaction"] == "commit"),
+        "Issue Comments": (df["interaction"] == "issue") & (df["subtype"] == "comment"),
+        "Issue Reactions": (df["interaction"] == "issue")
+        & (df["subtype"] == "reaction"),
+        "PR Comments": (df["interaction"] == "pr") & (df["subtype"] == "comment"),
+        "PR Reactions": (df["interaction"] == "pr") & (df["subtype"] == "reaction"),
+        "PR Reviews": (df["interaction"] == "pr") & (df["subtype"] == "review"),
     }
 
     user_contributions_list = []
     for contrib_type, mask in contribution_types.items():
         contrib_counts = (
-            df.loc[mask]
-            .groupby('username')
-            .size()
-            .reset_index(name=contrib_type)
+            df.loc[mask].groupby("username").size().reset_index(name=contrib_type)
         )
         user_contributions_list.append(contrib_counts)
-    
+
     user_contributions = user_contributions_list[0]
     for contrib_df in user_contributions_list[1:]:
-        user_contributions = user_contributions.merge(contrib_df, on='username', how='outer')
-    
+        user_contributions = user_contributions.merge(
+            contrib_df, on="username", how="outer"
+        )
+
     user_contributions = user_contributions.fillna(0)
-    
+
     contrib_cols = list(contribution_types.keys())
-    user_contributions['Total'] = user_contributions[contrib_cols].sum(axis=1)
-    
+    user_contributions["Total"] = user_contributions[contrib_cols].sum(axis=1)
+
     merged = user_contributions.merge(
-        user_classifications_df[['username', 'company']], 
-        on='username', 
-        how='left'
+        user_classifications_df[["username", "company"]], on="username", how="left"
     )
-    
+
     org_contributions = (
-        merged.groupby('company')[contrib_cols]
+        merged.groupby("company")[contrib_cols]
         .sum()
         .sort_values(by=contrib_cols, ascending=False)
     )
-    
-    org_contributions['Total'] = org_contributions[contrib_cols].sum(axis=1)
-    org_contributions = org_contributions.sort_values('Total', ascending=False).head(3)
-    
-    org_contributions['Feedback Given'] = (
-        org_contributions['Issue Comments'] + 
-        org_contributions['Issue Reactions'] + 
-        org_contributions['PR Comments'] + 
-        org_contributions['PR Reactions'] + 
-        org_contributions['PR Reviews']
+
+    org_contributions["Total"] = org_contributions[contrib_cols].sum(axis=1)
+    org_contributions = org_contributions.sort_values("Total", ascending=False).head(3)
+
+    org_contributions["Feedback Given"] = (
+        org_contributions["Issue Comments"]
+        + org_contributions["Issue Reactions"]
+        + org_contributions["PR Comments"]
+        + org_contributions["PR Reactions"]
+        + org_contributions["PR Reviews"]
     )
-    
+
     totals = {
-        'Total': org_contributions['Total'].sum(),
-        'Issues Opened': org_contributions['Issues Opened'].sum(),
-        'PRs Opened': org_contributions['PRs Opened'].sum(),
-        'Commits': org_contributions['Commits'].sum(),
-        'Feedback Given': org_contributions['Feedback Given'].sum(),
+        "Total": org_contributions["Total"].sum(),
+        "Issues Opened": org_contributions["Issues Opened"].sum(),
+        "PRs Opened": org_contributions["PRs Opened"].sum(),
+        "Commits": org_contributions["Commits"].sum(),
+        "Feedback Given": org_contributions["Feedback Given"].sum(),
     }
-    
+
     cols = st.columns(3)
-    
+
     for idx, (org_name, row) in enumerate(org_contributions.iterrows()):
         with cols[idx]:
-            
             formatted_name = str(org_name).title()
             if len(formatted_name) > 30:
                 formatted_name = formatted_name[:27] + "..."
-            
+
             st.markdown(f"### {formatted_name}")
-            
+
             with st.expander("View Statistics"):
-                
-                total_count = int(row['Total'])
-                total_total = totals['Total']
+                total_count = int(row["Total"])
+                total_total = totals["Total"]
                 total_pct = (total_count / total_total * 100) if total_total > 0 else 0
-                st.markdown(f"**Total contributions:** {total_count:,} / {total_total:,} ({total_pct:.1f}%)")
-                
-                st.markdown("---")  
-                
-                issues_count = int(row['Issues Opened'])
-                issues_total = totals['Issues Opened']
-                issues_pct = (issues_count / issues_total * 100) if issues_total > 0 else 0
-                st.markdown(f"**Issues raised:** {issues_count:,} / {issues_total:,} ({issues_pct:.1f}%)")
-                
-                prs_count = int(row['PRs Opened'])
-                prs_total = totals['PRs Opened']
+                st.markdown(
+                    f"**Total contributions:** {total_count:,} / {total_total:,} ({total_pct:.1f}%)"
+                )
+
+                st.markdown("---")
+
+                issues_count = int(row["Issues Opened"])
+                issues_total = totals["Issues Opened"]
+                issues_pct = (
+                    (issues_count / issues_total * 100) if issues_total > 0 else 0
+                )
+                st.markdown(
+                    f"**Issues raised:** {issues_count:,} / {issues_total:,} ({issues_pct:.1f}%)"
+                )
+
+                prs_count = int(row["PRs Opened"])
+                prs_total = totals["PRs Opened"]
                 prs_pct = (prs_count / prs_total * 100) if prs_total > 0 else 0
-                st.markdown(f"**Pull requests opened:** {prs_count:,} / {prs_total:,} ({prs_pct:.1f}%)")
-                
-                commits_count = int(row['Commits'])
-                commits_total = totals['Commits']
-                commits_pct = (commits_count / commits_total * 100) if commits_total > 0 else 0
-                st.markdown(f"**Commits:** {commits_count:,} / {commits_total:,} ({commits_pct:.1f}%)")
-                
-                feedback_count = int(row['Feedback Given'])
-                feedback_total = totals['Feedback Given']
-                feedback_pct = (feedback_count / feedback_total * 100) if feedback_total > 0 else 0
-                st.markdown(f"**Feedback given:** {feedback_count:,} / {feedback_total:,} ({feedback_pct:.1f}%)")
-                
-                
+                st.markdown(
+                    f"**Pull requests opened:** {prs_count:,} / {prs_total:,} ({prs_pct:.1f}%)"
+                )
+
+                commits_count = int(row["Commits"])
+                commits_total = totals["Commits"]
+                commits_pct = (
+                    (commits_count / commits_total * 100) if commits_total > 0 else 0
+                )
+                st.markdown(
+                    f"**Commits:** {commits_count:,} / {commits_total:,} ({commits_pct:.1f}%)"
+                )
+
+                feedback_count = int(row["Feedback Given"])
+                feedback_total = totals["Feedback Given"]
+                feedback_pct = (
+                    (feedback_count / feedback_total * 100) if feedback_total > 0 else 0
+                )
+                st.markdown(
+                    f"**Feedback given:** {feedback_count:,} / {feedback_total:,} ({feedback_pct:.1f}%)"
+                )
+
+
 def get_complete_time(df: pd.DataFrame, interaction: str, time_col: str) -> pd.Series:
     """Calculate time to completion for PRs or issues.
 
