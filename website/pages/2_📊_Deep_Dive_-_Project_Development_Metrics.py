@@ -457,21 +457,16 @@ def detailed_org_contributions_breakdown(
         "PRs Opened": "interaction == 'pr' & subtype == 'author'",
         "Commits": "interaction == 'commit'",
         "Feedback Given": (
-            "interaction in ['issue', 'pr'] & subtype in ['comment', 'reaction', 'review']")
+            "interaction in ['issue', 'pr'] & subtype in ['comment', 'reaction', 'review']"
+        ),
     }
-    
-    global_totals = {
-        "Total contributions": len(df),
-    }
+
+    global_totals = {"Total contributions": len(df)}
     for contrib_name, mask in contribution_types.items():
         global_totals[contrib_name] = len(df.query(mask))
 
-    
     org_contributions = (
-        df.merge(
-            user_classifications_df[["username", "company"]],
-            on="username",
-        )
+        df.merge(user_classifications_df[["username", "company"]], on="username")
         .groupby(["company", "interaction", "subtype"])
         .size()
         .to_frame("count")
@@ -481,22 +476,19 @@ def detailed_org_contributions_breakdown(
     totals = {
         "Total contributions": org_contributions.groupby("company")["count"].sum()
     }
-    
+
     for contrib_name, mask in contribution_types.items():
         totals[contrib_name] = (
-            org_contributions
-            .query(mask)
-            .groupby("company")["count"]
-            .sum()
+            org_contributions.query(mask).groupby("company")["count"].sum()
         )
-        
+
     totals_df = (
         pd.DataFrame(totals)
         .fillna(0)
         .sort_values(by="Total contributions", ascending=False)
         .head(3)
     )
-    
+
     st.markdown(
         """
         <style>
@@ -504,54 +496,42 @@ def detailed_org_contributions_breakdown(
             background-color: #895129;
             border-radius: 8px;
         }
-        
+
         div[data-testid="stMetricValue"] {
         font-weight: 500;
         font-size: 1.5rem;
     }
         </style>
-        """, unsafe_allow_html=True
+        """,
+        unsafe_allow_html=True,
     )
-    
+
     cols = st.columns(3)
-    
-    metric_order = [
-        "Issues Opened",
-        "PRs Opened",
-        "Commits",
-        "Feedback Given",
-    ]
-    
+
+    metric_order = ["Issues Opened", "PRs Opened", "Commits", "Feedback Given"]
+
     def render_stat(label, value, total):
-        pct = (value/total * 100) if total > 0 else 0
+        pct = (value / total * 100) if total > 0 else 0
         return f"**{label}:** {int(value):,} / {int(total):,} ({int(pct)}%)"
-    
+
     for (company, row), col in zip(totals_df.iterrows(), cols):
         with col:
-            
             company_name = str(company).title()
             if len(company_name) > 30:
                 company_name = company_name[:27] + "..."
-            
+
             st.markdown(f"##### {company_name}")
-            
+
             st.metric(
                 label="Total contributions",
-                value=f"{int(row['Total contributions']):,}"
+                value=f"{int(row['Total contributions']):,}",
             )
-            
-            
+
             with st.expander("View breakdown"):
-                
                 for metric in metric_order:
-                    st.markdown(
-                        render_stat(
-                            metric, row[metric], global_totals[metric],
-                        )
-                    )
-                        
-                
-                
+                    st.markdown(render_stat(metric, row[metric], global_totals[metric]))
+
+
 def get_complete_time(df: pd.DataFrame, interaction: str, time_col: str) -> pd.Series:
     """Calculate time to completion for PRs or issues.
 
