@@ -439,17 +439,19 @@ def top_users_display(df: pd.DataFrame):
             )
 
 
-def detailed_org_contributions_breakdown(df: pd.DataFrame, user_classifications_df: pd.DataFrame):
+def detailed_org_contributions_breakdown(
+    df: pd.DataFrame, user_classifications_df: pd.DataFrame
+):
     """Display detailed breakdown of organizational contributions by type.
-    
+
     Shows top 3 organizations with expandable statistics in columns.
-    
+
     Args:
         df: DataFrame containing user interaction data (already filtered).
         user_classifications_df: DataFrame containing username to company mappings.
     """
     st.subheader("Top 3 Contributing Organizations")
-    
+
     contribution_types = {
         "Issues Opened": "interaction == 'issue' & subtype == 'author'",
         "PRs Opened": "interaction == 'pr' & subtype == 'author'",
@@ -475,7 +477,7 @@ def detailed_org_contributions_breakdown(df: pd.DataFrame, user_classifications_
         .to_frame("count")
         .reset_index()
     )
-    
+
     totals = {
         "Total contributions": org_contributions.groupby("company")["count"].sum()
     }
