@@ -447,8 +447,8 @@ def detailed_org_contributions_breakdown(
     Shows top 3 organizations with expandable statistics in columns.
 
     Args:
-        df: DataFrame containing user interaction data (already filtered).
-        user_classifications_df: DataFrame containing username to company mappings.
+        df (pd.DataFrame): DataFrame containing user interaction data (already filtered).
+        user_classifications_df (pd.DataFrame): DataFrame containing username to company mappings.
     """
     st.subheader("Top 3 Contributing Organizations")
 
@@ -489,47 +489,53 @@ def detailed_org_contributions_breakdown(
         .head(3)
     )
 
-    st.markdown(
-        """
+    st.html(
+        f"""
         <style>
-        div[data-testid="stExpander"] details summary{
-            background-color: #895129;
-            border-radius: 8px;
-        }
-
-        div[data-testid="stMetricValue"] {
-        font-weight: 500;
-        font-size: 1.5rem;
-    }
+            div [data-testid=stExpander] details summary{{
+                background-color: {px.colors.sequential.Peach[0]};
+            }}
+            div [data-testid=stExpander] details summary p{{
+                font-size: 1rem;
+            }}
         </style>
-        """,
-        unsafe_allow_html=True,
+        """
     )
 
     cols = st.columns(3)
 
     metric_order = ["Issues Opened", "PRs Opened", "Commits", "Feedback Given"]
 
-    def render_stat(label, value, total):
-        pct = (value / total * 100) if total > 0 else 0
-        return f"**{label}:** {int(value):,} / {int(total):,} ({int(pct)}%)"
-
     for (company, row), col in zip(totals_df.iterrows(), cols):
         with col:
             company_name = str(company).title()
-            if len(company_name) > 30:
-                company_name = company_name[:27] + "..."
 
-            st.markdown(f"##### {company_name}")
+            st.markdown(f"**{company_name}**")
 
             st.metric(
                 label="Total contributions",
                 value=f"{int(row['Total contributions']):,}",
             )
-
             with st.expander("View breakdown"):
                 for metric in metric_order:
-                    st.markdown(render_stat(metric, row[metric], global_totals[metric]))
+                    st.markdown(
+                        _render_stat(metric, row[metric], global_totals[metric])
+                    )
+
+
+def _render_stat(label: str, value: int, total: int) -> str:
+    """Render an org contribution as a markdown string with percentage.
+
+    Args:
+        label (str): label for the metric.
+        value (int): value for the metric.
+        total (int): total value for calculating percentage.
+
+    Returns:
+        str: formatted markdown string with value and percentage.
+    """
+    pct = (value / total * 100) if total > 0 else 0
+    return f"**{label}:** {int(value):,} / {int(total):,} ({int(pct)}%)"
 
 
 def get_complete_time(df: pd.DataFrame, interaction: str, time_col: str) -> pd.Series:
@@ -590,7 +596,7 @@ def plot_histogram(
             line_dash="dot",
             line_color="grey",
             annotation={
-                "text": f"All tools Median: {global_median}",
+                "text": f"All tools Median: {global_median:.1f}",
                 "font_color": "grey",
                 # "position": "bottom",
                 # "ayref": "paper",
@@ -741,7 +747,7 @@ def _prs_with_reviews_caption(df: pd.DataFrame) -> None:
     if not is_closed.empty:
         perc_prs_reviewed = len(merged_and_reviewed) / len(is_closed) * 100
         st.caption(
-            f"{perc_prs_reviewed}% of PRs received at least one review before being merged/closed."
+            f"{perc_prs_reviewed:.1f}% of PRs received at least one review before being merged/closed."
         )
 
 
