@@ -34,10 +34,10 @@ ORG_COLS = ["description"]
 
 @click.command()
 @click.option(
-    "--user-interactions",
+    "--repo-interactions",
     type=click.Path(exists=True, dir_okay=False, file_okay=True, path_type=Path),
-    help="Path to the user_interactions.csv file (from get_repo_users.py).",
-    default="user_analysis/output/user_interactions.csv",
+    help="Path to the repo_interactions.csv file (from get_repo_users.py).",
+    default="user_analysis/output/repo_interactions.csv",
 )
 @click.option(
     "--outdir",
@@ -50,8 +50,8 @@ ORG_COLS = ["description"]
     help="If True, collect all user data from scratch rather than appending to the existing user details table.",
     is_flag=True,
 )
-def cli(user_interactions: Path, outdir: Path, refresh_cache: bool):
-    """CLI entry point to collect detailed user info for all users in user_interactions.csv."""
+def cli(repo_interactions: Path, outdir: Path, refresh_cache: bool):
+    """CLI entry point to collect detailed user info for all users in repo_interactions.csv."""
     outdir.mkdir(parents=True, exist_ok=True)
     user_details_path = outdir / "user_details.csv"
     org_details_path = outdir / "organizations.csv"
@@ -72,7 +72,7 @@ def cli(user_interactions: Path, outdir: Path, refresh_cache: bool):
     gh_client = GitHubClientGH()
     gl_client = GitLabClientGL()
 
-    users_df = pd.read_csv(user_interactions)
+    users_df = pd.read_csv(repo_interactions)
 
     # Filter out users we've already processed
     users_df = users_df[~users_df.username.isin(existing_users.index)]

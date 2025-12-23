@@ -65,7 +65,7 @@ def detect_host(url: str) -> str | None:
     "--out-path",
     type=click.Path(exists=False, dir_okay=False, file_okay=True, path_type=Path),
     help="Output path for the user interactions data file.",
-    default="user_analysis/output/user_interactions.csv",
+    default="user_analysis/output/repo_interactions.csv",
 )
 def cli(stats_file: Path, out_path: Path):
     """CLI entry point to collect all users who interact with repositories listed in a stats file."""

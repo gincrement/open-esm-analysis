@@ -28,7 +28,7 @@ LOGGER = logging.getLogger(__name__)
 # Default base API URL for GitLab.com REST v4
 DEFAULT_BASE_URL = "https://gitlab.com/api/v4"
 
-PAGINATION_CACHE = util.read_yaml("gitlab_pagination_cache", exists=False)
+PAGINATION_CACHE = util.read_yaml("pagination_cache_gl", exists=False)
 
 
 @dataclass
@@ -102,7 +102,7 @@ class GitLabClientGL:
                 break
         if page > 1:
             PAGINATION_CACHE[path] = page
-            util.dump_yaml("gitlab_pagination_cache", PAGINATION_CACHE)
+            util.dump_yaml("pagination_cache_gl", PAGINATION_CACHE)
 
     @staticmethod
     def encode_project_path(path: str) -> str:
@@ -313,7 +313,10 @@ class GitLabRepositoryCollectorGL:
         # Parse timestamps (keep naive)
         for ts_col in ["created", "closed", "merged"]:
             if ts_col in df:
-                df[ts_col] = pd.to_datetime(df[ts_col], utc=True).dt.tz_localize(None)
+                col_no_sub_seconds = df[ts_col].str.split(".", expand=True)[0]
+                df[ts_col] = pd.to_datetime(
+                    col_no_sub_seconds, utc=True
+                ).dt.tz_localize(None)
         if "number" in df:
             df["number"] = df["number"].astype("Int16")
         return df[COLS]

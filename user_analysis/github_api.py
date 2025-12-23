@@ -24,7 +24,7 @@ from github.GithubException import GithubException, RateLimitExceededException
 load_dotenv()
 LOGGER = logging.getLogger(__name__)
 
-PAGINATION_CACHE = util.read_yaml("pagination_cache", exists=False)
+PAGINATION_CACHE = util.read_yaml("pagination_cache_gh", exists=False)
 
 
 @dataclass
@@ -359,7 +359,8 @@ class GitHubRepositoryCollectorGH:
             cursor = items["pageInfo"]["endCursor"]
             PAGINATION_CACHE[cache_key] = cursor
             page += 1
-
+        if page > 1:
+            util.dump_yaml("pagination_cache_gh", PAGINATION_CACHE)
         LOGGER.warning(f"Fetched {len(all_data)} {query_name} items")
         return all_data
 

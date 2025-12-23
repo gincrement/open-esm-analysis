@@ -699,7 +699,7 @@ def main(df_vis: pd.DataFrame):
         help="Filter out automated bot interactions (e.g., actions, codecov, pre-commit-ci).",
     )
 
-    # Apply all filters including date range
+    # Apply all filters except date range
     filtered_interactions = filter_interactions(
         df_vis,
         repo_to_tool_map,
@@ -710,7 +710,6 @@ def main(df_vis: pd.DataFrame):
     if filtered_interactions.empty:
         st.warning("No interaction data available for the selected filters.")
         return
-
     # Get date range from the data
     min_date = filtered_interactions[["merged", "created", "closed"]].min().min().date()
     max_date = filtered_interactions[["merged", "created", "closed"]].max().max().date()
@@ -770,7 +769,7 @@ if __name__ == "__main__":
     user_stats_dir = Path(__file__).parent.parent.parent / "user_analysis" / "output"
     # We're sharing this cached data with the main page, but we have to account for it being loaded for the first time here.
     df_vis = st.session_state.get(
-        "df_interactions", create_vis_table(user_stats_dir / "user_interactions.csv")
+        "df_interactions", create_vis_table(user_stats_dir / "repo_interactions.csv")
     )
 
     preamble()
