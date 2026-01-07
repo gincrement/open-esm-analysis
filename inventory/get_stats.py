@@ -61,25 +61,29 @@ def _get_conda_download_df(months_ago: int = 1, retry: bool = False) -> pd.DataF
     if months_ago < 1:
         raise ValueError("months_ago must be 1 or greater")
     now = datetime.now()
-    last_month = now.month - months_ago
-    if last_month < 1:
-        now = now.replace(year=now.year - 1)
-        last_month = 12 - (months_ago - 1)
+    month = now.month - months_ago
+    year = now.year
+    if month < 1:
+        year -= 1
+        month = 12 - (months_ago - 1)
+
     # The previous month's Anaconda data doesn't get compiled and uploaded to S3 until sometime into the following month.
     # If the file isn't found, we take the month before that
     try:
-        return pd.read_parquet(
-            f"s3://anaconda-package-data/conda/monthly/{now.year}/{now.year}-{last_month:02d}.parquet"
+        df = pd.read_parquet(
+            f"s3://anaconda-package-data/conda/monthly/{year}/{year}-{month:02d}.parquet"
         )
+        LOGGER.warning(f"Found Anaconda download data for {year}-{month:02d}")
+        return df
     except FileNotFoundError:
         if retry:
             LOGGER.warning(
-                f"Could not find Anaconda download data for {now.year}-{last_month:02d}, trying previous month"
+                f"Could not find Anaconda download data for {year}-{month:02d}, trying previous month"
             )
             return _get_conda_download_df(months_ago=months_ago + 1, retry=False)
         else:
             raise FileNotFoundError(
-                f"Could not find Anaconda download data for {now.year}-{last_month:02d}"
+                f"Could not find Anaconda download data for {year}-{month:02d}"
             )
 
 
