@@ -80,7 +80,8 @@ class GitHubClientGH:
         data = response.json()
 
         if "errors" in data:
-            raise Exception(f"GraphQL errors: {data['errors']}")
+            LOGGER.error(f"GraphQL errors: {data['errors']}")
+            return {}
 
         # Handle rate limiting
         if "data" in data and "rateLimit" in data["data"]:

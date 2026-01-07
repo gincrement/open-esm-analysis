@@ -106,8 +106,7 @@ messpy,https://github.com/pielube/MESSpy,pielube,False,34.0,10.0,Python,,2022-02
 microgrids_py,https://github.com/Microgrids-X/Microgrids.py,Microgrids-X,False,14.0,8.0,Python,mit,2022-07-21T15:16:19.000Z,2023-10-17T13:10:54.000Z,2025-03-31T13:59:29.000Z,0.0,1.0,,16.0,0.0,2023-10-17
 microgridspy,https://github.com/MicroGridsPy/MicroGridsPy,MicroGridsPy,False,40.0,37.0,Python,eupl-1.2,2018-01-23T02:21:57.000Z,2025-11-18T13:41:48.000Z,2025-11-12T01:34:49.000Z,0.4672897196261683,14.0,,,,
 minigrid_jcc,https://github.com/Autarky-Power/Minigrid-JCC,Autarky-Power,False,0.0,0.0,Julia,mit,2023-08-31T13:45:44.000Z,2024-02-27T08:28:48.000Z,2024-02-27T08:24:51.000Z,,,,,,
-minpower,https://github.com/adamgreenhall/minpower,adamgreenhall,False,72.0,35.0,Python,,2011-04-04T18:50:48.000Z,2024-04-07T20:07:05.000Z,2025-06-06T15:05:27.000Z,0.0,1.0,adamgreenhall.github.io/minpower,218.0,2.0,2021-07-21
-modpowersystems,https://github.com/modelica-3rdparty/ModPowerSystems,modelica-3rdparty,False,1.0,1.0,Modelica,,2020-02-03T14:17:42.000Z,2020-03-25T04:03:21.000Z,2021-03-18T15:36:22.000Z,0.09090909090909094,2.0,https://github.com/ModPowerSystems/ModPowerSystems,,,
+minpower,https://github.com/adamgreenhall/minpower,adamgreenhall,False,72.0,35.0,Python,,2011-04-04T18:50:48.000Z,2024-04-07T20:07:05.000Z,2025-06-06T15:05:27.000Z,0.0,1.0,adamgreenhall.github.io/minpower,234.0,2.0,2021-07-21
 mosaik,https://gitlab.com/mosaik/mosaik,mosaik,False,18.0,11.0,,lgpl-2.1,2020-02-14T20:57:17.429Z,,2025-10-30T09:32:57.008Z,,,,1049.0,46.0,2025-03-17
 most,https://github.com/MATPOWER/most,MATPOWER,False,34.0,14.0,MATLAB,other,2016-12-16T19:10:43.000Z,2025-07-12T21:36:49.000Z,2025-07-12T21:36:41.000Z,0.0,1.0,https://matpower.org/,,,
 multi_vector_simulator,https://github.com/rl-institut/multi-vector-simulator,rl-institut,False,23.0,12.0,Python,gpl-2.0,2019-07-29T14:57:11.000Z,2025-09-19T10:59:26.000Z,2025-07-12T14:31:56.000Z,0.7671166827386693,19.0,,107.0,1.0,2024-05-03
