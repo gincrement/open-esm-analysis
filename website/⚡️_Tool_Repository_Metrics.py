@@ -126,7 +126,7 @@ def create_vis_table(tool_stats_dir: Path, user_stats_dir: Path) -> pd.DataFrame
     docs_df = pd.read_csv(tool_stats_dir / "docs.csv", index_col="id")
     df = pd.merge(left=stats_df, right=tools_df, right_index=True, left_index=True)
     df["Interactions"] = (
-        _create_user_interactions_timeseries(user_stats_dir)
+        _create_repo_interactions_timeseries(user_stats_dir)
         .reindex(df.url.values)
         .values
     )
@@ -196,7 +196,7 @@ def interaction_df(filepath: Path) -> pd.DataFrame:
     return df
 
 
-def _create_user_interactions_timeseries(
+def _create_repo_interactions_timeseries(
     tool_data_dir: Path, resolution: str = "7d", n_months: int = 6
 ) -> pd.Series:
     """Create a cumulative sum timeseries of github repo user interactions.
@@ -212,7 +212,7 @@ def _create_user_interactions_timeseries(
             This is not a data structure that pandas really supports as the dtype is list-like.
     """
     user_df = util.get_state(
-        "interaction_df", interaction_df(tool_data_dir / "user_interactions.csv")
+        "interaction_df", interaction_df(tool_data_dir / "repo_interactions.csv")
     )
     use_df_6me = user_df.loc[
         user_df.created.dt.tz_localize(None)

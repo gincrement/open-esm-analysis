@@ -40,7 +40,7 @@ repos:
       - id: check-merge-conflict
       - id: check-illegal-windows-names
       - id: check-added-large-files
-        args: [--enforce-all --maxkb=100000]
+        args: [--enforce-all, --maxkb=100000]
       - id: trailing-whitespace
         exclude: "^(inventory|user_analysis)/output/.*.csv$"
       - id: end-of-file-fixer
