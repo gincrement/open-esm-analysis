@@ -46,6 +46,7 @@ jobs:
 
       - name: Run pixi task
         env:
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: pixi run classify-users
 
