@@ -159,8 +159,6 @@ https://github.com/oemof/oemof-solph: https://repos.ecosyste.ms/api/v1/hosts/Git
 https://github.com/oemof/oemof-thermal: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/oemof%2Foemof-thermal
 https://github.com/olugovoy/energyrt: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/optimal2050%2FenergyRt
 https://github.com/onsset/onsset: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/OnSSET%2Fonsset
-https://github.com/open-energy-transition/open-tyndp: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/open-energy-transition%2Fopen-tyndp
-https://github.com/open-energy-transition/solver-benchmark: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/open-energy-transition%2Fsolver-benchmark
 https://github.com/opencemorg/opencem: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/openCEMorg%2FopenCEM
 https://github.com/openego/edisgo: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/openego%2FeDisGo
 https://github.com/openego/ego: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/openego%2FeGo
@@ -241,7 +239,6 @@ https://gitlab.com/dlr-ve/esy/remix/framework: https://repos.ecosyste.ms/api/v1/
 https://gitlab.com/energyincities/python-ehub: https://repos.ecosyste.ms/api/v1/hosts/gitlab.com/repositories/energyincities%2Fpython-ehub
 https://gitlab.com/fame-framework: not-found
 https://gitlab.com/fame-framework/fame-core: https://repos.ecosyste.ms/api/v1/hosts/gitlab.com/repositories/fame-framework%2Ffame-core
-https://gitlab.com/fame-framework/fame-io: https://repos.ecosyste.ms/api/v1/hosts/gitlab.com/repositories/fame-framework%2Ffame-io
 https://gitlab.com/mosaik: not-found
 https://gitlab.com/mosaik/mosaik: https://repos.ecosyste.ms/api/v1/hosts/gitlab.com/repositories/mosaik%2Fmosaik
 https://gitlab.com/sesit/copper: https://repos.ecosyste.ms/api/v1/hosts/gitlab.com/repositories/sesit%2Fcopper

@@ -59,7 +59,6 @@ esdl,https://github.com/EnergyTransition/ESDL,EnergyTransition,False,15.0,8.0,Sh
 etm_pro,https://github.com/quintel/etmodel,quintel,False,54.0,17.0,CoffeeScript,mit,2011-05-03T08:55:13.000Z,2025-12-31T14:04:54.000Z,2025-12-30T13:02:28.000Z,0.763473731884058,69.0,https://energytransitionmodel.com/,,,
 exago,https://github.com/pnnl/ExaGO,pnnl,False,93.0,16.0,C++,other,2023-08-02T21:05:34.000Z,2025-12-30T19:05:25.000Z,2025-12-31T07:50:11.000Z,0.5874035989717223,30.0,,0.0,0.0,2022-04-05
 fame,https://gitlab.com/fame-framework/fame-core,fame-framework,False,5.0,1.0,,apache-2.0,2020-03-23T10:55:08.027Z,,2025-11-22T23:50:28.595Z,,,,0.0,3.0,2025-04-05
-fame_io,https://gitlab.com/fame-framework/fame-io,fame-framework,False,4.0,6.0,,apache-2.0,2020-03-23T10:08:14.739Z,,2025-11-12T14:22:53.765Z,,,,259.0,3.0,2025-10-14
 ficus,https://github.com/tum-ewk/ficus,tum-ewk,False,12.0,13.0,Python,gpl-3.0,2015-09-07T14:14:57.000Z,2021-05-27T13:30:02.000Z,2025-09-24T15:16:02.000Z,,,,,,
 fine,https://github.com/FZJ-IEK3-VSA/FINE,FZJ-IEK3-VSA,False,85.0,48.0,Python,other,2018-07-02T14:48:55.000Z,2025-11-13T16:14:49.000Z,2025-11-18T09:03:37.000Z,0.7883116883116883,48.0,https://vsa-fine.readthedocs.io,14438.0,2.0,2025-10-27
 flexigis,https://github.com/FlexiGIS/FlexiGIS,FlexiGIS,False,27.0,10.0,Python,,2019-12-02T08:47:33.000Z,2024-01-15T21:56:03.000Z,2025-11-13T15:41:50.000Z,0.504,5.0,,,,
@@ -121,10 +120,8 @@ oemof_thermal,https://github.com/oemof/oemof-thermal,oemof,False,35.0,15.0,Pytho
 omegalpes,https://gricad-gitlab.univ-grenoble-alpes.fr/omegalpes/omegalpes,omegalpes,,0.0,2.0,,apache-2.0,2018-10-24T09:54:08.003Z,,2025-08-06T18:46:14.282Z,,,,,,
 onsset,https://github.com/OnSSET/onsset,OnSSET,False,28.0,36.0,Python,other,2019-05-27T15:17:54.000Z,2025-11-11T09:07:55.000Z,2025-11-11T09:07:59.000Z,0.7669616519174041,12.0,http://www.onsset.org,50.0,1.0,2021-03-02
 open,https://github.com/EPGOxford/OPEN,EPGOxford,False,69.0,30.0,Python,apache-2.0,2019-12-02T18:54:17.000Z,2021-04-18T18:12:33.000Z,2025-12-10T22:52:58.000Z,,,,,,
-open_energy_benchmark,https://github.com/open-energy-transition/solver-benchmark,open-energy-transition,False,52.0,11.0,TypeScript,agpl-3.0,2024-07-15T08:05:05.000Z,2025-12-29T14:49:06.000Z,2025-12-24T18:37:01.000Z,0.3921568627450981,4.0,https://openenergybenchmark.org/,,,
 open_energy_cell_simulation,https://github.com/fabmid/Open-Energy-Cell-Simulation,fabmid,False,5.0,1.0,Python,other,2020-09-03T14:41:48.000Z,2025-02-13T12:19:07.000Z,2025-06-12T08:05:37.000Z,,,,,,
 open_modeling_framework,https://github.com/nreca-bts/omf,nreca-bts,False,123.0,74.0,Python,gpl-2.0,2012-09-17T17:15:57.000Z,2025-12-04T15:09:22.000Z,2025-12-04T15:09:27.000Z,0.5673228912200029,65.0,https://omf.coop,,,
-open_tyndp,https://github.com/open-energy-transition/open-tyndp,open-energy-transition,False,40.0,5.0,Python,,2025-02-17T14:20:48.000Z,2026-01-03T00:32:07.000Z,2025-12-23T10:55:57.000Z,,,https://open-tyndp.readthedocs.io/,,,
 opencem,https://github.com/openCEMorg/openCEM,openCEMorg,False,19.0,8.0,Python,gpl-3.0,2018-11-13T03:41:55.000Z,2023-07-06T21:34:08.000Z,2025-05-21T02:21:42.000Z,0.4935483870967742,9.0,,,,
 opender,https://github.com/epri-dev/OpenDER,epri-dev,False,68.0,29.0,Python,other,2022-04-26T22:09:28.000Z,2025-06-23T15:15:40.000Z,2025-09-27T15:33:40.000Z,0.05607476635514019,2.0,,432.0,1.0,2025-04-13
 opendss_c,https://github.com/epri-dev/OpenDSS-C,epri-dev,False,4.0,4.0,C++,,2024-07-16T19:17:21.000Z,2024-07-20T18:01:35.000Z,2025-04-17T01:20:02.000Z,,,,,,
