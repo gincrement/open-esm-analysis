@@ -1,11 +1,13 @@
 username,classification,company,location,repos
 0-k,unknown,,Germany,"antaressimulatorteam/antares_simulator,emlab/emlab-generation,fzj-iek3-vsa/fine,genxproject/genx.jl,leonardgoeke/anymod.jl,pypsa/pypsa"
+007ML007,unknown,,,future-power-networks/simplus-grid-tool
 00Sleepy,professional,xept,Germany,akkudoktor-eos/eos
 00abed,unknown,,,akkudoktor-eos/eos
 00mjk,unknown,,,"gmlc-tdc/helics,lanl-ansi/powermodels.jl,mzy2240/esa,nrel/sam,openego/ego"
 0206lili,unknown,,,etsap-times/times_model
 04046,unknown,,,matpower/matpower
 04jonas,academic,,,akkudoktor-eos/eos
+09shubh,industry,,,"blue-marble/gridpath,pypsa/pypsa"
 0UmfHxcvx5J7JoaOhFSs5mncnisTJJ6q,academic,potsdam institute for climate impact research,,optimal2050/energyrt
 0b11001111,unknown,,,pypsa/pypsa
 0joseDark,academic,,Portugal,"akkudoktor-eos/eos,marvinler/pypownet"
@@ -99,6 +101,7 @@ username,classification,company,location,repos
 3000dust,academic,,,hope-model-project/hope
 314330535,unknown,,,curent/andes
 314961246,academic,shandong university,China,changgang/steps
+31jinxiao,unknown,,,iiasa/message_ix
 32bitmicro,professional,32bitmicro,,"e2niee/pandapower,nrel/sam,openipsl/openipsl"
 33200101165,academic,zhejiang university,China,idaholab/hybrid
 35604,unknown,,,richard-weinhold/pomato
@@ -110,6 +113,7 @@ username,classification,company,location,repos
 3enny3oy,unknown,,,openipsl/openipsl
 3lbits,unknown,,Norway,"e2niee/pandapower,powsybl/pypowsybl"
 3plus10i,unknown,,China,"blue-marble/gridpath,curent/andes,matpower/matpower,rwl/pypower,sanpen/gridcal"
+3shn,unknown,,,lanl-ansi/powermodels.jl
 3tes,unknown,,Germany,akkudoktor-eos/eos
 404notykk,unknown,,,uu-er/adopt-net0
 421-WWQ,unknown,,,grid2op/grid2op
@@ -194,6 +198,7 @@ AIRicky,utility,self,China,matpower/matpower
 AIShankhoGhosh,unknown,,,e2niee/pandapower
 AIagent-007,unknown,,,future-power-networks/simplus-grid-tool
 AIncredible,unknown,,,calliope-project/calliope
+AIwalker1,unknown,,,iiasa/message_ix
 AKarimzadeh,unknown,,,"openipsl/openipsl,upb-lea/electricgrid.jl"
 AL-255,academic,,United States,rwl/pypower
 ALRSIE,unknown,,,e2niee/pandapower
@@ -209,12 +214,14 @@ APfeFSB,unknown,,,energy-modelling-toolkit/dispa-set
 APshreya,unknown,,,nrel/rodeo
 AR-SmartHelio,professional,smarthelio,India,"nrel-distribution-suites/erad,oemof/oemof-solph"
 AR4Z,industry,,Colombia,sanpen/gridcal
+ARPST-UniMelb,unknown,,,nrel/pras
 ARSayed,unknown,,,e2niee/pandapower
 ASC95,unknown,,,"nreca-bts/omf,nrel/reopt.jl"
 ASHEEM-GARWA,unknown,,,energy-modelling-toolkit/dispa-set
 ASMIftekhar,industry,microsoft,United States,critical-infrastructure-systems-lab/pownet
 ASamarkRoth,unknown,,,genxproject/genx.jl
 ATAjhut,unknown,,,calliope-project/calliope
+ATouuuu,unknown,,,iiasa/message_ix
 AVRCN,unknown,,,lvorspel/digripy
 AWABIE,unknown,,,nrel/sam
 AYUSHMIT,unknown,,United States,curent/andes
@@ -236,6 +243,7 @@ AbedAyyad,utility,energy modelling hub,Canada,sesit/copper
 AbhiiGitHub,unknown,,,ames-market/psst
 Abhijeet1990,research,national renewable energy laboratory,United States,"mzy2240/esa,nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl"
 AbhimanyuAryan,industry,cegid,Spain,genxproject/genx.jl
+AbhishekDhawale,academic,teri,,iiasa/message_ix
 AbhishekRoyalking,professional,om group traders,India,nrel-sienna/powersimulations.jl
 Abijith20,unknown,,,matpower/matpower
 AbletonX,unknown,,,"curent/andes,e2niee/pandapower,mbheinen/bpa-ipf-tsp,openipsl/openipsl,pypsa/pypsa"
@@ -281,6 +289,7 @@ AfterDreaming,academic,georgia institute of technology,United States,epri-dev/op
 AgnesBelt,unknown,,,"calliope-project/calliope,energy-modelling-toolkit/dispa-set,kth-desa/onsset-2016,osemosys/osemosys,sei-international/nemomod.jl"
 Agrover112,industry,,,nrel-sienna/powersimulations.jl
 Aguerazo,unknown,,,"nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl"
+Agustin-Medusa,unknown,,,akkudoktor-eos/eos
 AhahaJade,unknown,,,"lanl-ansi/powermodels.jl,nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl"
 Ahmad-Mahmoudi-coder,unknown,,,eiagov/bluesky
 Ahmad-Wahid,industry,seitabv,Pakistan,"calliope-project/calliope,pypsa/pypsa,sanpen/gridcal"
@@ -308,6 +317,7 @@ AkarshSahlot,industry,,,powergridmodel/power-grid-model
 Akin01,industry,,,pypsa/pypsa
 Akurso,unknown,,,pypsa/pypsa
 AlJuel,unknown,,,lkruitwagen/global-fossil-fuel-supply-chain
+AlKhourdajie,unknown,,,iiasa/message_ix
 AlKlecks,unknown,,,akkudoktor-eos/eos
 AlOussama,academic,university of stuttgart,Germany,"assume-framework/assume,electa-git/flexplan.jl,energy-modelling-toolkit/dispa-set,genxproject/genx.jl,juliaenergy/powerdynamics.jl,lanl-ansi/powermodels.jl,nrel-sienna/powersimulationsdynamics.jl,pypsa/pypsa,youngfaithful/capacityexpansion.jl"
 AlannLiu,unknown,,,genxproject/genx.jl
@@ -410,6 +420,7 @@ Amonara,unknown,,,"e2niee/pandapower,pypsa/pypsa"
 Amrit-Gill,unknown,,France,dynawo/dynawo
 AmroAbdulla,unknown,,,powsybl/pypowsybl
 Amuwa,academic,"damo academy, alibaba inc.",China,"grid-parity-exchange/egret,lanl-ansi/powermodels.jl,matpower/matpower"
+Amynka,unknown,,Switzerland,energysystemsmodellinglab/muse2
 AnBlav,unknown,,,e2niee/pandapower
 AnHeuermann,unknown,,Germany,transient-official/transient-lib
 AnandSrini,unknown,,,e2niee/pandapower
@@ -461,6 +472,7 @@ Anmirazik,academic,,Malaysia,"genxproject/genx.jl,lkruitwagen/global-fossil-fuel
 Anna-Polito,unknown,,,pypsa/pypsa
 AnnaBuettner,academic,potsdam intitute for climate impact research pik-icone,,juliaenergy/powerdynamics.jl
 AnnaFeierling,unknown,,,richard-weinhold/pomato
+AnnaSpedo,academic,politecnico di milano,Italy,iiasa/message_ix
 Annas-Jawed,unknown,,,e2niee/pandapower
 Annika10,academic,bielefeld university,,chrisyeh96/sustaingym
 Anooshirvan,academic,,Italy,pypsa/pypsa
@@ -477,6 +489,7 @@ AntonellaGia,unknown,,,oemof/oemof-solph
 Antonioyang0726,unknown,,,e2niee/pandapower
 AntonisCY97,academic,msc energy production & management student,Greece,pypsa/pypsa
 Antti-L,unknown,,,"etsap-times/times_model,iee-tugraz/lego"
+Anurag94-cool,professional,ceew,India,iiasa/message_ix
 Anusha0501,industry,,India,grid2op/grid2op
 AnyaHe,unknown,,,openego/edisgo
 Aoko7,unknown,,,fzj-iek3-vsa/fine
@@ -512,6 +525,7 @@ ArmelloBello,unknown,,,pielube/messpy
 Armenat1990,unknown,,,"e2niee/pandapower,powergridmodel/power-grid-model,pypsa/pypsa,sanpen/veragrid"
 Armin-Ha,unknown,,,erf-model/erf
 ArminTeskeredzic,unknown,,,sogno-platform/dpsim
+ArminiusC,unknown,,Austria,iiasa/message_ix
 Arminz53,unknown,,,akkudoktor-eos/eos
 ArnabKar,academic,duke university,United States,genxproject/genx.jl
 Arnaud-Dorthe,professional,abak consulting,Belgium,"antaressimulatorteam/antares_simulator,behrangshirizadeh/eoles_elecres"
@@ -531,8 +545,10 @@ ArttuTupala,unknown,,,irena-flextool/flextool
 ArunSukumaranNair-eaton,unknown,,,"nrel/reopt_api,nrel/reopt_lite_api"
 Ashargin,academic,,France,grid2op/grid2op
 Ashish-Kotwal,academic,institute for energy studies,United States,"adgefficiency/energy-py,adgefficiency/energy-py-linear,breakthrough-energy/reise.jl,calliope-project/calliope,e2niee/pandapower,nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl,oemof/oemof-solph,pypsa/pypsa,sei-international/nemomod.jl,switch-model/switch,tum-ens/urbs"
+Ashmit8583,unknown,,,energysystemsmodellinglab/muse2
 AshutoshVJTI,industry,,,grid2op/grid2op
 AshwinSandeep1,academic,,,genxproject/genx.jl
+AsiminaF,unknown,,,antaressimulatorteam/antares_simulator
 AskoldNebelskyi,unknown,,,lkruitwagen/global-fossil-fuel-supply-chain
 Asland-create,unknown,,,matpower/matpower
 Aso2510,unknown,,,e2niee/pandapower
@@ -545,6 +561,7 @@ Atlas553,unknown,,Germany,akkudoktor-eos/eos
 AtomSolar,unknown,,,"nrel/pysam,nrel/reopt_api,nrel/reopt_lite_api,nrel/sam"
 Atturath,unknown,,,"grid2op/grid2op,powergridmodel/power-grid-model,sanpen/gridcal"
 Audrey-Hepburn,unknown,,,leonardgoeke/anymod.jl
+Aurashk,unknown,,,energysystemsmodellinglab/muse2
 Aurel31,academic,wildfire interdisciplinary research center,United States,erf-model/erf
 Avi-Goyal,unknown,,,lkruitwagen/global-fossil-fuel-supply-chain
 AvisP,industry,,Canada,grid2op/grid2op
@@ -578,6 +595,7 @@ BRIK-Engenharia,unknown,,Brazil,nrel/pysam
 BRNNDR,unknown,,Italy,"grid-parity-exchange/egret,grid2op/grid2op,pypsa/pypsa,spine-tools/spineopt.jl"
 BSanjani,academic,stony brook university,United States,nrel/paraemt_public
 BSrijita,academic,rensselaer polytechnic institute,United States,openipsl/openipsl
+BTV25,unknown,,,nrel/h2integrate
 BTVloedgraven,unknown,,,pypsa/pypsa
 BZS-W,unknown,,,matpower/matpower
 BabakTaheri1,academic,georgia institute of technology,United States,lanl-ansi/powermodels.jl
@@ -605,6 +623,7 @@ Bankaifan,professional,huk-coburg,Germany,akkudoktor-eos/eos
 Bao20520,unknown,,,prep-next/prep-shot
 BaptisteZoghby,unknown,,,lanl-ansi/powermodels.jl
 BaraaUniKassel,unknown,,,e2niee/pandapower
+Barryallen999,unknown,,,iiasa/message_ix
 Bart-5,unknown,,,emlab/emlab-generation
 BartSchuurmans,professional,alliander,Netherlands,powergridmodel/power-grid-model
 BartelsJ,unknown,,,openego/ego
@@ -638,6 +657,7 @@ BenNeighbour,industry,enginebystarling,United Kingdom,nrel-sienna/powersimulatio
 BenPalethorpe,unknown,,,"e2niee/pandapower,manuvarkey/gelectrical"
 BenPortner,industry,gft technologies se,Germany,lkruitwagen/global-fossil-fuel-supply-chain
 BenSitn,professional,nation of celestial space,Italy,prep-next/prep-shot
+BenTheExpert,unknown,,,pypsa/pypsa
 Bend3smo,unknown,,,akkudoktor-eos/eos
 BendikMann,unknown,,,open-energy-transition/solver-benchmark
 BeneJoh,academic,energy information networks and systems lab,Germany,"juliaenergy/powerdynamics.jl,nrel-sienna/powersimulations.jl,sogno-platform/dpsim"
@@ -678,6 +698,7 @@ BilelAzzabi,unknown,,,lanl-ansi/powermodels.jl
 Bill-Becker,research,national renewable energy laboratory,United States,"nrel/reopt.jl,nrel/reopt_api,nrel/reopt_lite_api"
 Billjutt,industry,fz tech solutions uk limited,United Kingdom,nreca-bts/omf
 BinHuangScut,unknown,,United States,"curent/andes,e2niee/pandapower,marvinler/pypownet,pypsa/pypsa,rwl/pypower,sanpen/gridcal"
+BinghaoHe,academic,,China,iiasa/message_ix
 Binglin-Wu,unknown,,,prep-next/prep-shot
 Bingoang,academic,shanghai university,China,rwl/pypower
 BishtArvind,academic,,,optimal2050/energyrt
@@ -791,15 +812,18 @@ CNP72,unknown,,,prep-next/prep-shot
 CO2leaks,unknown,,,"dynawo/dynawo,e2niee/pandapower,pypsa/pypsa"
 CPUsunshine,unknown,,,matpower/matpower
 CQZ612,unknown,,,prep-next/prep-shot
+CQiZhang,unknown,,,iiasa/message_ix
 CROdominik,academic,technical university of denmark,Denmark,calliope-project/calliope
 CSchoch,unknown,,,akkudoktor-eos/eos
 CSenkpiel,unknown,,,csenkpiel/inve2st
 CTSunky,unknown,,China,matpower/matpower
 CURENT2,unknown,,,curent/andes
+CYClone-xhb,unknown,,,iiasa/message_ix
 Cadenzard,unknown,,,"bje-/nemo,unsw-ceem/nempy"
 CaffeinatedCod3r,unknown,,India,onsset/onsset
 Cainmani,utility,,South Africa,nrel/sam
 CairodJD,unknown,,,akkudoktor-eos/eos
+Caiyuyang,unknown,,,iiasa/message_ix
 CalaMatti,unknown,,,pielube/messpy
 Caleb-lo,unknown,,,pypsa/pypsa
 CallahuaraMiguel,unknown,,,irena-flextool/flextool
@@ -824,6 +848,7 @@ CarlaDBI,unknown,,,"e2niee/pandapower,pypsa/pypsa"
 CarlesCG,industry,,,adgefficiency/energy-py-linear
 CarliJoy,unknown,,Germany,e2niee/pandapower
 CarloCarcasci,unknown,,,pielube/messpy
+CarloCori,unknown,,,iiasa/message_ix
 Carlos-Alegre,unknown,,,sanpen/gridcal
 CarlosAlmeida4,industry,continental engineering services,Portugal,marvinler/pypownet
 CarlosEpia,unknown,,,"openego/ego,pypsa/pypsa"
@@ -895,6 +920,7 @@ Chillthrower,industry,,,powergridmodel/power-grid-model
 Chiman-AI,unknown,,,matpower/matpower
 Chloe-1204,unknown,,,rwl/pypower
 ChloeH719,unknown,,,powergridmodel/power-grid-model
+Chocooto,professional,geidco,,iiasa/message_ix
 Chorouk03,unknown,,,optimal2050/energyrt
 ChowIndustries,unknown,,,tum-ens/urbs
 Chr-007,unknown,,,akkudoktor-eos/eos
@@ -945,6 +971,7 @@ ClaudioSiervi,professional,udemy,Brazil,"osemosys/osemosys,pypsa/pypsa,quintel/e
 Claus1985,unknown,,,akkudoktor-eos/eos
 ClayCampaigne,professional,,United States,pypsa/pypsa
 Clayt0nGamble,unknown,,,genxproject/genx.jl
+Climate2,professional,,,pnnl/exago
 CloudAlex0218,unknown,,,critical-infrastructure-systems-lab/pownet
 CloudOnWings,unknown,,,"ahalev/python-microgrid,arras-energy/gridlabd,curent/andes,dgusain1/energysim,dynawo/dynawo,e2niee/pandapower,gmlc-tdc/helics,powergridmodel/power-grid-model,powsybl/powsybl-core,pypsa/pypsa,sanpen/gridcal"
 Cloudiver,unknown,,,prep-next/prep-shot
@@ -965,11 +992,14 @@ CommReteris,unknown,,,"blue-marble/gridpath,nrel/sam"
 CommanderRoot,unknown,,Germany,akkudoktor-eos/eos
 Complexyy,unknown,,,"calliope-project/calliope,e2niee/pandapower,matpower/matpower,mesmo-dev/mesmo"
 Condor-1998,unknown,,,future-power-networks/simplus-grid-tool
+Confareneoclassico,academic,,Spain,iiasa/message_ix
 Cong-boy,unknown,,,transient-official/transient-lib
 Congyu-Han,unknown,,,prep-next/prep-shot
+ConnectedSystems,academic,,,iiasa/message_ix
 ConnorButterfield,academic,,,pypsa/pypsa
 ConnorPigg,unknown,,,idaholab/heron
 ConsolinnoEnergy,unknown,,,oemof/oemof-solph
+ConstantinM089,unknown,,,drafproject/draf
 Consuto,unknown,,,nreca-bts/omf
 CoolDalek,unknown,,,ie3-institute/simona
 CoolJoe86,unknown,,,e2niee/pandapower
@@ -994,6 +1024,7 @@ CundallAus,unknown,,Australia,"nrel/pysam,nrel/sam"
 Curiosit,academic,,,pypsa/pypsa
 CuteCandice,unknown,,,curent/andes
 CuttySark1869,academic,imperial college london,United Kingdom,future-power-networks/simplus-grid-tool
+CyI9,unknown,,,grid2op/grid2op
 CyKibb,professional,enurgen,Canada,epri-dev/opender
 Cynthia-0909,unknown,,,prep-next/prep-shot
 Cyril-yu,unknown,,,"e2niee/pandapower,sanpen/gridcal"
@@ -1018,6 +1049,7 @@ DFuh,unknown,,,oemof/oemof-solph
 DGCaprace,unknown,,,erf-model/erf
 DGeorgiadis,unknown,,,rwl/pypower
 DHersh3094,unknown,,,calliope-project/calliope
+DIUANA,unknown,,,iiasa/message_ix
 DIlla5,unknown,,,akkudoktor-eos/eos
 DJ-pnnl,unknown,,,pnnl/exago
 DJDIAA,unknown,,,temoaproject/temoa
@@ -1133,6 +1165,7 @@ DerSimulant,unknown,,,akkudoktor-eos/eos
 Deran80,unknown,,,akkudoktor-eos/eos
 DeriEnergy,professional,Nan Jing De Rui Neng Yuan Yan Jiu Yuan ,China,e2niee/pandapower
 DerryChan,unknown,,Hong Kong,grid2op/grid2op
+DeryaGokalp,unknown,,,iiasa/message_ix
 DesTroYDI,unknown,,,e2niee/pandapower
 DesmondZhong,industry,breakpoint ai,United States,"blue-marble/gridpath,grid2op/grid2op,switch-model/switch"
 DetMoerk,unknown,,Germany,akkudoktor-eos/eos
@@ -1160,6 +1193,7 @@ DimitrisTrakas,unknown,,,e2niee/pandapower
 Dimitrismentis,academic,world resources institute,,kth-desa/onsset-2016
 Dimsum-art,unknown,,,iit-energysystemmodels/opensduc
 DiogoFreitas60,unknown,,,"matpower/matpower,matpower/most"
+DiogoKramel,academic,norwegian university of science and technology,Norway,iiasa/message_ix
 DionB10,unknown,,,quintel/etmodel
 DionEngels,academic,eindhoven university of technology,Netherlands,quintel/pyetm
 Diptargha,industry,siemens,United Kingdom,"dynawo/dynawo,gridoptics/gridpack,nrel-sienna/powersimulationsdynamics.jl,nrel/paraemt_public"
@@ -1184,6 +1218,7 @@ DominikBurkert,unknown,,,assume-framework/assume
 DominikK0702,unknown,,,akkudoktor-eos/eos
 Don-Dominic,unknown,,,"e2niee/pandapower,pypsa/pypsa,sanpen/gridcal"
 DonCN,unknown,,,"chengts95/rustpower,e2niee/pandapower,openipsl/openipsl,sanpen/gridcal"
+Dong-Liu-12,unknown,,,sei-international/nemomod.jl
 Dong-Yixin,unknown,,,nrel/sam
 DongChen06,academic,,,"grid2op/grid2op,gridoptics/gridpack"
 Dongbox,unknown,,,grid2op/grid2op
@@ -1204,6 +1239,8 @@ Dr4K4n,professional,balticfinance,Germany,akkudoktor-eos/eos
 DrCarlosCalderon,academic,newcastle university,United Kingdom,calliope-project/calliope
 DrDeadbrain,academic,haw hamburg,Germany,pnnl/tesp
 DrFriedrich,unknown,,,"emma-model/emma,epgoxford/open,tum-ewk/lemlab"
+DrRabiu,unknown,,,iiasa/message_ix
+DrUkachi,industry,microsoft,Niger,iiasa/message_ix
 Drasek,professional,ttn rhein-sieg,Germany,akkudoktor-eos/eos
 Drowsle,unknown,,,transition-zero/tz-osemosys
 Drplana,academic,universidad central marta abreu de las villas,Cuba,energy-modelling-toolkit/dispa-set
@@ -1402,6 +1439,7 @@ FMCalisto,academic,institute for systems and robotics,Portugal,oemof/oemof-solph
 FMatsinhe01,unknown,,,microgridspy/microgridspy
 FMcil,professional,cuspai,United Kingdom,temoaproject/temoa
 FNietoUC,unknown,,,nrel/sam
+FOREVERtong,unknown,,,iiasa/message_ix
 FPavanello,academic,ifo institute and lmu munich,Germany,switch-model/switch
 FSLight1996,academic,tianjin university,,oemof/oemof-solph
 FSSYS,professional,geotact,United Kingdom,energy-modelling-toolkit/dispa-set
@@ -1427,6 +1465,7 @@ FahrJo,unknown,,Germany,akkudoktor-eos/eos
 Faisal-700,unknown,,,sogno-platform/dpsim
 FakeTrader,unknown,,,pypsa/pypsa
 Falferreira,unknown,,,iit-energysystemmodels/opentepes
+FanByteX,academic,northeastern university,,gridfm/gridfm-graphkit
 FanTomasCZ,unknown,,,manuvarkey/gelectrical
 FangCundi,unknown,,,pypsa/pypsa
 Farid-Najar,academic,,,grid2op/grid2op
@@ -1460,6 +1499,7 @@ FelixTUC,unknown,,,dlr-ve/esy/amiris/amiris
 FelixWollenhaupt,unknown,,,mosaik/mosaik
 Fellowhuang,unknown,,,curent/andes
 Fengjiewen,unknown,,,prep-next/prep-shot
+FerAnd84,unknown,,,manuvarkey/gelectrical
 FerRory,industry,,Netherlands,powergridmodel/power-grid-model
 Fergus-Willsmore,unknown,,,pypsa/pypsa
 Fergyyy,professional,gridcognition,Australia,unsw-ceem/nempy
@@ -1484,6 +1524,7 @@ FisayoAdeyemi,unknown,,Niger,nrel/sam
 Fishsevens,unknown,,,akkudoktor-eos/eos
 Fitzgerard23,academic,zhejiang university,China,"nreca-bts/omf,e2niee/pandapower"
 FjunD,unknown,,,prep-next/prep-shot
+Fl00ri4n,unknown,,,akkudoktor-eos/eos
 Fl0ete,unknown,,Germany,akkudoktor-eos/eos
 Fl0x23,unknown,,,akkudoktor-eos/eos
 Flavio-Arthur,unknown,,,iit-energysystemmodels/opentepes
@@ -1584,6 +1625,7 @@ GalPerelman,academic,,Israel,"critical-infrastructure-systems-lab/pownet,grid-pa
 Galaxis-26,unknown,,Germany,akkudoktor-eos/eos
 Galery2345,unknown,,,akkudoktor-eos/eos
 Gallenger,unknown,,,"rwl/pypower,susantoj/pypower-dynamics"
+GamzeUnlu95,unknown,,,iiasa/message_ix
 GanXianxin,unknown,,,matpower/matpower
 Ganben,research,c lab,China,"pypsa/pypsa,sogno-platform/dpsim"
 Gandalf877,unknown,,,pypsa/pypsa
@@ -1592,6 +1634,7 @@ Garcia2307,unknown,,,nrel/sam
 Gareryer,unknown,,,akkudoktor-eos/eos
 GargiuloM,professional,e4sma srl,Italy,"etsap-times/times_model,iit-energysystemmodels/opentepes"
 GaryCooper23,unknown,,Germany,akkudoktor-eos/eos
+GaryKwokQZ,academic,,,iiasa/message_ix
 GassarAbdo,academic,la rochelle unive,France,"adgefficiency/energy-py-linear,etsap-times/times_model,flexigis/flexigis,irena-flextool/flextool,pypsa/pypsa,tum-ewk/opentumflex"
 GauthierDemonchy,unknown,,,spf-ost/optihood
 GauthierNEVE,unknown,,,energyscope/energyscope
@@ -1608,6 +1651,8 @@ Geluen,unknown,,,"matpower/matpower,pypsa/pypsa"
 Gen-R,academic,,Germany,temoaproject/temoa
 GenXProject,unknown,,,genxproject/genx.jl
 Genajoin,unknown,,,thales1330/psp
+Gencisama,unknown,,,iiasa/message_ix
+GeneralW1,unknown,,,pypsa/pypsa
 GenosseFlosse,academic,rwth aachen university,Germany,matpower/matpower
 Geo-Mahdi,unknown,,Netherlands,flexigis/flexigis
 GeonMoo,academic,university of science and technology of china,,akkudoktor-eos/eos
@@ -1789,6 +1834,7 @@ HamidgLUSE,unknown,,,oemof/oemof-thermal
 HamishPoole,unknown,,,flexiblepower/powermatcher
 HammaAudi,unknown,,,akkudoktor-eos/eos
 Hamster-Furtif,unknown,,,e2niee/pandapower
+Han-Xiao-Yao,academic,,,matpower/matpower
 Han-lgpm,unknown,,,future-power-networks/simplus-grid-tool
 Han-shu,academic,cornell university,,nrel-sienna/powersimulations.jl
 HanHuiHH,academic,,,"osemosys/osemosys,pypsa/pypsa,sei-international/nemomod.jl"
@@ -1820,6 +1866,7 @@ Harm1995,unknown,,,powergridmodel/power-grid-model
 HarmonicReflux,industry,,United Kingdom,energysystemsmodellinglab/muse_os
 Harry79,unknown,,,akkudoktor-eos/eos
 Harryvb91,unknown,,,calliope-project/calliope
+Harshul-18,academic,,Germany,assume-framework/assume
 HasanTariq1995,unknown,,,e2niee/pandapower
 HashMoto,unknown,,Japan,prep-next/prep-shot
 HasiHays,academic,university of arkansas,United States,ie3-institute/simona
@@ -1866,6 +1913,7 @@ HenrikRabler,academic,,,e2niee/pandapower
 HenryLHH,unknown,,,pnnl/exago
 Henryutd2021,unknown,,,"nrel/reopt_api,nrel/reopt_lite_api,spine-tools/spineopt.jl"
 Hericles-Farias,industry,ceesp,,e2niee/pandapower
+HermanniKokkonen,professional,gekkovet oy,Finland,iiasa/message_ix
 Heronimonimo,unknown,,Netherlands,open-energy-transition/open-tyndp
 HerveDavid,utility,reseau de transport d'electricite,France,"dynawo/dynawo,powsybl/pypowsybl"
 HervePruvost,academic,dresden university of technology,Germany,flixopt/flixopt
@@ -1935,6 +1983,7 @@ Hze7,unknown,,,"nrel/emerge,rwl/pypower"
 I-E-Pharoes,unknown,,,lanl-ansi/powermodels.jl
 I201821180,unknown,,United Kingdom,nreca-bts/omf
 IAmirKhani,academic,,,calliope-project/calliope
+ID-Akash,unknown,,,nrel/paraemt_public
 ID162,unknown,,,grid2op/grid2op
 IEEEWLX,unknown,,,"nreca-bts/omf,matpower/matpower"
 IEHWagner,unknown,,,flexigis/flexigis
@@ -2014,6 +2063,7 @@ IsmaelHerre,unknown,,,sanpen/gridcal
 Ismail-Opatola,industry,deskpass,Niger,nrel/sam
 Isoching,academic,university of surrey,United Kingdom,tum-ens/urbs
 IsolatedSage,academic,huazhong university of science and technology,China,etsap-times/times_model
+Issimonmutunga,industry,,Kenya,iiasa/message_ix
 Istaroth,industry,maera gmbh,,akkudoktor-eos/eos
 Itayazolay,unknown,,,"matpower/most,rwl/pypower"
 Itheaa,unknown,,China,prep-next/prep-shot
@@ -2037,6 +2087,7 @@ JEZHDK,unknown,,,"calliope-project/calliope,e2niee/pandapower,manuvarkey/gelectr
 JEngdahl,unknown,,United States,nrel/sam
 JFreytes,professional,home alone,France,future-power-networks/simplus-grid-tool
 JGrootBramel,professional,th-koln,Germany,akkudoktor-eos/eos
+JHBO7,unknown,,,"blue-marble/gridpath,lanl-ansi/powermodels.jl,pypsa/pypsa,sanpen/veragrid"
 JHZhou123,unknown,,,"e2niee/pandapower,matpower/matpower"
 JIEZHUZED,academic,tianjin university,China,tum-ens/urbs
 JIJINKOO,unknown,,,nreca-bts/omf
@@ -2104,6 +2155,7 @@ JakobUnterholzner,unknown,,,e2niee/pandapower
 Jalubl,unknown,,,"e2niee/pandapower,oemof/oemof-solph,pypsa/pypsa"
 James-Price,unknown,,,highres-model/highres-europe
 James4Ever0,financial,,,"blue-marble/gridpath,calliope-project/calliope,changgang/steps,curent/andes,nreca-bts/omf,e2niee/pandapower,etsap-times/times_model,fraukewiese/renpass,genxproject/genx.jl,grid-parity-exchange/egret,grid2op/grid2op,idaholab/hybrid,nrel-sienna/powersimulations.jl,oemof/oemof-solph,openipsl/openipsl,pypsa/pypsa,sogno-platform/dpsim,susantoj/pypower-dynamics"
+JamesFrierson1,unknown,,United States,iiasa/message_ix
 JamesParrott,unknown,,United Kingdom,antaressimulatorteam/antares_simulator
 Jamesmaster3,unknown,,,quintel/etmodel
 JamilMaj,academic,,,ipese/reho
@@ -2114,6 +2166,7 @@ Jan-van-der-Hoek,professional,,Germany,"etsap-times/times_model,fzj-iek3-vsa/fin
 JanBu99,unknown,,,transient-official/transient-lib
 JanDTU,unknown,,,frkunz/stelmod
 JanFrederickUnnewehr,academic,,Germany,open-energy-transition/open-tyndp
+JanKortes212,unknown,,,iiasa/message_ix
 JanaSoler,unknown,,,sanpen/gridcal
 JanbooGo,unknown,,,temoaproject/temoa
 JandyYoung,unknown,,,"adgefficiency/energy-py,blue-marble/gridpath,mesmo-dev/mesmo,oemof/oemof-solph,pypsa/pypsa"
@@ -2199,6 +2252,7 @@ JhoonnB,unknown,,,"e2niee/pandapower,grid-parity-exchange/egret"
 JiaZhou-PU,unknown,,,idaholab/heron
 JiabinShen,unknown,,,"adamgreenhall/minpower,pypsa/pypsa,rwl/pypower,sanpen/gridcal,susantoj/pypower-dynamics"
 JiachengZeng,unknown,,,future-power-networks/simplus-grid-tool
+JiahengJiangEE,academic,xi'an jiaotong university,China,changgang/steps
 JiahuiGong,unknown,,,"ahalev/python-microgrid,microgrids-x/microgrids.py"
 JiajiaZheng,academic,"university of california, santa barbara",,"nrel/sam,tum-ens/urbs"
 JialeFan,academic,southwest jiaotong university,China,lanl-ansi/powermodels.jl
@@ -2217,6 +2271,7 @@ JiayongO-O,professional,ustc,China,marvinler/pypownet
 JieFeng-cse,academic,ucsd,United States,"curent/andes,e2niee/pandapower"
 JieLiu17,unknown,,,prep-next/prep-shot
 Jigyasa-Singhai,unknown,,,sogno-platform/dpsim
+Jihoon,research,international institute for applied systems analysis,,iiasa/message_ix
 Jimachin,academic,pontificia universidad catolica de chile,United States,nrel/sam
 JimiC,research,"ntua, smartrue lab, athens",Greece,e2niee/pandapower
 Jimmy-INL,research,,,"balmorelcommunity/balmorel,calliope-project/calliope,genxproject/genx.jl,grid2op/grid2op,idaholab/heron,idaholab/hybrid,nrel/pras,osemosys/osemosys,pypsa/pypsa,sogno-platform/dpsim,youngfaithful/capacityexpansion.jl"
@@ -2326,6 +2381,7 @@ JuliaSvn,unknown,,,open-energy-transition/open-tyndp
 JuliaTagBot,unknown,,,"ait-energy/iesopt.jl,electa-git/flexplan.jl,energymodelsx/energymodelsbase.jl,genxproject/genx.jl,juliaenergy/joulia.jl,juliaenergy/powerdynamics.jl,lanl-ansi/powermodels.jl,lanl-ansi/powermodelsannex.jl,leonardgoeke/anymod.jl,nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl,spine-tools/spineopt.jl,tulipaenergy/tulipaenergymodel.jl,upb-lea/electricgrid.jl,youngfaithful/capacityexpansion.jl"
 JulianBarinton,academic,reiner lemoine institute,,"oemof/oemof-solph,rl-institut/multi-vector-simulator,tum-ens/urbs"
 JulianGeis,unknown,,Germany,"emma-model/emma,pypsa/pypsa"
+JulianHunt4,unknown,,,iiasa/message_ix
 JulianLeRoux,unknown,,,pypsa/pypsa
 JulieDelpy1,unknown,,,ahalev/python-microgrid
 JulieSliwak,unknown,,,lanl-ansi/powermodels.jl
@@ -2336,6 +2392,7 @@ JuliusSan,unknown,,,tum-ens/urbs
 Julz707,unknown,,,akkudoktor-eos/eos
 JumBO-EGAT,unknown,,,pypsa/pypsa
 JunejaAmmy,unknown,,,curent/andes
+JungheeHyun,unknown,,,iiasa/message_ix
 Junjia-Yang,unknown,,,"e2niee/pandapower,epri-dev/opender"
 JunjieYU-UoM,academic,,,erf-model/erf
 JunkangSong,unknown,,,"akkudoktor-eos/eos,mesmo-dev/mesmo,tum-ens/urbs"
@@ -2375,6 +2432,7 @@ KZou-coder,unknown,,,macroenergy/macroenergy.jl
 KaaNee,unknown,,China,akkudoktor-eos/eos
 Kaaveh,industry,oddrun,,matpower/matpower
 Kacjer,unknown,,,ahalev/python-microgrid
+KadaverJoe,unknown,,,akkudoktor-eos/eos
 Kadrushirrushi,unknown,,,transient-official/transient-lib
 KaeiD1,academic,tu freiberg,,akkudoktor-eos/eos
 KaffeDiem,industry,,Denmark,assume-framework/assume
@@ -2506,6 +2564,7 @@ Kurmake,unknown,,,pypsa/pypsa
 Kuzu0,unknown,,,"blue-marble/gridpath,e2niee/pandapower,lanl-ansi/powermodelsannex.jl,nrel/pras"
 Kyona776,unknown,,,akkudoktor-eos/eos
 KyraDiF,unknown,,,nrel-sienna/powersimulations.jl
+Kyungmin519,unknown,,,nrel/sam
 L-Piao,academic,delft university of technology,Netherlands,pypsa/pypsa
 L-l633,unknown,,,opencemorg/opencem
 L0rz,unknown,,,akkudoktor-eos/eos
@@ -2553,6 +2612,7 @@ LTBK23,unknown,,,open-energy-transition/open-tyndp
 LXXXR0,unknown,,,matpower/matpower
 LXY2728,unknown,,,prep-next/prep-shot
 LY-123456,unknown,,,rwl/pypower
+LYNN121212,unknown,,,iiasa/message_ix
 LZhangCognite,unknown,,,powsybl/pypowsybl
 LaianLaian,unknown,,,prep-next/prep-shot
 Lampham-dot,unknown,,,transition-zero/tz-osemosys
@@ -2565,6 +2625,7 @@ LarsHadidi,unknown,,Germany,fzj-iek3-vsa/fine
 Lasall,unknown,,Germany,akkudoktor-eos/eos
 LasseRosenow,professional,"cedgetec, haw hamburg",,e2niee/pandapower
 LatentDream,academic,,,leonardgoeke/anymod.jl
+LauWien,industry,,Germany,iiasa/message_ix
 LauraBrafine,unknown,,,tulipaenergy/tulipaenergymodel.jl
 LauraHonig,unknown,,,tum-ens/urbs
 Laurynas-Jagutis,unknown,,,powergridmodel/power-grid-model
@@ -2653,6 +2714,7 @@ Liujunbo,unknown,,,osemosys/osemosys
 Liuqianjie,unknown,,,"nrel/reopt_api,nrel/reopt_lite_api"
 Lixd-sysu,academic,sun yat-sen university,China,prep-next/prep-shot
 Liya0117,unknown,,,pnnl/exago
+LiyuanWLY,unknown,,,iiasa/message_ix
 Lkruitwagen,academic,,United Kingdom,lkruitwagen/global-fossil-fuel-supply-chain
 LlucFigueras,unknown,,,"dynawo/dynawo,powsybl/powsybl-core"
 Lnnnnnnn,academic,university of edinburgh,United Kingdom,pypsa/pypsa
@@ -2671,6 +2733,7 @@ Longzhu-droid,unknown,,,blue-marble/gridpath
 Lonightar,unknown,,China,rwl/pypower
 Loony2392,professional,loony-tech,Germany,akkudoktor-eos/eos
 LopesParreira,unknown,,,e2niee/pandapower
+LordJatonyas,unknown,,,grid2op/grid2op
 LordMike,unknown,,Denmark,akkudoktor-eos/eos
 LordZeroCool,unknown,,,akkudoktor-eos/eos
 LorenzoRinaldi,academic,politecnico di milano,Italy,microgridspy/microgridspy
@@ -2753,6 +2816,7 @@ MAX400296,unknown,,,"anl-ceeesa/unitcommitment.jl,grid2op/grid2op,macroenergy/ma
 MAZamarripa,academic,,United States,gmlc-dispatches/dispatches
 MArpogaus,unknown,,,"pypsa/pypsa,sanpen/gridcal"
 MBessani,unknown,,,e2niee/pandapower
+MButros,academic,georgia institute of technology,United States,lanl-ansi/powermodels.jl
 MCGA2050,utility,,,"curent/andes,matpower/matpower,mzy2240/esa,rwl/pypower"
 MCRen88,professional,zoippo,Ukraine,adgefficiency/energy-py-linear
 MConfuse,unknown,,Germany,akkudoktor-eos/eos
@@ -2775,6 +2839,7 @@ MOJOliciousFTW,industry,mojotech,Norway,pypsa/pypsa
 MOKRAB-ACHOUR,academic,university of bejaia,Algeria,susantoj/pypower-dynamics
 MOrtner,unknown,,Germany,akkudoktor-eos/eos
 MPavicevic,research,argonne national laboratory,United States,"critical-infrastructure-systems-lab/pownet,energy-modelling-toolkit/dispa-set"
+MQL9011,industry,ls,United States,pypsa/pypsa
 MRE-Code-Hub,industry,,,"matpower/matpower,nrel/sam,rwl/pypower"
 MRLZero,unknown,,,pypsa/pypsa
 MRossol,professional,crossnokaye,United States,"nrel/h2integrate,nrel/hopp,nrel/pysam,nrel/sam"
@@ -2782,6 +2847,7 @@ MS132000,unknown,,,e2niee/pandapower
 MT-TR,unknown,,,"e2niee/pandapower,lanl-ansi/powermodels.jl,pypsa/pypsa"
 MTWebSer,unknown,,,lkruitwagen/global-fossil-fuel-supply-chain
 MTZun10,academic,kyoto university,Japan,pypsa/pypsa
+MURR707,unknown,,,iiasa/message_ix
 MV564,academic,iiunam,Mexico,"dynawo/dynawo,openipsl/openipsl,pnnl/exago"
 MWang335,unknown,,,upb-lea/electricgrid.jl
 MYNajjar,unknown,,,e2niee/pandapower
@@ -2796,6 +2862,7 @@ MabroukAhmed,unknown,,,e2niee/pandapower
 Mac199,unknown,,,curent/andes
 MacchiatoMo,unknown,,,"chrisyeh96/sustaingym,e2niee/pandapower,grid2op/grid2op,matpower/matpower,pypsa/pypsa,rwl/pypower"
 MachinesOnTheRise,unknown,,United States,"dynawo/dynawo,e2niee/pandapower,pypsa/pypsa"
+MackoMichaela,unknown,,,iiasa/message_ix
 MacsBO,unknown,,,e2niee/pandapower
 MadDogKeLevRa,unknown,,,akkudoktor-eos/eos
 MadHobbs,academic,,United States,grid2op/grid2op
@@ -2867,6 +2934,7 @@ MarcusHolly,unknown,,,gmlc-dispatches/dispatches
 MarcvdSluys,academic,nikhef/utrecht university,Netherlands,osemosys/osemosys
 MarechalJason,unknown,,,antaressimulatorteam/antares_simulator
 Mareeke,unknown,,,akkudoktor-eos/eos
+MarekMakowski,unknown,,,iiasa/message_ix
 Mareldi,academic,stanford university,,eiagov/bluesky
 MariaIRubio,industry,,Germany,gridoptics/gridpack
 Marianne-Zeyringer,unknown,,,highres-model/highres-europe
@@ -2887,6 +2955,7 @@ MarkusKgit,industry,,Germany,"akkudoktor-eos/eos,e2niee/pandapower,sanpen/gridca
 Marllanita76,industry,man energy solutions,Philippines,akkudoktor-eos/eos
 MarlonSchlemminger,unknown,,Germany,"openego/edisgo,pypsa/pypsa"
 Mars0077,unknown,,,matpower/matpower
+Marsryam,academic,,Austria,iiasa/message_ix
 Marssf,academic,university of new south wales,Australia,nrel/sam
 MartLubben,unknown,,,"quintel/etengine,quintel/etmodel"
 MartaVanin,academic,ku leuven - esat/electa,Belgium,"electa-git/flexplan.jl,epri-dev/opender,grid2op/grid2op,juliaenergy/powerdynamics.jl,lanl-ansi/powermodels.jl,leonardgoeke/anymod.jl,nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl,powergridmodel/power-grid-model"
@@ -2954,6 +3023,7 @@ MaxW1337,professional,gsh-lan e.v.,Germany,akkudoktor-eos/eos
 Maxhi77,unknown,,,oemof/oemof-solph
 MaxiJernej,unknown,,,akkudoktor-eos/eos
 MaximalCrazy,unknown,,Germany,akkudoktor-eos/eos
+MaximeAgez,academic,ciraig,Canada,iiasa/message_ix
 MaximeBaudette,government,lawrence berkeley national laboratory,United States,openipsl/openipsl
 MaximilianBernkopf,academic,,,powsybl/pypowsybl
 MaximilianJanetschek,unknown,,Germany,akkudoktor-eos/eos
@@ -3007,6 +3077,7 @@ MiguelAMP20,unknown,,,pypsa/pypsa
 MiguelEscribanoRodenas,unknown,,,sanpen/gridcal
 MiguelLoureiro98,academic,,,"drafproject/draf,pypsa/pypsa"
 MiguelMSampaio,unknown,,,lanl-ansi/powermodels.jl
+MiguelPobleteCazenave,unknown,,,iiasa/message_ix
 MikaelAmelin,academic,kth royal institute of technology,Sweden,spine-tools/spineopt.jl
 Mikalls,unknown,,,richard-weinhold/pomato
 MikeBild,industry,mike bild,Germany,akkudoktor-eos/eos
@@ -3017,6 +3088,7 @@ MikhailSkl,industry,utiligize,Denmark,e2niee/pandapower
 Miki4212,unknown,,,sanpen/gridcal
 Mikkel-schmidt,industry,,Denmark,adgefficiency/energy-py-linear
 Mikykim,unknown,,,andrewlyden/pylesa
+Milas22,unknown,,,akkudoktor-eos/eos
 Milena1511,unknown,,,e2niee/pandapower
 MilleniumSpark,unknown,,,powsybl/powsybl-core
 Milos-RTEi,industry,redstork solutions,Serbia,antaressimulatorteam/antares_simulator
@@ -3073,6 +3145,7 @@ Morgadoo,unknown,,,osemosys/osemosys
 Mori22,unknown,,,e2niee/pandapower
 MoritzSchloesser,unknown,,,openego/edisgo
 MoriyamaTom,unknown,,Japan,lanl-ansi/powermodels.jl
+MorningStarTM,professional,,Sri Lanka,powergridmodel/power-grid-model
 MortFred,industry,equinor,Norway,e2niee/pandapower
 MortezaSh79,academic,niroo research institute,"Iran, Islamic Republic of","critical-infrastructure-systems-lab/pownet,lanl-ansi/powermodels.jl,pypsa/pypsa,rwl/pypower"
 MoryNajafi,unknown,,,"curent/andes,dynawo/dynawo,e2niee/pandapower,future-power-networks/simplus-grid-tool,matpower/matpower,nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl,nrel/paraemt_public,powergridmodel/power-grid-model,sogno-platform/dpsim,villasframework/node"
@@ -3143,6 +3216,7 @@ NREL,government,,United States,nreca-bts/omf
 NREL-Sienna-clone,unknown,,,"nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl,nrel-sienna/powersystemsinvestments.jl"
 NREL-clone,unknown,,,"nrel-distribution-suites/erad,nrel/coral,nrel/emerge,nrel/gear-scoup,nrel/h2integrate,nrel/hopp,nrel/hybridbosse,nrel/mafrit,nrel/paraemt_public,nrel/pras,nrel/pysam,nrel/reeds-2.0,nrel/reopt.jl,nrel/reopt_api,nrel/reopt_lite_api,nrel/rodeo,nrel/sam,nrel/wpgnn"
 NRGnerd,unknown,,,akkudoktor-eos/eos
+NSWX,academic,xinjiang university,China,e2niee/pandapower
 NTURain,unknown,,,prep-next/prep-shot
 NXUMWY,unknown,,,energy-modelling-toolkit/dispa-set
 NXianglw,unknown,,,pypsa/pypsa
@@ -3168,6 +3242,7 @@ NathandeMatos99,unknown,,,"sesit/copper,sesit/silver"
 NathanielDake,unknown,,,nrel-sienna/powersimulations.jl
 NathanielShields,unknown,,,genxproject/genx.jl
 NatsumeFzd,unknown,,,prep-next/prep-shot
+NaveenRshahi,unknown,,,iiasa/message_ix
 Naveysaurey,unknown,,,e2niee/pandapower
 NavidHaghdadi,academic,university of new south wales,Australia,opencemorg/opencem
 Navjot-Kaur-DA,unknown,,,nrel/pysam
@@ -3262,6 +3337,7 @@ OCISLY-ds,unknown,,France,akkudoktor-eos/eos
 OCM-Lab-PUC,academic,,Chile,switch-model/switch
 ODOU,unknown,,,nrel/reeds-2.0
 OESNES,utility,electric power research institute,,"nrel-distribution-suites/erad,nrel/emerge,nrel/reeds-2.0,rebase-energy/enflow"
+OFR-IIASA,unknown,,,iiasa/message_ix
 ORNLJD,unknown,,,"mesmo-dev/mesmo,openipsl/openipsl"
 OSeMOSYS,academic,,,tum-ens/urbs
 OSelinger,unknown,,,pypsa/pypsa
@@ -3320,6 +3396,7 @@ Orko79,unknown,,Germany,akkudoktor-eos/eos
 OrtegaJuanJose,industry,,Spain,"pypsa/pypsa,sanpen/gridcal"
 OsakiTetsuya,unknown,,,"adgefficiency/energy-py-linear,etsap-times/times_model"
 Osamah-Almushreqi,unknown,,,oemof/oemof-solph
+Osasemega,unknown,,,pypsa/pypsa
 OskarBienko,academic,axpo,Poland,rebase-energy/enflow
 OskarVagero,academic,university of oslo,Norway,highres-model/highres-europe
 OsmarBogarin,professional,saci h petersen,Paraguay,akkudoktor-eos/eos
@@ -3336,6 +3413,7 @@ PChunark,government,electricity generating authority of thailand,Thailand,idahol
 PFMcGonagle,unknown,,,pencleanenergy/match-model
 PGDataHome,unknown,,,energysystemsmodellinglab/muse_os
 PGimenez,academic,genieframework,Spain,"dynawo/dynawo,nrel/reopt.jl"
+PGjedde,academic,,,iiasa/message_ix
 PIC-Lab,academic,,,"nrel/paraemt_public,sanpen/gridcal"
 PLANiT-Institute,unknown,,,pypsa/pypsa
 PMeira,academic,,Brazil,"ames-market/psst,nreca-bts/omf,dss-extensions/dss_capi,gmlc-tdc/helics,grid-parity-exchange/egret"
@@ -3388,6 +3466,7 @@ Patrick-Hummel,academic,,Germany,rwl/pypower
 Patrick-Power-Saver,unknown,,,"rwl/pypower,sanpen/veragrid,tum-ens/urbs"
 Patrick0913sad,unknown,,,hope-model-project/hope
 PatrickBourdon,unknown,,France,powsybl/pypowsybl
+PatrickGoettsch,academic,tuhh ics,Germany,akkudoktor-eos/eos
 PatrickKueven,unknown,,,sogno-platform/dpsim
 PatternMatching,unknown,,,"e2niee/pandapower,pypsa/pypsa"
 PatwaUmang,unknown,,,temoaproject/temoa
@@ -3399,6 +3478,7 @@ PaulMichiels01,unknown,,,energyscope/energyscope
 PaulSchulz,professional,mawsonlakes.org,Australia,"matpower/matpower,powergridmodel/power-grid-model"
 PaulTalbot-INL,government,idaho national laboratory,United States,"gmlc-dispatches/dispatches,idaholab/heron,idaholab/hybrid"
 PaulaBezerra,unknown,,Brazil,nrel/sam
+Paulmicha,professional,apprenti redirectionniste,Brazil,iiasa/message_ix
 Paulnkk,unknown,,,"e2niee/pandapower,matpower/matpower"
 PauloRadatz,unknown,,,epri-dev/opender
 PaulusElektrus,academic,technical university of munich,Germany,e2niee/pandapower
@@ -3407,9 +3487,11 @@ PavelDergachev,unknown,,,"nrel-sienna/powersimulations.jl,nrel-sienna/powersimul
 Payne1992,unknown,,,curent/andes
 PeacefulCoder,academic,nef,Turkey,osemosys/osemosys
 Peak-Energy,utility,,United States,genxproject/genx.jl
+PederFalkman,unknown,,,sogno-platform/dpsim
 PedroSGui,unknown,,Portugal,e2niee/pandapower
 Peijin-Jiang,academic,the university of britishh columbia,Canada,nrel/wpgnn
 PeiliangZhang,unknown,,,prep-next/prep-shot
+PelinaP,unknown,,,iiasa/message_ix
 PenelopeR,unknown,,,e2niee/pandapower
 PengyiLiao,academic,,Canada,gmlc-tdc/helics
 Pep20231999,unknown,,,adgefficiency/energy-py-linear
@@ -3427,6 +3509,7 @@ PeterTsungYu,unknown,,"Taiwan, Province of China",pypsa/pypsa
 Petr365,unknown,,,"antaressimulatorteam/antares_simulator,calliope-project/calliope,spine-tools/spineopt.jl"
 PeymanTehrani,unknown,,United States,chrisyeh96/sustaingym
 PfeLars94,unknown,,,pypsa/pypsa
+Pfyuan77,academic,,,iiasa/message_ix
 PhDYoung,unknown,,,prep-next/prep-shot
 Phaedrus44,unknown,,Ireland,pypsa/pypsa
 Phantom8877000,unknown,,,akkudoktor-eos/eos
@@ -3522,6 +3605,7 @@ Qjl2580,unknown,,,prep-next/prep-shot
 Qomojay,unknown,,,e2niee/pandapower
 Qualle598,unknown,,,sogno-platform/dpsim
 QuantumApplicationLab,unknown,,,pypsa/pypsa
+QuentinAndre11,academic,,,iiasa/message_ix
 QuentinPerrier,professional,haut conseil pour le climat,France,behrangshirizadeh/eoles_elecres
 QuentinPletinckx,unknown,,,calliope-project/calliope
 QueueDoubleU,unknown,,,nrel/reeds-2.0
@@ -3570,8 +3654,10 @@ RafaelGoncalvesUA,academic,detiuaveiro,Portugal,ahalev/python-microgrid
 Ragamuff1n,academic,polytechnic of milan,Italy,kth-desa/onsset-2016
 Raggles,unknown,,New Zealand,sanpen/gridcal
 Ragilo,unknown,,,akkudoktor-eos/eos
+RahJa24,industry,,,iiasa/message_ix
 Rahim912,unknown,,,akkudoktor-eos/eos
 RahmanKhorramfar91,academic,massachusetts institute of technology,United Kingdom,"genxproject/genx.jl,rahmankhorramfar91/jpong"
+RahulShah11,unknown,,,iiasa/message_ix
 RaidLeader,academic,tsinghua university,,"etsap-times/times_model,osemosys/osemosys"
 Rainbowag,unknown,,,prep-next/prep-shot
 RainerGaier,utility,,South Africa,oemof/oemof-solph
@@ -3602,6 +3688,7 @@ RatonMagique,unknown,,,e2niee/pandapower
 Raudi1,unknown,,,akkudoktor-eos/eos
 Raul-Ciria-Aylagas,academic,cener,Spain,oemof/oemof-solph
 Raverman,unknown,,,akkudoktor-eos/eos
+RaviAkshintala,unknown,,,iiasa/message_ix
 Ray1ey6,academic,zhejiang university,China,rwl/pypower
 RayGoodJob,unknown,,,prep-next/prep-shot
 RayH-Ter,academic,zhejiang university,China,e2niee/pandapower
@@ -3621,6 +3708,7 @@ Redkinof,unknown,,,akkudoktor-eos/eos
 ReginaldSourn,academic,,Cambodia,akkudoktor-eos/eos
 Regis-Delubac,unknown,,,spine-tools/spineopt.jl
 Regis111,unknown,,,oemof/oemof-solph
+RegisGourdel,academic,,,iiasa/message_ix
 ReichMarco,unknown,,,tum-ens/urbs
 ReidAtcheson,professional,numerical algorithms group,United States,nrel-sienna/powersimulationsdynamics.jl
 ReinboldV,academic,universite paris saclay,France,pypsa/pypsa
@@ -3704,6 +3792,7 @@ Roberto-XY,professional,sonnen,Germany,akkudoktor-eos/eos
 RobinConRich,unknown,,,akkudoktor-eos/eos
 Robinlovelace,academic,university of leeds,United Kingdom,"nrel/sam,oemof/oemof-solph"
 RobinsAnto,unknown,,,pnnl/tesp
+Robinson950619,unknown,,,iiasa/message_ix
 RobinsonBeaucour,professional,cea,,"oemof/oemof-solph,pypsa/pypsa"
 Robson-Passos,academic,federal university of itajuba,Brazil,erf-model/erf
 Robustmanner,unknown,,,matpower/matpower
@@ -3739,12 +3828,15 @@ RuaridhMacd,academic,massachusetts institute of technology,United States,"eiagov
 Rucksack94,unknown,,,genxproject/genx.jl
 Rui-29,professional,ubc,Canada,chrisyeh96/sustaingym
 RuiLiu-alice,unknown,,,"grid2op/grid2op,rwl/pypower"
+RuiSu-gif,academic,"beijing, china",China,iiasa/message_ix
+RuiWangWr,unknown,,,iiasa/message_ix
 RuiqiL1,unknown,,,prep-next/prep-shot
 Ruitao-Terry,unknown,,,"prep-next/prep-shot,pypsa/pypsa"
 Ruizhe-Yang,academic,dalian university of technology,China,prep-next/prep-shot
 Runnda,unknown,,,mesmo-dev/mesmo
 RuohLiuq,unknown,,,chrisyeh96/sustaingym
 Ruptam,academic,,,powsybl/powsybl-core
+Ruslana22,academic,yezreel valley academic college,,iiasa/message_ix
 RustyCobalt36,unknown,,,"grid2op/grid2op,openego/edisgo,openego/ego,pnnl/exago,pypsa/pypsa,rebase-energy/enflow"
 RyanVaughan,unknown,,,curent/andes
 RyanYQWang,unknown,,,nrel-sienna/powersimulationsdynamics.jl
@@ -3755,6 +3847,7 @@ Ryzee119,industry,,Australia,"e2niee/pandapower,manuvarkey/gelectrical"
 S8XY,industry,oppo,China,prep-next/prep-shot
 SArham,unknown,,,pypsa/pypsa
 SCKelemen,industry,,Sweden,lanl-ansi/powermodels.jl
+SCWang01,academic,tbsi,China,macroenergy/macroenergy.jl
 SDDKKK,academic,chongqing university,China,"e2niee/pandapower,lanl-ansi/powermodels.jl,matpower/matpower,pypsa/pypsa,rwl/pypower"
 SDY-selflearning,unknown,,,richard-weinhold/pomato
 SECQUOIA,academic,,United States,lanl-ansi/powermodels.jl
@@ -3801,6 +3894,7 @@ SagMuk,unknown,,,osemosys/osemosys
 SagXD,academic,,,akkudoktor-eos/eos
 Sagar-Karki,unknown,,,nrel/pysam
 Saharmgh,academic,,,anl-ceeesa/unitcommitment.jl
+Sahil590,unknown,,,energysystemsmodellinglab/muse2
 Sahitya-Y,professional,audi,Germany,e2niee/pandapower
 SaidChihabi,industry,said chihabi,Germany,akkudoktor-eos/eos
 SaimaAlamOSU,unknown,,,curent/andes
@@ -3868,6 +3962,7 @@ Schlegen,unknown,,,"antaressimulatorteam/antares_simulator,macroenergy/macroener
 Schm1tz1,industry,confluent,Germany,akkudoktor-eos/eos
 SchmidtJuergen,unknown,,,akkudoktor-eos/eos
 ScholzDaniel1985,unknown,,,assume-framework/assume
+Schrod-76,unknown,,,pypsa/pypsa
 Schwarz-XU,academic,,,e2niee/pandapower
 Schwombl,unknown,,,akkudoktor-eos/eos
 Sciemon,academic,fraunhofer iee,Germany,"antaressimulatorteam/antares_simulator,curent/andes,dynawo/dynawo,e2niee/pandapower,juliaenergy/powerdynamics.jl,lanl-ansi/powermodels.jl,nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl,openipsl/openipsl,powergridmodel/power-grid-model,powsybl/pypowsybl,sanpen/gridcal,sogno-platform/dpsim,upb-lea/electricgrid.jl"
@@ -3928,7 +4023,9 @@ ShahabTor,unknown,,,"epgoxford/open,lanl-ansi/powermodels.jl,nrel-sienna/powersi
 Shahmed,academic,american university in cairo,Egypt,"kth-desa/onsset-2016,osemosys/osemosys"
 Shahnawazalam01799,unknown,,,ie3-institute/powersystemdatamodel
 Shahu-Kale,unknown,,,e2niee/pandapower
+ShaiWinograd-zz,unknown,,,iiasa/message_ix
 ShaileshWasti,academic,pennsylvania state university,United States,lanl-ansi/powermodels.jl
+Shan253,unknown,,Sweden,iiasa/message_ix
 ShanLi1992,unknown,,,nrel/sam
 Shane98c,professional,carbonplan,United States,nreca-bts/omf
 ShangweiLiu,academic,,,blue-marble/gridpath
@@ -3946,6 +4043,7 @@ SharkpJIM,unknown,,,matpower/matpower
 Shashank220193,academic,iit bombay,India,macroenergy/macroenergy.jl
 ShawnZhao0214,unknown,,,e2niee/pandapower
 SheePill,unknown,,,oemof/exerpy
+Shen9C,professional,shen9c,China,e2niee/pandapower
 ShenJX21,unknown,,,"genxproject/genx.jl,pypsa/pypsa"
 ShenTengTu,academic,"department of csie, cheng shiu university","Taiwan, Province of China",akkudoktor-eos/eos
 ShengWang-EE,unknown,,,matpower/matpower
@@ -3986,6 +4084,8 @@ Siantos,unknown,,,"calliope-project/calliope,nrel/wpgnn"
 Siberian9767,unknown,,,gmlc-tdc/helics
 Sibiriak,unknown,,,"e2niee/pandapower,sanpen/gridcal"
 Sico93,industry,deutsche telekom ag,,akkudoktor-eos/eos
+SidaJ,professional,wsp & fellowbot,Sweden,pypsa/pypsa
+SiddharthJoshi-Git,research,international institute for applied systems analysis,,iiasa/message_ix
 Siddharthh39,academic,student,India,uu-er/adopt-net0
 Sidsr10,unknown,,,tum-ens/urbs
 Siebenfurcht,unknown,,,oemof/oemof-solph
@@ -4025,6 +4125,7 @@ Siss3l,academic,,,richard-weinhold/pomato
 SissiLi0789,unknown,,,grid2op/grid2op
 Sivasubramaniansoma,unknown,,,oemof/oemof-solph
 Skalar2001,unknown,,,e2niee/pandapower
+SkillcapDev,unknown,,,akkudoktor-eos/eos
 SkyTalker,unknown,,Germany,akkudoktor-eos/eos
 Skym0sh0,unknown,,Germany,akkudoktor-eos/eos
 Skywalkerorgin,unknown,,,romulus97/capow_py36
@@ -4177,6 +4278,7 @@ SystemsPurge,unknown,,,"sogno-platform/dpsim,villasframework/node"
 Szogunn,unknown,,Poland,manuvarkey/gelectrical
 Szymono,unknown,,,sanpen/gridcal
 T-O-M-A,unknown,,France,marvinler/pypownet
+T2ek1ng0,unknown,,,pypsa/pypsa
 TANGWJ17,unknown,,,critical-infrastructure-systems-lab/pownet
 TBendong,unknown,,,"curent/andes,mzy2240/esa"
 TC25,research,pacific northwest national laboratory,,erf-model/erf
@@ -4319,9 +4421,11 @@ ThomasJefferyFMG,unknown,,,"nrel-sienna/powersimulations.jl,nrel-sienna/powersys
 ThomasL95,unknown,,,e2niee/pandapower
 ThomasMinor,professional,kps ag,Germany,akkudoktor-eos/eos
 ThomasNikolakakis,unknown,,,esmap-world-bank-group/epm
+ThomasPiskol,industry,siemens,Germany,akkudoktor-eos/eos
 ThomasPohl,professional,exxeta ag,Germany,akkudoktor-eos/eos
 ThomasW69,unknown,,,akkudoktor-eos/eos
 ThomsonTanminxin,unknown,,,sanpen/gridcal
+Thrameos,research,lawrence livermore national laboratory,United States,iiasa/message_ix
 Thu-Dingqi,academic,tsinghua university,China,"leonardgoeke/anymod.jl,mesmo-dev/mesmo,nrel/reeds-2.0,oemof/oemof-solph"
 Thufir2021,unknown,,,"nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl"
 ThulasiKrishna,industry,,,oemof/oemof-solph
@@ -4454,6 +4558,7 @@ Twilightspark,unknown,,,akkudoktor-eos/eos
 TxiaoWang,unknown,,,"critical-infrastructure-systems-lab/pownet,energy-modelling-toolkit/dispa-set,matpower/most,pypsa/pypsa"
 Tyberyus,unknown,,,akkudoktor-eos/eos
 Tyias,unknown,,,energyscope/energyscope
+Tyler-lc,unknown,,,iiasa/message_ix
 Tyqfat,unknown,,,anl-ceeesa/unitcommitment.jl
 Tyr-github,unknown,,,genxproject/genx.jl
 Tyrrx,professional,bluehands,Germany,nrel-sienna/powersimulationsdynamics.jl
@@ -4463,6 +4568,7 @@ U1710129,unknown,,,nrel/sam
 UGM-EPSLab,unknown,,,ames-market/psst
 UGuntupalli,professional,dnv,United States,grid-parity-exchange/egret
 UJumpInoJump,unknown,,,assume-framework/assume
+ULYRORS,academic,,China,dynawo/dynawo
 UMSICHT-ESY,unknown,,,transient-official/transient-lib
 UNSW-CEEM,academic,,Australia,bje-/nemo
 USEONGEE,academic,gachon university,South Korea,pielube/messpy
@@ -4475,6 +4581,7 @@ Ulrik-VA,unknown,,,richard-weinhold/pomato
 UlyssesLorenze,unknown,,,e2niee/pandapower
 Ulziikhutag0517,unknown,,,nrel/sam
 UmaMaquinaDeOndas,unknown,,,epgoxford/open
+UmerYasin1,professional,,Pakistan,iiasa/message_ix
 UmikaB,unknown,,,zen-universe/zen-garden
 UnderTaker2186,unknown,,,prep-next/prep-shot
 UnePierre,industry,rohde & schwarz cybersecurity,Germany,akkudoktor-eos/eos
@@ -4519,6 +4626,7 @@ VictorCFeng,academic,cornell university,United States,nrel/reeds-2.0
 VictorChen1990,unknown,,,switch-model/switch
 VictorOrmeno,unknown,,,matpower/matpower
 VictorRicaux,unknown,,,lanl-ansi/powermodels.jl
+VictoriaDahmen,unknown,,,iiasa/message_ix
 Victory233,unknown,,,ahalev/python-microgrid
 VigneshWater,unknown,,,"critical-infrastructure-systems-lab/pownet,energytransition/esdl"
 VikasChidananda,academic,universitat paderborn,Germany,upb-lea/electricgrid.jl
@@ -4527,8 +4635,10 @@ VikiPetrovic,unknown,,,e2niee/pandapower
 Vikkum102,unknown,,,pypsa/pypsa
 Villyes,unknown,,,ait-energy/iesopt.jl
 VinceLab401,industry,,,"e2niee/pandapower,grid2op/grid2op"
+VincentGDLZ,unknown,,,pypsa/pypsa
 VincentTasa,unknown,,,oemof/oemof-solph
 VincentTasara,unknown,,,oemof/oemof-solph
+Vincenttao,unknown,,,matpower/matpower
 Vini99921,unknown,,,nrel/sam
 Vinxenx,unknown,,,oemof/oemof-solph
 VittoriaOssanna,academic,university of trento,,gridfm/gridfm-graphkit
@@ -4570,6 +4680,7 @@ Wa7be,professional,e.on inhouse consulting,Germany,"oemof/oemof-solph,oemof/oemo
 Waffles32,unknown,,United States,nrel/sam
 WajihaNazHasan,unknown,,,e2niee/pandapower
 WalAmeni,unknown,,,"powsybl/powsybl-core,powsybl/powsybl-open-loadflow"
+Walter462,unknown,,,pnnl/exago
 WalterMadelim,unknown,,,genxproject/genx.jl
 WalterSimoncini,unknown,,,nrel-sienna/powersimulations.jl
 WalternativE,industry,treetop medical,Austria,"calliope-project/calliope,mesmo-dev/mesmo,pypsa/pypsa"
@@ -4588,8 +4699,10 @@ WaterworthWins,professional,waterworth,Canada,akkudoktor-eos/eos
 Watson-AL,unknown,,,eiagov/bluesky
 Wayan123,unknown,,Indonesia,vub-hydr/revub
 WayneNani,industry,apps associates gmbh,Germany,akkudoktor-eos/eos
+WayneXuCN,academic,institutes of science and development of chinese academy of sciences,China,iiasa/message_ix
 Wcfaga,unknown,,,sanpen/gridcal
 Webbah,academic,paderborn university,Germany,upb-lea/electricgrid.jl
+Wegatriespython,unknown,,,iiasa/message_ix
 WegnerDan,industry,trilux digital solutions gmbh,Germany,akkudoktor-eos/eos
 WegsWei,unknown,,,energyinnovation/eps-us
 WeiAi-Energy,academic,university of michigan,,genxproject/genx.jl
@@ -4679,6 +4792,7 @@ Xiaolang-Zhang,unknown,,,prep-next/prep-shot
 XiaomingKan,unknown,,,niclasmattsson/supergrid
 XiaoshanAI,unknown,,,pypsa/pypsa
 Xiaowei-Z,unknown,,,pypsa/pypsa
+Xiaoyu-Fu,academic,xi'an jiaotong university,China,"adgefficiency/energy-py,e2niee/pandapower,lanl-ansi/powermodels.jl"
 XieWHirlwind,unknown,,,matpower/matpower
 XinDongEE,academic,sichuan university (Si Chuan Da Xue ),China,"changgang/steps,curent/andes,e2niee/pandapower,gmlc-tdc/helics,pypsa/pypsa"
 XinFang88,unknown,,,"curent/andes,e2niee/pandapower,grid-parity-exchange/egret,powsybl/pypowsybl"
@@ -4760,6 +4874,7 @@ Yikw616720,unknown,,,richard-weinhold/pomato
 Yil2,unknown,,,spine-tools/spineopt.jl
 YiliaoJo,unknown,,,pypsa/pypsa
 Yiming019,unknown,,,prep-next/prep-shot
+Ying11235,unknown,,,prep-next/prep-shot
 YingboMa,professional,juliacomputing,United States,genxproject/genx.jl
 YingjieWangTony,unknown,,,matpower/matpower
 Yingzhu-Liu-Star,professional,pku,,richard-weinhold/pomato
@@ -4827,6 +4942,7 @@ ZQFChris57,unknown,,,"ait-energy/iesopt.jl,mesmo-dev/mesmo"
 ZQYyyo,unknown,,,oemof/oemof-solph
 ZR981218,unknown,,,critical-infrastructure-systems-lab/pownet
 ZRMike,unknown,,,prep-next/prep-shot
+ZWCQAZ,unknown,,,iiasa/message_ix
 ZZLLKK,unknown,,,"grid2op/grid2op,matpower/matpower,nrel-sienna/powersimulationsdynamics.jl,rwl/pypower,sanpen/gridcal"
 ZZXSIN,unknown,,,vub-hydr/revub
 ZZZ199204,unknown,,,matpower/matpower
@@ -4842,6 +4958,7 @@ ZailinYuan,academic,university of texas at dallas,United States,prep-next/prep-s
 Zainuddin-Khan,industry,,,e2niee/pandapower
 Zalnd,unknown,,,sanpen/gridcal
 Zamwell,unknown,,,"e2niee/pandapower,sanpen/gridcal"
+ZaneFrey,academic,university of utah department of mechanical engineering,United States,erf-model/erf
 Zaprier,unknown,,,pypsa/pypsa
 Zargontapel,unknown,,,nreca-bts/omf
 Zaubeerer,unknown,,,fzj-iek3-vsa/fine
@@ -4963,6 +5080,7 @@ aarek-eng,unknown,,,"e2niee/pandapower,juliaenergy/powerdynamics.jl,rwl/pypower"
 aaron0105vincent,academic,,,e2niee/pandapower
 aaronabraham311,unknown,,,sanpen/gridcal
 aaronledray,academic,university of texas at austin,United States,akkudoktor-eos/eos
+aaronliuqy,unknown,,,iiasa/message_ix
 aaronperrin,unknown,,United States,nreca-bts/omf
 aaronsax,unknown,,,genxproject/genx.jl
 aaronsung,unknown,,Australia,pypsa/pypsa
@@ -4990,6 +5108,7 @@ abhijay1403,industry,sede-x,India,"calliope-project/calliope,energyscope/energys
 abhijithcodes,unknown,,,matpower/matpower
 abhimanyukaushal,academic,ku leuven,Belgium,lanl-ansi/powermodels.jl
 abhinavbhaskar,unknown,,,"fzj-iek3-vsa/fine,osemosys/osemosys"
+abhinavgupta2004,unknown,,,energysystemsmodellinglab/muse2
 abhineet-gupta,government,,United States,"nrel/h2integrate,nrel/hopp"
 abhiroopghosh71,industry,aspen technology,United States,rwl/pypower
 abhishek0208,unknown,,,"calliope-project/calliope,osemosys/osemosys,tum-ens/urbs"
@@ -5062,6 +5181,7 @@ adesideri,unknown,,,nrel/sam
 adetalhouet,unknown,,,ahalev/python-microgrid
 adfarth,academic,national renewable energy laboratory,United States,"nrel/reopt.jl,nrel/reopt_api,nrel/reopt_lite_api"
 adfi,unknown,,,e2niee/pandapower
+adgomezs,unknown,,,iiasa/message_ix
 adhikariprajitraj,academic,,,open-energy-transition/solver-benchmark
 adisarno,utility,,Italy,"etsap-times/times_model,pypsa/pypsa"
 aditya-834,unknown,,,lanl-ansi/powermodels.jl
@@ -5089,6 +5209,7 @@ adrienmellot,unknown,,,calliope-project/calliope
 adriesse,industry,pv performance labs,Germany,"nrel/pysam,nrel/sam"
 adriguir,utility,reseau de transport d'electricite,France,"dynawo/dynawo,powsybl/powsybl-open-loadflow"
 adrisanchu,academic,,Spain,sanpen/gridcal
+adrivinca,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 adrpo,academic,linkoping university & stanna it research institute,Sweden,"openipsl/openipsl,transient-official/transient-lib"
 adrupp,unknown,,,e2niee/pandapower
 ads-mirrors,unknown,,,nrel/sam
@@ -5132,6 +5253,8 @@ agnesfrancois,academic,,France,"pypsa/pypsa,spf-ost/optihood"
 agoymann,unknown,,,e2niee/pandapower
 agucova,unknown,,Chile,lanl-ansi/powermodels.jl
 aguerra7002,unknown,,,grid2op/grid2op
+aguti99,unknown,,,akkudoktor-eos/eos
+ahabersetzer,unknown,,,iiasa/message_ix
 ahalev,unknown,,United States,ahalev/python-microgrid
 ahamilton144,unknown,,,romulus97/capow_py36
 ahawkes,academic,imperial college london,United Kingdom,energysystemsmodellinglab/muse_os
@@ -5240,6 +5363,7 @@ alabmh0d,industry,,Saudi Arabia,"adgefficiency/energy-py,adgefficiency/energy-py
 aladinoster,academic,here,France,lanl-ansi/powermodels.jl
 aladshaw3,professional,span.io,United States,nrel-sienna/powersimulationsdynamics.jl
 alamincse32,academic,north dakota state university,United States,blue-marble/gridpath
+alanleavy,unknown,,,iiasa/message_ix
 alansmithwx,unknown,,,nrel/sam
 albalat22,unknown,,,fzj-iek3-vsa/fine
 albangossard,academic,institute of environmental geosciences,France,behrangshirizadeh/eoles_elecres
@@ -5309,6 +5433,7 @@ alexisisgit,unknown,,,pypsa/pypsa
 alexisn7,unknown,,France,pypsa/pypsa
 alexisolivo,professional,matapalo dev,Ecuador,energysystemsmodellinglab/muse_os
 alexkazachkov,unknown,,,akkudoktor-eos/eos
+alexkoberle,unknown,,,iiasa/message_ix
 alexkolo,industry,strategic ai solutions,France,pypsa/pypsa
 alexkorko,unknown,,,kth-desa/onsset-2016
 alexlib,academic,tel aviv university,Israel,pypsa/pypsa
@@ -5404,6 +5529,7 @@ amarant,unknown,,,"antaressimulatorteam/antares_simulator,etsap-times/times_mode
 amarcheselli,unknown,,,emlab/emlab-generation
 amarvin,professional,hpinc,United States,genxproject/genx.jl
 amashlakov,unknown,,,"adgefficiency/energy-py,epri-dev/opender,powergridmodel/power-grid-model"
+amastrucci,unknown,,Ecuador,iiasa/message_ix
 amayboudellal,industry,utiligize,Denmark,e2niee/pandapower
 amazing9515,unknown,,,pielube/messpy
 amber821,unknown,,,rwl/pypower
@@ -5420,6 +5546,7 @@ amfarnsw,unknown,,,tum-ens/urbs
 amicha24,academic,universiteit gent,Belgium,adgefficiency/energy-py-linear
 amihalik,unknown,,,lanl-ansi/powermodels.jl
 amills61,unknown,,,flexiblepower/powermatcher
+amilovanoff,academic,university of toronto,,iiasa/message_ix
 amilz,professional,solana-foundation,,blue-marble/gridpath
 amin-jalilzadeh-tu,academic,,,"ahalev/python-microgrid,pypsa/pypsa"
 aminve,utility,village energy,,"gmlc-tdc/helics,pnnl/tesp"
@@ -5492,6 +5619,7 @@ andresgm,academic,universidad de los andes,Colombia,"nrel/pysam,nrel/sam,oemof/o
 andresorge,unknown,,,adamgreenhall/minpower
 andrevks,academic,,,"marvinler/pypownet,pypsa/pypsa"
 andrevlisboa,unknown,,,pypsa/pypsa
+andrew,industry,ecosyste-ms and octobox,United Kingdom,pypsa/pypsa
 andrew-johnson-4,professional,,United States,energytransition/esdl
 andrew-mortimer,unknown,,,etsap-times/times_model
 andrew-scott-white,unknown,,,"nrel/reeds-2.0,openego/ego"
@@ -5541,6 +5669,7 @@ anirudhs96,unknown,,United States,rwl/pypower
 anishsugathan,unknown,,,etsap-times/times_model
 anistouri,unknown,,,"powsybl/powsybl-core,powsybl/powsybl-open-loadflow,powsybl/pypowsybl"
 anitakabir,unknown,,,emlab/emlab-generation
+anjali025,professional,mnit jaipur,,iiasa/message_ix
 anjingxz,unknown,,,powsybl/powsybl-core
 anju-a,academic,indian institute of technology kanpur,India,villasframework/node
 ankitnaik177,professional,wolframresearch,,openipsl/openipsl
@@ -5588,6 +5717,7 @@ antonoliv,academic,feup,Portugal,grid2op/grid2op
 antonplietzsch,unknown,,,"juliaenergy/powerdynamics.jl,lanl-ansi/powermodels.jl,nrel-sienna/powersimulationsdynamics.jl"
 antonponmath,unknown,,,nrel-sienna/powersimulationsdynamics.jl
 antonsterkhov,unknown,,Russia,e2niee/pandapower
+antosubash,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 antsup11,unknown,,,gmlc-tdc/helics
 antviro,academic,upct,Spain,"oemof/oemof-solph,vub-hydr/revub"
 antw,professional,shopify,United Kingdom,"quintel/etengine,quintel/etmodel"
@@ -5599,6 +5729,7 @@ anujgs,industry,,France,fzj-iek3-vsa/fine
 anuragsodhi,financial,,United States,opencemorg/opencem
 anyacastillo,unknown,,,grid-parity-exchange/egret
 anyaxie,unknown,,,zen-universe/zen-garden
+anyco2018,unknown,,Austria,iiasa/message_ix
 anyexingluzk,unknown,,,pypsa/pypsa
 anyifang,academic,tsinghua university,,prep-next/prep-shot
 aodenweller,academic,potsdam institute for climate impact research,,pypsa/pypsa
@@ -5640,12 +5771,14 @@ aranyavenkatesh,unknown,,,temoaproject/temoa
 ararslan,industry,beacon biosignals,United States,lanl-ansi/powermodels.jl
 arash8361,unknown,,,e2niee/pandapower
 arashbaghaeilakehqb,unknown,,,lkruitwagen/global-fossil-fuel-supply-chain
+arauniyar,unknown,,,iiasa/message_ix
 araza7865,academic,rensselaer polytechnic institute,,grid-parity-exchange/egret
 arbit3rr,unknown,,,"epgoxford/open,grid2op/grid2op,pypsa/pypsa"
 arbrefleur,unknown,,,lanl-ansi/powermodels.jl
 arc-pbc-co,unknown,,,eiagov/bluesky
 archiezq,academic,,,tum-ens/urbs
 arcwolf,industry,lg electronics,South Korea,"matpower/matpower,pypsa/pypsa"
+ardasha93,academic,tu wien,Austria,iiasa/message_ix
 ardequeiroz,unknown,,,temoaproject/temoa
 arduinoll,unknown,,,"bje-/nemo,curent/andes,dss-extensions/dss_capi,dynawo/dynawo,e2niee/pandapower,emma-model/emma,epri-dev/opender,grid2op/grid2op,lanl-ansi/powermodels.jl,manuvarkey/gelectrical,marvinler/pypownet,matpower/matpower,nrel/pysam,nrel/sam,oemof/oemof-solph,openipsl/openipsl,powsybl/powsybl-core,pypsa/pypsa,rwl/pypower,sanpen/gridcal,susantoj/pypower-dynamics,switch-model/switch"
 are279,unknown,,,curent/andes
@@ -5712,6 +5845,7 @@ arvindsrinii,unknown,,,zen-universe/zen-garden
 aryan-at-ul,academic,,,grid2op/grid2op
 aryeh-looker,unknown,,,powsybl/powsybl-core
 asalmgren,academic,ccse,,erf-model/erf
+asamant,academic,,Netherlands,iiasa/message_ix
 asaprolfy,industry,,United States,"epri-dev/opender,gmlc-tdc/helics"
 asashishh,unknown,,,spine-tools/spineopt.jl
 asavasci,academic,michigan technological university,United States,"ames-market/psst,lanl-ansi/powermodels.jl"
@@ -5745,6 +5879,7 @@ asmunder,unknown,,,"erf-model/erf,lkruitwagen/global-fossil-fuel-supply-chain"
 asmwarrior,industry,,,"pypsa/pypsa,thales1330/psp"
 asolavi,unknown,,,pielube/messpy
 aspashur,academic,,,onsset/onsset
+aspiringgo,academic,nanyang technological university,,iiasa/message_ix
 aspitarl,research,national energy technology laboratory,United States,"gmlc-dispatches/dispatches,pypsa/pypsa"
 asrinivasan-enphase,professional,sofdesk,,nrel/sam
 asrlhhh,unknown,,,"e2niee/pandapower,pypsa/pypsa"
@@ -5767,6 +5902,7 @@ atkwadraat,unknown,,,pypsa/pypsa
 atlonxp,academic,,Thailand,akkudoktor-eos/eos
 atmurray,unknown,,,sanpen/gridcal
 atmyers,unknown,,United States,erf-model/erf
+atomstromfilter,unknown,,,sanpen/veragrid
 atpham88,government,national renewable energy laboratory,United States,"genxproject/genx.jl,nrel/reopt.jl,nrel/reopt_api,nrel/reopt_lite_api,sei-international/nemomod.jl,temoaproject/temoa"
 attila-balint-kul,unknown,,,spine-tools/spineopt.jl
 atworktv,unknown,,,akkudoktor-eos/eos
@@ -5782,6 +5918,7 @@ austnalio,unknown,,,akkudoktor-eos/eos
 austospumanto,professional,saxecap,United States,tum-ens/urbs
 aut6620,unknown,,,matpower/matpower
 automenta,unknown,,,powsybl/powsybl-core
+ava179,unknown,,,manuvarkey/gelectrical
 avalderr,unknown,,,"nrel/pysam,nrel/reopt_api,nrel/reopt_lite_api"
 avantgarde0707,unknown,,,akkudoktor-eos/eos
 avarbella,academic,eth zurich,Switzerland,pypsa/pypsa
@@ -5791,23 +5928,28 @@ avgprog,unknown,,,ie3-institute/powersystemdatamodel
 avikai,unknown,,,genxproject/genx.jl
 avinash131103007,unknown,,,pypsa/pypsa
 avinashresearch1,unknown,,Norway,"energymodelsx/energymodelsbase.jl,tulipaenergy/tulipaenergymodel.jl"
+aviramohad,unknown,,,iiasa/message_ix
 avishak-umd,unknown,,,sanpen/gridcal
 avishgumber,academic,,,"ie3-institute/powersystemdatamodel,pypsa/pypsa"
 avkirilenko,unknown,,,matpower/matpower
 avpeery,unknown,,United States,slacgismo/tess
 avtr108,unknown,,,akkudoktor-eos/eos
 awabbes,unknown,,,nrel/hopp
+awais307,research,international institute for applied systems analysis,Australia,iiasa/message_ix
 awanyulianto,unknown,,,optimal2050/energyrt
 awarsewa,industry,strophurus solutions,,"e2niee/pandapower,powsybl/pypowsybl"
+awe-sd,unknown,,,nrel-sienna/powersimulations.jl
 awelsz,unknown,,,calliope-project/calliope
 aweltsch,unknown,,,tum-ens/urbs
 awgutierrez,unknown,,,spine-tools/spineopt.jl
+awiebe42,unknown,,,iiasa/message_ix
 awig,unknown,,United States,"e2niee/pandapower,gmlc-tdc/helics,lanl-ansi/powermodels.jl,powsybl/powsybl-core,pypsa/pypsa,sanpen/gridcal"
 awongel,academic,carnegie institution for science,United States,pypsa/pypsa
 ax3l,research,lawrence berkeley national laboratory,United States,erf-model/erf
 axhang13,unknown,,,"assume-framework/assume,pypsa/pypsa"
 ayadabd000,unknown,,,ames-market/psst
 aydinnyunus,unknown,,,akkudoktor-eos/eos
+ayeletdavidovitch,unknown,,,iiasa/message_ix
 ayenpure,industry,"kitware, inc.",United States,temoaproject/temoa
 ayeosq,unknown,,,adamgreenhall/minpower
 ayolab,unknown,,,"powsybl/powsybl-core,powsybl/powsybl-open-loadflow,powsybl/pypowsybl"
@@ -5852,6 +5994,7 @@ baeniv,academic,eth zurich,,zen-universe/zen-garden
 baggiponte,academic,xtreamsrl,,"e2niee/pandapower,pypsa/pypsa"
 bagussundaru,industry,,,akkudoktor-eos/eos
 baifengbai,professional,111,China,"nreca-bts/omf,pypsa/pypsa"
+baimushanshui,unknown,,,iiasa/message_ix
 baisefengche46,unknown,,,smspp/smspp-project
 bajfi,academic,,China,akkudoktor-eos/eos
 bakapyf,unknown,,,future-power-networks/simplus-grid-tool
@@ -5894,6 +6037,7 @@ bartgips,unknown,,,powergridmodel/power-grid-model
 barthelemy-simon,unknown,,,e2niee/pandapower
 barzamin,industry,hecke-rs,United States,lanl-ansi/powermodels.jl
 basemidlbi,unknown,,,e2niee/pandapower
+bassamjaved,unknown,,,iiasa/message_ix
 bassmaster187,unknown,,Germany,akkudoktor-eos/eos
 bastEwbank,unknown,,,e2niee/pandapower
 basti242,unknown,,Germany,akkudoktor-eos/eos
@@ -5954,10 +6098,12 @@ benedikt-schesch,unknown,,,grid2op/grid2op
 benediktbienhuels,unknown,,,smspp/smspp-project
 bengt,unknown,,Germany,mosaik/mosaik
 benhamal,unknown,,,"lanl-ansi/powermodels.jl,nrel-sienna/powersimulationsdynamics.jl"
+benhbm,academic,tsinghua university,China,iiasa/message_ix
 benhpe,unknown,,Germany,akkudoktor-eos/eos
 benjaminkee,unknown,,,"nrel/h2integrate,nrel/hopp"
 benjeming-1024,unknown,,,pypsa/pypsa
 benji-york,industry,cribl,,lkruitwagen/global-fossil-fuel-supply-chain
+benkosi,unknown,,,iiasa/message_ix
 benlagane,unknown,,,antaressimulatorteam/antares_simulator
 benleit,unknown,,,"e2niee/pandapower,osemosys/osemosys"
 bennian,unknown,,,prep-next/prep-shot
@@ -5990,6 +6136,7 @@ bertramr,unknown,,,"curent/andes,matpower/matpower,oemof/oemof-solph"
 bertrandhaut_engie,unknown,,,mosaik/mosaik
 bertrandkerres,industry,aurobay,Sweden,nrel/reopt.jl
 bertt,industry,,Netherlands,energytransition/esdl
+besondong,unknown,,,iiasa/message_ix
 bestnub,unknown,,Germany,akkudoktor-eos/eos
 betaxell,unknown,,,spf-ost/optihood
 bethem,professional,eagle-rock-analytics,,nrel/pysam
@@ -6031,6 +6178,7 @@ bingyao,unknown,,China,lkruitwagen/global-fossil-fuel-supply-chain
 bink3R,professional,hk polyu,,"pypsa/pypsa,sanpen/gridcal"
 binlii,unknown,,,nrel/sam
 binlixiao,unknown,,,sei-international/nemomod.jl
+bintangby,research,international institute for applied systems analysis,,iiasa/message_ix
 bipasaagrawal,unknown,,,sesit/silver
 bipulroy8,unknown,,,pypsa/pypsa
 biren01,unknown,,,e2niee/pandapower
@@ -6066,6 +6214,7 @@ blackmount8,unknown,,,"e2niee/pandapower,pypsa/pypsa,rwl/pypower"
 blakeldridge,academic,,,open-energy-transition/open-tyndp
 blakelymayhall,unknown,,,gmlc-tdc/helics
 blaleon12,unknown,,,pypsa/pypsa
+blaze1111,unknown,,,akkudoktor-eos/eos
 blebo,unknown,,Australia,"adamgreenhall/minpower,e2niee/pandapower,nrel-sienna/powersimulationsdynamics.jl,nrel/paraemt_public,pypsa/pypsa,rwl/pypower,sanpen/gridcal,unsw-ceem/nempy"
 blegat,professional,"inma, icteam, uclouvain",Belgium,"genxproject/genx.jl,lanl-ansi/powermodels.jl,leonardgoeke/anymod.jl,nrel-sienna/powersimulations.jl,spine-tools/spineopt.jl"
 blmass,unknown,,,"calliope-project/calliope,oemof/oemof-solph,osemosys/osemosys,pypsa/pypsa,sanpen/gridcal,temoaproject/temoa"
@@ -6115,6 +6264,7 @@ boli9301,professional,cqu,,"curent/andes,fzj-iek3-vsa/fine,switch-model/switch"
 bolin-666,unknown,,,blue-marble/gridpath
 bollegijscoding,unknown,,,adgefficiency/energy-py
 boltbeard,unknown,,,"e2niee/pandapower,juliaenergy/powerdynamics.jl,nrel-sienna/powersimulations.jl,openego/edisgo,openego/ego,osemosys/osemosys,sanpen/gridcal"
+bom-ee,unknown,,,iiasa/message_ix
 bonbonblond,academic,,France,transition-zero/tz-osemosys
 bondrew,unknown,,China,"e2niee/pandapower,lanl-ansi/powermodels.jl,pypsa/pypsa"
 bondxue,unknown,,,e2niee/pandapower
@@ -6170,6 +6320,7 @@ breakinghong,unknown,,,"pypsa/pypsa,thales1330/psp"
 bredamatt,academic,,United Kingdom,pypsa/pypsa
 breeze-zhaofei,unknown,,,"calliope-project/calliope,dgusain1/energysim,mesmo-dev/mesmo,pypsa/pypsa"
 breldridge,unknown,,,grid-parity-exchange/egret
+brendandanaher,unknown,,,iiasa/message_ix
 brendanjmeade,academic,harvard university,United States,pypsa/pypsa
 brendlin,utility,deutsches elektronen-synchrotron desy,Germany,"e2niee/pandapower,grid2op/grid2op"
 brenner-tobias,professional,deloitte,,akkudoktor-eos/eos
@@ -6249,6 +6400,7 @@ bwintcig,unknown,,,nreca-bts/omf
 bwitherspoon,unknown,,,"grid2op/chronix2grid,grid2op/grid2op"
 bwpriest,research,lawrence livermore national laboratory,United States,grid-parity-exchange/egret
 byeongjee,academic,,United States,lkruitwagen/global-fossil-fuel-supply-chain
+byersiiasa,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 bygreencn,unknown,,China,pypsa/pypsa
 byronbest,unknown,,,"gridoptics/gridpack,juliaenergy/powerdynamics.jl,lanl-ansi/powermodels.jl"
 byrtimo1,unknown,,,"ancillaryservicesacquisitionmodel/asam,calliope-project/calliope,energy-modelling-toolkit/dispa-set,oemof/oemof-solph,osemosys/osemosys"
@@ -6282,6 +6434,7 @@ cadouxfl,professional,roseautechnologies,France,roseautechnologies/roseau_load_f
 cagdasoezguer,unknown,,,powsybl/powsybl-core
 cahrmani8,unknown,,,nrel/sam
 caicaiking,professional,jidu,China,gmlc-tdc/helics
+caicainiao,unknown,,,"calliope-project/calliope,e2niee/pandapower,pypsa/pypsa"
 caidurbin,professional,konrad group,Canada,akkudoktor-eos/eos
 caindy,unknown,,,"lanl-ansi/powermodels.jl,nrel/reopt_api,nrel/reopt_lite_api"
 caioluke,professional,artelys,France,"lanl-ansi/powermodels.jl,powsybl/powsybl-core,powsybl/powsybl-open-loadflow,powsybl/pypowsybl"
@@ -6299,6 +6452,7 @@ cam333,unknown,,,e2niee/pandapower
 cameramanpov,unknown,,,akkudoktor-eos/eos
 cameronrutherford,academic,aws,United States,pnnl/exago
 camillem,unknown,,,powsybl/powsybl-core
+camillereynaud29,unknown,,,iiasa/message_ix
 camiloramirezgo,academic,kth royal institute of technology,Sweden,onsset/onsset
 camiloromers,professional,,France,"e2niee/pandapower,grid2op/chronix2grid,grid2op/grid2op,marvinler/pypownet,pypsa/pypsa"
 camirmas,industry,,United States,"nrel/h2integrate,nrel/hopp"
@@ -6383,6 +6537,7 @@ ccheylan,unknown,,,powsybl/powsybl-core
 cchrisgong,utility,remindmodel,Germany,leonardgoeke/anymod.jl
 cchristiansen,unknown,,Denmark,unsw-ceem/nempy
 ccl0326,professional,Le Yan Ke Ji ,China,sanpen/gridcal
+cclyfblink,unknown,,China,switch-model/switch
 ccmonsalve43,unknown,,,"pypsa/pypsa,sanpen/gridcal"
 ccoffrin,research,,United States,"e2niee/pandapower,gmlc-tdc/helics,grid-parity-exchange/egret,lanl-ansi/powermodels.jl,lanl-ansi/powermodelsannex.jl,matpower/matpower,nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl,pypsa/pypsa,rwl/pypower"
 ccolle,unknown,,,oemof/oemof-solph
@@ -6454,6 +6609,7 @@ chaitanyagudapati,unknown,,,smspp/smspp-project
 chaitanyawho,unknown,,,powsybl/powsybl-core
 chalg,academic,,Australia,pypsa/pypsa
 chamanbaz,unknown,,,genxproject/genx.jl
+chandpreet751,unknown,,,iiasa/message_ix
 chandru320,unknown,,,erf-model/erf
 changfeizhao,unknown,,,matpower/matpower
 changgang,academic,"school of electrical engineering, shandong university",China,"changgang/steps,gridoptics/gridpack,mbheinen/bpa-ipf-tsp,susantoj/pypower-dynamics,yanzhaochang/psatools-python"
@@ -6511,6 +6667,7 @@ chenyingthu,unknown,,,nrel/reeds-2.0
 chenyousu,unknown,,,gridoptics/gridpack
 chenzecai123,unknown,,,changgang/steps
 chenzx33,unknown,,,prep-next/prep-shot
+cheolhung,professional,kaist,South Korea,iiasa/message_ix
 cherrero42,industry,,Spain,nrel/sam
 cherrytree32362,unknown,,,matpower/matpower
 chet-SA,unknown,,,nrel/sam
@@ -6562,6 +6719,7 @@ chris-vecchio,academic,national bureau of economic research,United States,sanpen
 chris-wynne,industry,,United Kingdom,calliope-project/calliope
 chris593221,unknown,,,tum-ewk/lemlab
 chriscoey,professional,relationalai,United States,"lanl-ansi/powermodels.jl,lanl-ansi/powermodelsannex.jl"
+chriselion,professional,splightplatform,United States,pypsa/pypsa
 chrisflei,unknown,,,oemof/oemof-solph
 chrisfyk,unknown,,,pypsa/pypsa
 chrisgervang,industry,joby-aviation,United States,lkruitwagen/global-fossil-fuel-supply-chain
@@ -6575,6 +6733,7 @@ chrismartel,academic,mcgill university,Canada,ahalev/python-microgrid
 chrismcg,unknown,,Ireland,nrel/sam
 chrisnexxtlab,unknown,,,e2niee/pandapower
 chrisorner,industry,,,tum-ewk/opentumflex
+chrisroadmap,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 chrisrock1984,unknown,,,akkudoktor-eos/eos
 christ0pher,professional,front row group,,akkudoktor-eos/eos
 christiaan-bosch,professional,cgi,Netherlands,flexiblepower/powermatcher
@@ -6642,6 +6801,7 @@ clairenicolas,unknown,,,esmap-world-bank-group/epm
 clairetrevisan,unknown,,,energyinnovation/eps-us
 clameron,unknown,,,"pypsa/pypsa,temoaproject/temoa"
 clangkuenstler,unknown,,,e2niee/pandapower
+clarkCY,unknown,,,eiagov/bluesky
 clarkchen900,unknown,,,future-power-networks/simplus-grid-tool
 clasch3007,unknown,,,akkudoktor-eos/eos
 claudiavalkenier,unknown,,,quintel/etmodel
@@ -6744,6 +6904,7 @@ connortann,professional,,,"oemof/oemof-solph,pypsa/pypsa"
 conoredwards347,industry,,United Kingdom,rwl/pypower
 conradmurphy,utility,,,switch-model/switch
 consideRatio,utility,sensmetry,Sweden,"calliope-project/calliope,genxproject/genx.jl"
+contactgeyin,unknown,,,osemosys/osemosys
 controllearn,unknown,,,future-power-networks/simplus-grid-tool
 cookangdavid,unknown,,,gmlc-tdc/helics
 cookie2512,unknown,,,akkudoktor-eos/eos
@@ -6798,6 +6959,7 @@ crazystevepotatoes,unknown,,,e2niee/pandapower
 creeston,unknown,,Poland,e2niee/pandapower
 creimers,industry,,Germany,pypsa/pypsa
 cris-dhakal,industry,,Nepal,transition-zero/tz-osemosys
+criscfer,academic,university of victoria - sesit group,Canada,iiasa/message_ix
 criscola,professional,helio ag,Switzerland,pypsa/pypsa
 cristianBMJ,academic,,,nrel/sam
 cristianocf,academic,institute for integrated energy systems,Canada,"sesit/copper,sesit/silver"
@@ -6873,6 +7035,7 @@ cxy-inwl,unknown,,,oemof/oemof-solph
 cxy2333355,unknown,,,"calliope-project/calliope,epgoxford/open,gmlc-tdc/helics,lanl-ansi/powermodels.jl,matpower/matpower,openego/edisgo,pnnl/tesp,pypsa/pypsa,susantoj/pypower-dynamics,temoaproject/temoa"
 cy-ros,unknown,,,macroenergy/macroenergy.jl
 cyangcheng,unknown,,,"curent/andes,matpower/matpower"
+cyberbosslady,unknown,,,iiasa/message_ix
 cybfr,unknown,,,dynawo/dynawo
 cyborgxxl,unknown,,Austria,akkudoktor-eos/eos
 cycooooo,unknown,,,e2niee/pandapower
@@ -6944,6 +7107,7 @@ damianofraizzoli,utility,,,tum-ens/urbs
 damianolombardo,unknown,,Australia,"nrel/pysam,nrel/sam"
 damonstone,unknown,,,powsybl/powsybl-core
 damya-966,unknown,,,roseautechnologies/roseau_load_flow
+dan-ho1502,unknown,,,iiasa/message_ix
 dan-kuc,academic,technical university of munich,Germany,openego/edisgo
 dan-mccabe,research,national renewable energy laboratory,,gmlc-tdc/helics
 dan-wiebe,unknown,,,"pypsa/pypsa,sanpen/gridcal"
@@ -6983,6 +7147,7 @@ danielbodnar,industry,bitbuilder.io,United States,sanpen/gridcal
 daniele-dynabase,industry,dynabase technologies gmbh,Germany,akkudoktor-eos/eos
 danielePala,unknown,,,powsybl/powsybl-core
 danielelerede-oet,professional,open energy transition,Italy,pypsa/pypsa
+danielevansmith,unknown,,,sanpen/veragrid
 danielfeismann,unknown,,,"assume-framework/assume,ie3-institute/powersystemdatamodel,ie3-institute/simona,openego/edisgo,tum-ewk/lemlab"
 danielfli,unknown,,Germany,akkudoktor-eos/eos
 danielhuppmann,research,international institute for applied systems analysis,Austria,"sei-international/nemomod.jl,spine-tools/spineopt.jl,temoaproject/temoa"
@@ -7028,6 +7193,7 @@ daschw,academic,ait austrian institute of technology,Austria,"ait-energy/iesopt.
 daspartha,academic,paul scherrer institute psi,Switzerland,caaficus/bewhere-model
 dasuan123,academic,huazhong university of science and technology,China,"chengts95/rustpower,curent/andes"
 data-panda,academic,eindhoven university of technology,India,"lanl-ansi/powermodels.jl,nrel-sienna/powersimulations.jl,pypsa/pypsa"
+data-policy,unknown,,,iiasa/message_ix
 databastard,unknown,,,"adgefficiency/energy-py,lanl-ansi/powermodels.jl,nrel/sam,oemof/oemof-solph"
 datafiend,utility,alt. paradigms,Canada,oemof/oemof-solph
 datatilsynet,academic,,,pypsa/pypsa
@@ -7051,6 +7217,7 @@ davidkleiven,professional,ntnu,Norway,powsybl/powsybl-core
 davidmunoznovoa,professional,gisce,Spain,pypsa/pypsa
 davidnbresch,academic,eth zurich,Switzerland,calliope-project/calliope
 davidreihs,unknown,,Austria,juliaenergy/powerdynamics.jl
+davidwabel,unknown,,,iiasa/message_ix
 davidwickh,professional,erminc,United Kingdom,pypsa/pypsa
 davisbuilds,unknown,,United States,genxproject/genx.jl
 davisgiles,unknown,,,"pielube/messpy,pypsa/pypsa"
@@ -7064,6 +7231,7 @@ dawu2018,unknown,,,"adgefficiency/energy-py,curent/andes,e2niee/pandapower,matpo
 daxiang415,unknown,,,chrisyeh96/sustaingym
 daya1986,unknown,,,nrel/sam
 dayano73,unknown,,,temoaproject/temoa
+daymontas1,unknown,,,iiasa/message_ix
 dayne,academic,acep-uaf acep-devops,United States,switch-model/switch
 dayoung08,unknown,,,"grid2op/grid2op,marvinler/pypownet"
 dazer-chen,unknown,,,spine-tools/spineopt.jl
@@ -7079,6 +7247,7 @@ dc132btc,unknown,,,richard-weinhold/pomato
 dc2917,academic,,United Kingdom,energysystemsmodellinglab/muse_os
 dc997069625,unknown,,,grid2op/grid2op
 dcaglayan,unknown,,,fzj-iek3-vsa/fine
+dcc88888888,unknown,,,iiasa/message_ix
 dchassin,academic,eudoxys sciences llc,United States,"arras-energy/gridlabd,nreca-bts/omf,rwl/pypower,slacgismo/tess"
 dcj,professional,clark communications,United States,epri-dev/opender
 dclee131,industry,amazon robotics,United States,grid-parity-exchange/egret
@@ -7230,7 +7399,7 @@ dimili,unknown,,Sweden,rebase-energy/enflow
 dimiphoton,unknown,,Belgium,energy-modelling-toolkit/dispa-set
 dinglei282919,unknown,,,matpower/matpower
 dingyu2020,professional,cup_beijing,China,"etsap-times/times_model,osemosys/osemosys,switch-model/switch"
-dinkelbachjan,unknown,,,"sogno-platform/dpsim"
+dinkelbachjan,unknown,,,sogno-platform/dpsim
 dinonien,unknown,,,flexiblepower/powermatcher
 diogojfr,academic,,Brazil,e2niee/pandapower
 dionator,industry,jila.ai,Netherlands,energy-modelling-toolkit/dispa-set
@@ -7255,6 +7424,7 @@ dizont,unknown,,,flixopt/flixopt
 djackR,unknown,,,"e2niee/pandapower,iit-energysystemmodels/opentepes,pypsa/pypsa"
 djacobson1,unknown,,,arras-energy/gridlabd
 djacouma,unknown,,,"microgrids-x/microgrids.py,nrel/pysam,nrel/reopt_api,nrel/reopt_lite_api,nrel/sam"
+djancarlo,unknown,,,iiasa/message_ix
 djanka2,academic,karlsruhe university of applied sciences,,rebase-energy/enflow
 djb0709,unknown,,,prep-next/prep-shot
 djbabjdjbdabjad,unknown,,,pypsa/pypsa
@@ -7275,13 +7445,14 @@ dk-teknologisk-pde,professional,teknologisk institut,Denmark,oemof/exerpy
 dkapt,unknown,,Greece,"chrisyeh96/sustaingym,e2niee/pandapower,grid2op/grid2op,nrel/pysam,nrel/sam,openipsl/openipsl,rwl/pypower"
 dkayser,industry,flowerpilot gmbh,Germany,oemof/oemof-solph
 dkazacos,unknown,,,e2niee/pandapower
+dkbohl,unknown,,,iiasa/message_ix
 dkesseli,unknown,,,nrel/sam
 dkolbeck84,unknown,,,e2niee/pandapower
 dkothona,unknown,,,e2niee/pandapower
 dkoupats,academic,data hermeneutics,Greece,nrel-sienna/powersimulationsdynamics.jl
 dkruyt,professional,atcomputing,Netherlands,powergridmodel/power-grid-model
-dl-sl,unknown,,,mosaik/mosaik
 dl-sl,unknown,,,e2niee/pandapower
+dl-sl,unknown,,,mosaik/mosaik
 dlcole3,unknown,,,"genxproject/genx.jl,macroenergy/macroenergy.jl,nrel-sienna/powersimulations.jl"
 dle-n-side,unknown,,,electa-git/flexplan.jl
 dlips,unknown,,Germany,akkudoktor-eos/eos
@@ -7418,6 +7589,7 @@ dshen109,academic,,United States,"e2niee/pandapower,grid-parity-exchange/egret,l
 dsiebel,industry,trivago,Germany,akkudoktor-eos/eos
 dsigler1234,unknown,,,"nrel-sienna/powersimulations.jl,nrel/reopt.jl"
 dsisnero,unknown,,,nrel/sam
+dsousarp,unknown,,,nrel-sienna/powersimulations.jl
 dstefanov46,unknown,,,e2niee/pandapower
 dsteinkopf,unknown,,,akkudoktor-eos/eos
 dstroot,unknown,,United States,lkruitwagen/global-fossil-fuel-supply-chain
@@ -7436,6 +7608,7 @@ dukeboard,unknown,,,matpower/matpower
 dukkune1,unknown,,,"e2niee/pandapower,pypsa/pypsa"
 dumblob,unknown,,,manuvarkey/gelectrical
 duncancallaway,unknown,,,nrel-sienna/powersimulationsdynamics.jl
+duniang818,unknown,,,sanpen/veragrid
 dunyuliu,academic,university of texas institute for geophysics,,curent/andes
 dunzhichen,unknown,,,sogno-platform/dpsim
 duqianqian0621,academic,north china electric power university,,ait-energy/iesopt.jl
@@ -7582,6 +7755,7 @@ eevenkatesh360,unknown,,,gmlc-tdc/helics
 eexxyy,unknown,,,"epgoxford/open,grid2op/grid2op,matpower/matpower"
 eezlin,academic,,China,"e2niee/pandapower,grid2op/grid2op,sanpen/gridcal"
 ef8ymis,academic,"school of electrical & electronic engineering, university college dublin",Ireland,"lanl-ansi/powermodels.jl,lanl-ansi/powermodelsannex.jl"
+efaPHC,professional,photoncycle as,Norway,curent/andes
 efaepocus,professional,epocus,Norway,matpower/matpower
 efmaracaja,unknown,,,nrel/sam
 efouladi94,unknown,,,gmlc-tdc/helics
@@ -7818,6 +7992,7 @@ ethan-nelson,industry,,United States,"calliope-project/calliope,tum-ens/urbs"
 ethanharoutunian,unknown,,,akkudoktor-eos/eos
 ethanmarshall,unknown,,,changgang/steps
 ethanverdin1,unknown,,Georgia,oemof/oemof-thermal
+ethereal-jack,unknown,,,"anl-ceeesa/unitcommitment.jl,chrisyeh96/sustaingym,critical-infrastructure-systems-lab/pownet,e2niee/pandapower,pypsa/pypsa,vub-hydr/revub"
 etienne-s,unknown,,,antaressimulatorteam/antares_simulator
 etienne-v,unknown,,,gridfm/gridfm-graphkit
 etiennehomer,unknown,,,"powsybl/powsybl-core,powsybl/powsybl-open-loadflow"
@@ -7880,6 +8055,7 @@ fabianoP,unknown,,Ireland,lanl-ansi/powermodels.jl
 fabid,unknown,,Japan,nrel-sienna/powersimulations.jl
 fabio-r-almeida,unknown,,,nrel/sam
 fabiomolinar,unknown,,Poland,"nrel-sienna/powersimulations.jl,pypsa/pypsa"
+fabiosferra,unknown,,,iiasa/message_ix
 fabmid,academic,technical university of berlin,,"fabmid/open-energy-cell-simulation,oemof/oemof-solph"
 fabratu,academic,humboldt-university berlin,Germany,pypsa/pypsa
 fabriciopsouza,academic,vibra energia sa,Brazil,lkruitwagen/global-fossil-fuel-supply-chain
@@ -7894,8 +8070,10 @@ faezs,unknown,,Pakistan,adgefficiency/energy-py
 fagan2888,unknown,,United States,"fzj-iek3-vsa/fine,tum-ens/rivus,tum-ens/urbs"
 fahadm89,unknown,,,nrel/sam
 fahdamjad,unknown,,Oman,pypsa/pypsa
+fahminlb33,industry,,Indonesia,iiasa/message_ix
 failxoe,unknown,,,akkudoktor-eos/eos
 faisal-hayat,industry,concord power & engineering,,adgefficiency/energy-py-linear
+faith216,unknown,,,iiasa/message_ix
 faizanashfaq8,unknown,,,e2niee/pandapower
 falcondai,industry,symbolica ai,United States,grid2op/grid2op
 famasoon,academic,,,e2niee/pandapower
@@ -7912,6 +8090,7 @@ fanjames,unknown,,,"adamgreenhall/minpower,curent/andes,lanl-ansi/powermodels.jl
 fanjiawei6,unknown,,,prep-next/prep-shot
 fanlyli,unknown,,,anl-ceeesa/unitcommitment.jl
 fanqblcf,unknown,,,pnnl/exago
+fanzz1,unknown,,,nrel/wpgnn
 faoh,academic,princeton university,United States,"lanl-ansi/powermodels.jl,mzy2240/esa"
 fapermata8,unknown,,,sanpen/gridcal
 farao-community-ci,unknown,,,powsybl/powsybl-core
@@ -7961,6 +8140,7 @@ felix0307,unknown,,,e2niee/pandapower
 felix2RB,unknown,,,akkudoktor-eos/eos
 felixbouleau,unknown,,United States,akkudoktor-eos/eos
 felixcbraun,unknown,,,"nrel/sam,pypsa/pypsa"
+felixfogel,unknown,,,iiasa/message_ix
 felixhus,unknown,,,"calliope-project/calliope,e2niee/pandapower,manuvarkey/gelectrical"
 felixj9,unknown,,,oemof/oemof-thermal
 felixkoeth,unknown,,,rwl/pypower
@@ -8018,6 +8198,7 @@ filipesaraiva,academic,universidade federal do para,Brazil,"e2niee/pandapower,gr
 filipnykvist,unknown,,,spine-tools/spineopt.jl
 filippopecci,professional,eiee,Italy,"genxproject/genx.jl,macroenergy/macroenergy.jl,nrel/reeds-2.0"
 filippovaldettaro,unknown,,,grid2op/grid2op
+filofossati,utility,entelligent,United States,iiasa/message_ix
 finaleshow,unknown,,,e2niee/pandapower
 finnhambly,unknown,,,genxproject/genx.jl
 finozzifa,professional,open energy transition,Italy,"oemof/oemof-solph,pypsa/pypsa"
@@ -8034,6 +8215,7 @@ fishcf,professional,Bei Jing Qing Neng Hu Lian Ke Ji You Xian Gong Si Yan Zhou F
 fishfree,unknown,,,pypsa/pypsa
 fitpro33,unknown,,,pypsa/pypsa
 fitzthomas,unknown,,Germany,pypsa/pypsa
+fizeny,unknown,,China,openipsl/openipsl
 fjibj,industry,,China,pypsa/pypsa
 fjmz-UPV,unknown,,,genxproject/genx.jl
 fjs18,unknown,,,future-power-networks/simplus-grid-tool
@@ -8089,6 +8271,7 @@ fokep,unknown,,Norway,balmorelcommunity/balmorel
 fokx,unknown,,,adgefficiency/energy-py
 folkong,unknown,,,lanl-ansi/powermodels.jl
 fonew,academic,,Switzerland,juliaenergy/joulia.jl
+fonfon,unknown,,,iiasa/message_ix
 fonshartendorp,academic,,Netherlands,"ahalev/python-microgrid,pypsa/pypsa,rebase-energy/enflow"
 fonsp,academic,tu eindhoven,Netherlands,pypsa/pypsa
 fontanf,academic,,France,anl-ceeesa/unitcommitment.jl
@@ -8117,6 +8300,7 @@ fradmm,unknown,,,zen-universe/zen-garden
 frafrancioschio,unknown,,,nrel/sam
 fran-jo,academic,kth royal institute of technology,Sweden,openipsl/openipsl
 francescolovat,research,international institute for applied systems analysis,,"etsap-times/times_model,genxproject/genx.jl,oemof/oemof-solph,osemosys/osemosys,pypsa/pypsa"
+francisco-mahu,unknown,,,iiasa/message_ix
 franciscoViage,industry,viage llc,United States,nrel/pysam
 franciscocs,unknown,,,pypsa/pypsa
 franciscogaluppo,academic,universidade federal de minas gerais,Brazil,genxproject/genx.jl
@@ -8256,6 +8440,7 @@ gaoypChina,unknown,,,akkudoktor-eos/eos
 gapaolo,unknown,,,zen-universe/zen-garden
 garciaguevara,unknown,,,nrel/sam
 gardner48,research,lawrence livermore national laboratory,United States,erf-model/erf
+garimavats2188,unknown,,,iiasa/message_ix
 garjitech,industry,garjitech llc,United States,nrel/sam
 garnoli99,utility,fermata energy,United States,"blue-marble/gridpath,grid-parity-exchange/egret,lanl-ansi/powermodels.jl,nrel/reopt_api,nrel/reopt_lite_api,osemosys/osemosys,pypsa/pypsa"
 garyhartwelldinmore,industry,tern computer inc.,United States,genxproject/genx.jl
@@ -8298,6 +8483,7 @@ gen7k,unknown,,,curent/andes
 genechk,unknown,,,nrel-sienna/powersimulationsdynamics.jl
 generic-github-user,academic,,United States,"nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl"
 genevievestarke,unknown,,,"nrel/h2integrate,nrel/hopp"
+gengelmann-a11y,unknown,,,nrel/sam
 genggc,academic,zhejiang university,China,pypsa/pypsa
 gengurke,unknown,,Germany,akkudoktor-eos/eos
 genose,professional,genose.org,France,powsybl/powsybl-core
@@ -8319,7 +8505,7 @@ georgebudau,unknown,,,powsybl/powsybl-core
 georgezhanguk,unknown,,,future-power-networks/simplus-grid-tool
 georghenke,unknown,,,zen-universe/zen-garden
 georgiasavvidou,unknown,,,"quintel/etengine,quintel/etmodel"
-georgii-tishenin,unknown,,,"sogno-platform/dpsim"
+georgii-tishenin,unknown,,,sogno-platform/dpsim
 geovsol,unknown,,,"kiedanski/pymarket,pnnl/tesp"
 geppyz,professional,team rockstars it,Netherlands,powsybl/powsybl-core
 ger08061959,utility,"o.a. ddop, gr-arado",Cambodia,energy-modelling-toolkit/dispa-set
@@ -8364,6 +8550,7 @@ giancarlo77,unknown,,,mesmo-dev/mesmo
 gianlucapellecchia,unknown,,,"calliope-project/calliope,microgridspy/microgridspy"
 giannisvrochidis,unknown,,,"assume-framework/assume,energysystemsmodellinglab/muse_os,fzj-iek3-vsa/fine,irena-flextool/flextool,nrel/reeds-2.0,spine-tools/spineopt.jl"
 gianvicolux,professional,open energy transition,Italy,"pypsa/pypsa,temoaproject/temoa"
+gidden,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 gieljnssns,unknown,,Belgium,akkudoktor-eos/eos
 giemic8,professional,exxeta,Germany,akkudoktor-eos/eos
 giftsichone,academic,"the university of zambia, department of physics",Zambia,pypsa/pypsa
@@ -8384,6 +8571,7 @@ gitdoublehelix,unknown,,,tum-ens/urbs
 gitfeldhase,academic,,,oemof/oemof-solph
 gitguardian,industry,,France,"antaressimulatorteam/antares_simulator,nreca-bts/omf,quintel/etmodel"
 github-actions[bot],unknown,,,"e3-/resolve,energysystemsmodellinglab/muse_os,genxproject/genx.jl,gmlc-tdc/helics,ie3-institute/powersystemdatamodel,ie3-institute/simona,juliaenergy/powerdynamics.jl,nrel/reopt.jl,prep-next/prep-shot,pypsa/pypsa,spine-tools/spineopt.jl,tulipaenergy/tulipaenergymodel.jl,upb-lea/electricgrid.jl,zen-universe/zen-garden"
+github-wbx,unknown,,,iiasa/message_ix
 githubuser1346,unknown,,,akkudoktor-eos/eos
 gitter-badger,professional,gitter,,"curent/andes,leonardgoeke/anymod.jl,nrel-sienna/powersimulations.jl,powsybl/powsybl-core,spine-tools/spineopt.jl"
 gituser789,professional,upb-lea,,upb-lea/electricgrid.jl
@@ -8401,6 +8589,7 @@ gky0302,unknown,,,"grid2op/grid2op,nrel/paraemt_public,pypsa/pypsa"
 gkze,unknown,,,akkudoktor-eos/eos
 glarange,academic,"state university new york, stony brook",United States,"adamgreenhall/minpower,genxproject/genx.jl,irena-flextool/flextool,nrel/pras,nrel/reeds-2.0,youngfaithful/capacityexpansion.jl"
 glassb,academic,,United States,calliope-project/calliope
+glatterf42,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 glauberesearch,academic,causahumana,,pypsa/pypsa
 glebbelov,industry,"ampl optimization, inc.",Australia,osemosys/osemosys
 glenispons,unknown,,,genxproject/genx.jl
@@ -8436,6 +8625,7 @@ goldhaxx,industry,drift labs,,pypsa/pypsa
 goldliuyang,unknown,,,sogno-platform/pymfm
 golip,unknown,,,e2niee/pandapower
 gondorh,unknown,,,"grid2op/grid2op,marvinler/pypownet,pypsa/pypsa"
+gong286,unknown,,,iiasa/message_ix
 gongwm,unknown,,,thales1330/psp
 gongzhiq,professional,atoz,China,akkudoktor-eos/eos
 goodengineer,professional,https://join.skype.com/invite/oxnjhbgys7ow,United States,"curent/andes,e2niee/pandapower"
@@ -8501,6 +8691,7 @@ gterren,academic,"university of california, santa barbara",United States,blue-ma
 gthomsen,unknown,,,critical-infrastructure-systems-lab/pownet
 gtors,unknown,,United Kingdom,e2niee/pandapower
 gtqite,unknown,,,"nrel/pysam,nrel/reopt_api,nrel/reopt_lite_api"
+gtrcoding,academic,wuhan university,China,iiasa/message_ix
 gu997,unknown,,,pielube/messpy
 guan-123,unknown,,,prep-next/prep-shot
 guanglei1wang,unknown,,,anl-ceeesa/unitcommitment.jl
@@ -8527,9 +8718,11 @@ gulrak,unknown,,Germany,gmlc-tdc/helics
 gunnarpope,industry,bitstory.ai,United States,pypsa/pypsa
 gunni1,unknown,,Germany,matpower/matpower
 guo-y23,unknown,,,prep-next/prep-shot
+guofei2016,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 guohaiping,utility,,,mbheinen/bpa-ipf-tsp
 guoluyang,unknown,,,"e2niee/pandapower,pypsa/pypsa,rwl/pypower"
 guoqing22,unknown,,China,"e2niee/pandapower,pypsa/pypsa"
+guoyan5123,unknown,,,iiasa/message_ix
 guqinglei123,unknown,,,curent/andes
 gus17-hub,unknown,,,blue-marble/gridpath
 gustavo-melo-dev,academic,,,thales1330/psp
@@ -8570,6 +8763,7 @@ hackl,academic,princeton university,United States,"e2niee/pandapower,marvinler/p
 hadamann,unknown,,,akkudoktor-eos/eos
 hadieshraghi,academic,north carolina state university,United States,temoaproject/temoa
 hadiibrahim-Engin,unknown,,,ie3-institute/simona
+hadiprasojo,academic,iuss pavia / uniinsubria,Italy,iiasa/message_ix
 hafezbazrafshan,unknown,,United States,lanl-ansi/powermodels.jl
 hagan2025,academic,university of michigan - ann arbor,United States,nrel/pysam
 hagensl,unknown,,,tum-ens/urbs
@@ -8742,6 +8936,7 @@ henrifrancois,academic,,United States,nrel/sam
 henrikhodel,unknown,,,lanl-ansi/powermodels.jl
 henrikt-ma,unknown,,,openipsl/openipsl
 henriqueio,industry,,Brazil,pypsa/pypsa
+henriquemdgoulart,unknown,,,iiasa/message_ix
 henriqueotogami,academic,cas-tecnologia,Brazil,thales1330/psp
 henryLEEdbdb,unknown,,,prep-next/prep-shot
 henryarihoona,professional,must,Uganda,e2niee/pandapower
@@ -8762,6 +8957,7 @@ hexone2086,industry,,China,pypsa/pypsa
 hey-mathis,academic,,,nrel/reeds-2.0
 hey3r,utility,gas- und warme-institut essen e.v.,,transient-official/transient-lib
 heycece,academic,,Australia,unsw-ceem/nempy
+heyerbobby,utility,,Australia,assume-framework/assume
 heyixtu,unknown,,,matpower/matpower
 hezhidragon,unknown,,,pypsa/pypsa
 hgallagh,academic,ur-->rit-->rit,United States,genxproject/genx.jl
@@ -8787,6 +8983,7 @@ hilbrich,unknown,,,e2niee/pandapower
 hilmandepe,unknown,,,"calliope-project/calliope,pypsa/pypsa"
 hilockman,unknown,,,pypsa/pypsa
 himahuja,academic,,India,"gridoptics/gridpack,nrel/reeds-2.0"
+himovicibracadabra-glitch,academic,tu ilmenau,Germany,gridfm/gridfm-graphkit
 himyjan,industry,,,pypsa/pypsa
 hinfsynz,utility,independent system operator of new england,,sanpen/gridcal
 hiramdi,unknown,,,"nrel/reopt_api,nrel/reopt_lite_api"
@@ -8872,6 +9069,7 @@ hsanzg,unknown,,Spain,sanpen/gridcal
 hsinganallur,unknown,,,zen-universe/zen-garden
 hsitaram,unknown,,,erf-model/erf
 hsk0059,academic,wuhan univeristy,China,"critical-infrastructure-systems-lab/pownet,prep-next/prep-shot"
+hsletsjoe,unknown,,,pypsa/pypsa
 hslu-deep,unknown,,,"e2niee/pandapower,grid2op/grid2op,pypsa/pypsa"
 hslulukas,unknown,,,zen-universe/zen-garden
 hsunnrel,unknown,,,nrel/pras
@@ -8936,6 +9134,7 @@ hydrogeohc,academic,genai research engineer,United States,"critical-infrastructu
 hydromac,utility,,Poland,oemof/oemof-solph
 hygge-coder,academic,sichuan universqiqty,China,matpower/matpower
 hyl181498-debug,unknown,,,prep-next/prep-shot
+hylacademic,unknown,,,iiasa/message_ix
 hyoseop2,unknown,,,e2niee/pandapower
 hyperion0706,unknown,,,"curent/andes,e2niee/pandapower,grid2op/grid2op"
 hypha,unknown,,,pypsa/pypsa
@@ -9044,6 +9243,7 @@ imaitland,academic,johns hopkins university,,grid2op/grid2op
 imartinezn,unknown,,,pypsa/pypsa
 imasadnust,utility,,Pakistan,e2niee/pandapower
 imaxxs,professional,deeptrail,United States,"genxproject/genx.jl,nrel/sam"
+imdecimalcoder,industry,,United States,pypsa/pypsa
 imenrahmani,unknown,,,roseautechnologies/roseau_load_flow
 imharrisonking,industry,propagate,United Kingdom,"calliope-project/calliope,pypsa/pypsa"
 imitator19,unknown,,,"changgang/steps,curent/andes,grid-parity-exchange/egret,nrel-sienna/powersimulationsdynamics.jl,rwl/pypower"
@@ -9054,6 +9254,7 @@ imsaumil,utility,electric power research institute,,"curent/andes,e2niee/pandapo
 imsupsup,industry,encored technologies,South Korea,"adgefficiency/energy-py,rwl/pypower"
 imztz,unknown,,,grid2op/grid2op
 in-RET,academic,,Germany,oemof/oemof-thermal
+inamaia,unknown,,,iiasa/message_ix
 inderdeepdhir,unknown,,,nrel/pysam
 indexzero,unknown,,United States,"curent/andes,eiagov/bluesky,genxproject/genx.jl"
 indiatce,unknown,,,pypsa/pypsa
@@ -9115,6 +9316,7 @@ ishankholkar,unknown,,,mesmo-dev/mesmo
 ishoukry,unknown,,,e2niee/pandapower
 isi07,unknown,,,akkudoktor-eos/eos
 isieb,unknown,,,pypsa/pypsa
+isilber,research,pacific northwest national laboratory,,curent/andes
 iskenderroglu,unknown,,,"matpower/matpower,rwl/pypower"
 islamiros,unknown,,,roseautechnologies/roseau_load_flow
 islamjahidul,unknown,,,curent/andes
@@ -9182,12 +9384,15 @@ jac2345,unknown,,,opencemorg/opencem
 jaccoheres,professional,alliander,Netherlands,powergridmodel/power-grid-model
 jacek-oet,professional,open energy transition,Poland,pypsa/pypsa
 jack-ning080,academic,nanchang university,China,"e2niee/pandapower,grid2op/grid2op,matpower/matpower,pypsa/pypsa,rwl/pypower,sanpen/gridcal"
+jack003007,unknown,,,"nrel-sienna/powersimulations.jl,pypsa/pypsa"
 jackjackk,unknown,,,"calliope-project/calliope,gmlc-tdc/helics,osemosys/osemosys,switch-model/switch"
 jackleekopij,unknown,,,nrel/rodeo
 jackpegler,unknown,,,adgefficiency/energy-py
 jacksavage,unknown,,,gridoptics/gridpack
 jacksmins,unknown,,,tum-ens/urbs
 jackson-morgan,unknown,,,macroenergy/macroenergy.jl
+jacksonGreenStone,academic,peaking university,China,powergridmodel/power-grid-model
+jacksonZ0411,unknown,,,nrel/reeds-2.0
 jacksonzche,unknown,,,e2niee/pandapower
 jackswl,academic,national university of singapore,Singapore,prep-next/prep-shot
 jackyjjp,unknown,,,"energyscope/energyscope,etsap-times/times_model,leonardgoeke/anymod.jl,osemosys/osemosys,sei-international/nemomod.jl,temoaproject/temoa"
@@ -9218,6 +9423,7 @@ jahanbani,unknown,,,"blue-marble/gridpath,curent/andes,e2niee/pandapower,genxpro
 jahnludvik,unknown,,,"adgefficiency/energy-py,balmorelcommunity/balmorel,behrangshirizadeh/eoles_elecres,oemof/oemof-solph,pypsa/pypsa,vub-hydr/revub"
 jainmilan,research,pacific northwest national laboratory,United States,gridoptics/gridpack
 jainsakshiii,unknown,,,pypsa/pypsa
+jaisaikrishnaV,unknown,,,iiasa/message_ix
 jajhall,academic,university of edinburgh ergo-code,United Kingdom,"breakthrough-energy/reise.jl,spine-tools/spineopt.jl,tum-ens/urbs"
 jake-wallace,unknown,,,lkruitwagen/global-fossil-fuel-supply-chain
 jakemayfield,unknown,,Australia,pypsa/pypsa
@@ -9282,6 +9488,7 @@ janpecht,unknown,,,akkudoktor-eos/eos
 janpeter79,unknown,,,grid2op/grid2op
 janschroeter,unknown,,Germany,akkudoktor-eos/eos
 janspale,academic,ctu in prague - uceeb & fme,Czechia,osemosys/osemosys
+jansteinhauser,unknown,,,iiasa/message_ix
 janstenner,unknown,,,upb-lea/electricgrid.jl
 janusbbq,unknown,,,curent/andes
 janusdebondt,utility,elia grid international,,antaressimulatorteam/antares_simulator
@@ -9406,11 +9613,14 @@ jeffersonpimenta,unknown,,,akkudoktor-eos/eos
 jeffreyo726,unknown,,,rwl/pypower
 jeffreysward,utility,rmi,United States,"blue-marble/gridpath,genxproject/genx.jl"
 jeffw-hust,unknown,,China,grid2op/grid2op
+jeis4wpi,academic,,,erf-model/erf
 jeisenman23,unknown,,,calliope-project/calliope
 jeke07,unknown,,,akkudoktor-eos/eos
 jemil-atlas,industry,atlas optimization gmbh,Switzerland,energy-modelling-toolkit/dispa-set
 jemmiewww,utility,,China,"curent/andes,e2niee/pandapower,matpower/matpower,pypsa/pypsa,rwl/pypower"
+jenchen95,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 jendrikseipp,unknown,,,smartgridtoolbox/smartgridtoolbox
+jengstud,unknown,,,"fzj-iek3-vsa/fine,oemof/oemof-solph"
 jenhagg,unknown,,,"breakthrough-energy/reise.jl,pypsa/pypsa"
 jenmauel,professional,6synct consulting,Canada,blue-marble/gridpath
 jennes,unknown,,Germany,akkudoktor-eos/eos
@@ -9511,6 +9721,7 @@ jiaxuwen,unknown,,,curent/andes
 jiaying,unknown,,,erf-model/erf
 jiaziyee,unknown,,,grid-parity-exchange/egret
 jicisneros,academic,texas a&m university,,matpower/matpower
+jiedingfei,unknown,,,iiasa/message_ix
 jiedxu,academic,"house of energy markets and finance, university duisburg-essen",Germany,"calliope-project/calliope,curent/andes,dynawo/dynawo,e2niee/pandapower,genxproject/genx.jl,lanl-ansi/powermodels.jl,matpower/matpower,nrel-sienna/powersimulationsdynamics.jl,powergridmodel/power-grid-model,pypsa/pypsa,sanpen/gridcal"
 jiefanshi,unknown,,,e2niee/pandapower
 jieweigrantli,unknown,,,nrel/reeds-2.0
@@ -9550,6 +9761,7 @@ jkefrey,unknown,,,quintel/etmodel
 jkehm,industry,,,breakthrough-energy/reise.jl
 jkelroy,professional,gitkraken,,nrel/sam
 jkfm,professional,flexpwr,,oemof/oemof-solph
+jkikstra,academic,,,iiasa/message_ix
 jkisse,academic,university of kassel,Germany,"e2niee/pandapower,leonardgoeke/anymod.jl"
 jkiviluo,industry,nodal-tools,,"irena-flextool/flextool,nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl,spine-tools/spineopt.jl,tulipaenergy/tulipaenergymodel.jl"
 jkleinekorte,industry,evonik operations gmbh,Mali,pypsa/pypsa
@@ -9601,6 +9813,7 @@ jneumann93,unknown,,,nrel/pysam
 jnew123,unknown,,,e2niee/pandapower
 jnhzzzk,unknown,,,"e2niee/pandapower,pypsa/pypsa,rwl/pypower"
 jniffene,unknown,,,nrel/hopp
+jnmeza,unknown,,,iiasa/message_ix
 jnnr,academic,delft university of technology,Germany,"calliope-project/calliope,oemof/oemof-solph,oemof/oemof-thermal,pypsa/pypsa,reegis/deflex"
 jnsbal,unknown,,,e2niee/pandapower
 jo-bao,unknown,,,"ie3-institute/powersystemdatamodel,ie3-institute/simona"
@@ -9647,6 +9860,7 @@ joeweaver,academic,"newcastle university, uk",United Kingdom,temoaproject/temoa
 joeygysf,unknown,,,e2niee/pandapower
 joeyhu1985,unknown,,,nrel/sam
 joflorianjo,unknown,,,akkudoktor-eos/eos
+jofmi,unknown,,,iiasa/message_ix
 jofranz,unknown,,,akkudoktor-eos/eos
 jogurtl,unknown,,,pypsa/pypsa
 johaack,unknown,,,e2niee/pandapower
@@ -9655,6 +9869,7 @@ johannes1992,unknown,,,fzj-iek3-vsa/fine
 johanneshiry,academic,,,"e2niee/pandapower,ie3-institute/powersystemdatamodel,ie3-institute/simona"
 johanneshoelker,academic,,,e2niee/pandapower
 johannesparschau,unknown,,,e2niee/pandapower
+johannesradl,unknown,,,iiasa/message_ix
 johannesschmude,academic,ibm research,United States,gridfm/gridfm-graphkit
 johanvanmol,unknown,,,akkudoktor-eos/eos
 johburger,unknown,,,"nrel/pysam,zen-universe/zen-garden"
@@ -9736,6 +9951,7 @@ joseptrilla,unknown,,,e2niee/pandapower
 joserom,unknown,,,iit-energysystemmodels/openmaster
 josh28x,unknown,,,"adgefficiency/energy-py-linear,bje-/nemo,calliope-project/calliope,nreca-bts/omf,e2niee/pandapower,pypsa/pypsa,unsw-ceem/nempy"
 joshdr83,academic,the university of texas at austin,United States,genxproject/genx.jl
+joshhopkins,academic,open corridor,Singapore,iiasa/message_ix
 joshua-cogliati-inl,research,idaho national laboratory,United States,"gmlc-dispatches/dispatches,idaholab/heron"
 joshuaeh,academic,the university of texas-austin,United States,"nrel/reopt.jl,nrel/reopt_api,nrel/reopt_lite_api,nrel/sam"
 joshuahaddad,industry,general electric,United States,grid-parity-exchange/egret
@@ -9827,6 +10043,7 @@ juchengquan,unknown,,Singapore,"nreca-bts/omf,e2niee/pandapower,nrel-sienna/powe
 judejeh,academic,,United Kingdom,"calliope-project/calliope,energysystemsmodellinglab/muse_os,etsap-times/times_model,nrel/reeds-2.0"
 judge-zhu,unknown,,,matpower/matpower
 judyjwxie,academic,imperialcollegelondon,,nrel/reeds-2.0
+judypark,academic,carnegie mellon university,,iiasa/message_ix
 jueqingsizhe66,professional,ncepu,China,nrel/wpgnn
 jufemaiz,industry,ace-teknologi,Australia,opencemorg/opencem
 juflorez,unknown,,,nrel/pras
@@ -9861,6 +10078,7 @@ junglegobs,academic,https://www.mech.kuleuven.be/en/tme/research/energy-systems-
 junjie-zh,unknown,,Germany,"openipsl/openipsl,sogno-platform/dpsim"
 junmuz,unknown,,,e2niee/pandapower
 junohang,unknown,,,e2niee/pandapower
+junukitashepard,academic,,,iiasa/message_ix
 junwucs,professional,,Denmark,marvinler/pypownet
 junyang0412,unknown,,,changgang/steps
 junzengx14,academic,university of california berkeley,United States,mesmo-dev/mesmo
@@ -9916,6 +10134,7 @@ kahn-jms,industry,hal-systems-au,Australia,adgefficiency/energy-py-linear
 kahyami,unknown,,,powsybl/powsybl-core
 kai-zheng,unknown,,,"dynawo/dynawo,idaholab/hybrid"
 kaiATtum,unknown,,,mesmo-dev/mesmo
+kaiding-ucb,unknown,,,pypsa/pypsa
 kairat-beep,unknown,,,lanl-ansi/powermodels.jl
 kais-siala,academic,potsdam institute for climate change impacts,Germany,tum-ens/urbs
 kaiser-data,industry,,Germany,fzj-iek3-vsa/fine
@@ -9942,6 +10161,7 @@ kandersolar,research,sandia national laboratories,,"nrel/pysam,nrel/sam"
 kang-nj,unknown,,,grid2op/chronix2grid
 kangchouapp,unknown,,,"pypsa/pypsa,sanpen/gridcal"
 kangqiu,unknown,,,genxproject/genx.jl
+kangvcar,academic,,China,iiasa/message_ix
 kangwenhao,unknown,,,e2niee/pandapower
 kapasi1234,academic,national institute of wind energy,India,genxproject/genx.jl
 karabiberym,unknown,,Germany,dynawo/dynawo
@@ -10047,6 +10267,7 @@ kevin-kruse,unknown,,,"e2niee/pandapower,lanl-ansi/powermodels.jl"
 kevin-wang-uchi,academic,university of chicago,United States,slacgismo/tess
 kevin7070,unknown,,,manuvarkey/gelectrical
 kevinPoliPoli,unknown,,,mosaik/mosaik
+kevinbdsouza,academic,,,iiasa/message_ix
 kevinkirchhof,unknown,,Germany,akkudoktor-eos/eos
 kevinleahy-switchdin,unknown,,,adgefficiency/energy-py-linear
 kevinliupy,unknown,,,"nrel/reopt_api,nrel/reopt_lite_api"
@@ -10064,6 +10285,7 @@ kgantchev,industry,ameru.ai,Bulgaria,powergridmodel/power-grid-model
 kglass,unknown,,,gridoptics/gridpack
 kha0s-tickler,unknown,,,lanl-ansi/powermodels.jl
 khade217,professional,dvibe,,akkudoktor-eos/eos
+khaeru,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 khanht8,unknown,,,akkudoktor-eos/eos
 khannurien,research,lab-sticc,France,energyscope/energyscope
 khashashin,industry,,Switzerland,"nrel/sam,oemof/oemof-solph,open-energy-transition/solver-benchmark"
@@ -10079,6 +10301,7 @@ ki511,unknown,,,"matpower/matpower,rwl/pypower"
 kibaekkim,research,argonne national laboratory,United States,lanl-ansi/powermodels.jl
 kiedanski,industry,tryolabs,Uruguay,"e2niee/pandapower,kiedanski/pymarket"
 kieranfung,research,national renewable energy laboratory,United States,nrel/sam
+kikannelle,unknown,,,iiasa/message_ix
 kilian-hub,unknown,,,transient-official/transient-lib
 kilianp14,unknown,,,pypsa/pypsa
 killer0071234,industry,strabag infrastructure & safety solutions gmbh,Austria,akkudoktor-eos/eos
@@ -10088,11 +10311,14 @@ kilojoules,unknown,,,nrel/wpgnn
 kilteris,unknown,,,"genxproject/genx.jl,pypsa/pypsa,rebase-energy/enflow"
 kim-mskw,professional,karlsruher institut fur technologie,,assume-framework/assume
 kimiwangjm,unknown,,,"nrel/reopt_api,nrel/reopt_lite_api"
+kimjintae9011,unknown,,,iiasa/message_ix
 kimte72,unknown,,,rwl/pypower
 kinbo1111,academic,,,akkudoktor-eos/eos
 kingsing,unknown,,,"adamgreenhall/minpower,e2niee/pandapower,pypsa/pypsa,rwl/pypower,sanpen/gridcal,susantoj/pypower-dynamics"
 kiplabat,industry,,,osemosys/osemosys
 kipovic,unknown,,,akkudoktor-eos/eos
+kir-grach,academic,,,iiasa/message_ix
+kiran-mysore,unknown,,Sweden,iiasa/message_ix
 kiranch219,unknown,,,powergridmodel/power-grid-model
 kiranshila,industry,kas microwave llc,United States,juliaenergy/joulia.jl
 kirtyvedula,unknown,,United States,adgefficiency/energy-py-linear
@@ -10121,6 +10347,7 @@ kkozersk,unknown,,,spine-tools/spineopt.jl
 kkpan11,industry,,"Taiwan, Province of China",manuvarkey/gelectrical
 kkrah,unknown,,,"nrel/reopt_api,nrel/reopt_lite_api"
 kksharma3951,academic,concordia university,Canada,erf-model/erf
+kkyong77,research,pacific northwest national laboratory,United States,nrel/pras
 klasrocket,unknown,,,akkudoktor-eos/eos
 klaus24,unknown,,,nrel/sam
 klaustopher,professional,opf,Germany,akkudoktor-eos/eos
@@ -10148,8 +10375,10 @@ kngms,industry,50hertz transmission gmbh,Germany,"grid2op/chronix2grid,marvinler
 knightad10,unknown,,,pnnl/exago
 knightnight93,unknown,,,"energytransition/esdl,epri-dev/opender"
 knoxsp,unknown,,,pypsa/pypsa
+knraj,unknown,,,iiasa/message_ix
 knut0815,unknown,,,"calliope-project/calliope,e2niee/pandapower,fraukewiese/renpass,kth-desa/onsset-2016,oemof/oemof-solph,osemosys/osemosys,pypsa/pypsa,reegis/deflex,robbiemorrison/deeco,rwl/pypower,sanpen/gridcal,tum-ewk/ficus"
 knva,academic,,China,pypsa/pypsa
+kobakaku,unknown,,United States,pypsa/pypsa
 kobi-ca,unknown,,United States,gmlc-tdc/helics
 kobong8,academic,,,idaholab/hybrid
 koemman,unknown,,,e2niee/pandapower
@@ -10169,6 +10398,7 @@ konradzawadka,unknown,,Germany,nrel/sam
 konsath,unknown,,,pypsa/pypsa
 konstantinblaesi,unknown,,Germany,akkudoktor-eos/eos
 koolhand,professional,paradoxus,Australia,pypsa/pypsa
+kor-GEMS,unknown,,,iiasa/message_ix
 korlynx,academic,unaichi.chinonso gmail.com,United Kingdom,flexigis/flexigis
 kornerc,academic,austrian institute of technology - ait,Austria,"ait-energy/iesopt.jl,e2niee/pandapower,powergridmodel/power-grid-model"
 korol100podd,unknown,,,e2niee/pandapower
@@ -10178,6 +10408,7 @@ kosaka90,research,pacific northwest national laboratory,,erf-model/erf
 kosmylo,unknown,,,"assume-framework/assume,e2niee/pandapower"
 kotarbinski,unknown,,,nrel/hopp
 kotutuloro,industry,,Netherlands,pypsa/pypsa
+kotze2801,unknown,,,iiasa/message_ix
 koudicz,unknown,,Czechia,manuvarkey/gelectrical
 koukiMohamed,unknown,,,dynawo/dynawo
 kousu,professional,ets,Canada,matpower/matpower
@@ -10210,6 +10441,7 @@ kstief,unknown,,,akkudoktor-eos/eos
 ksun46,unknown,,United States,lanl-ansi/powermodels.jl
 ktboy0502,unknown,,,"curent/andes,ie3-institute/simona,lanl-ansi/powermodels.jl,sanpen/gridcal"
 ktehranchi,academic,stanford university,United States,"blue-marble/gridpath,eiagov/bluesky,genxproject/genx.jl,lanl-ansi/powermodels.jl,nrel-sienna/powersimulations.jl,nrel-sienna/powersystemsinvestments.jl,nrel/pras,nrel/reeds-2.0,pencleanenergy/match-model,pypsa/pypsa,rebase-energy/enflow,spine-tools/spineopt.jl,stanford-eao/bridges,switch-model/switch,tulipaenergy/tulipaenergymodel.jl"
+ktokarska,academic,,,iiasa/message_ix
 ktye-UF,unknown,,,"curent/andes,mzy2240/esa"
 kuarthepirat,unknown,,Germany,tum-ens/urbs
 kubachri,unknown,,Denmark,balmorelcommunity/balmorel
@@ -10235,6 +10467,7 @@ kweiss51,unknown,,,nrel/pras
 kwisniew,unknown,,,bje-/nemo
 kye-NREL,unknown,,,e2niee/pandapower
 kyleniemeyer,academic,oregon state university,United States,assume-framework/assume
+kylerkk,unknown,,,future-power-networks/simplus-grid-tool
 kyrcha,academic,,Greece,e2niee/pandapower
 kyri-petrou,unknown,,,e2niee/pandapower
 kyribaker,academic,,United States,e2niee/pandapower
@@ -10247,6 +10480,7 @@ l-welder,professional,climate analytics,Germany,fzj-iek3-vsa/fine
 l1358,academic,,,e2niee/pandapower
 l3miage-pichouda,unknown,,,roseautechnologies/roseau_load_flow
 l4b4r4b4b4,industry,,Germany,"reegis/deflex,tum-ewk/opentumflex"
+l5d1l5,academic,peking university,China,iiasa/message_ix
 labormedia,professional,labormedia,Chile,switch-model/switch
 labothap,academic,university of liege,,energy-modelling-toolkit/dispa-set
 labrahams,unknown,,,emlab/emlab-generation
@@ -10283,6 +10517,7 @@ laranea,professional,laranea,Belgium,critical-infrastructure-systems-lab/pownet
 lararou,unknown,,,"ie3-institute/powersystemdatamodel,ie3-institute/simona"
 lardillierp,unknown,,,e2niee/pandapower
 larenspear,research,pacific northwest national laboratory,United States,erf-model/erf
+larissaklnr,unknown,,,iiasa/message_ix
 larkoe,unknown,,,akkudoktor-eos/eos
 larleth,unknown,,,akkudoktor-eos/eos
 larrasket,unknown,,France,nrel-sienna/powersimulations.jl
@@ -10328,6 +10563,7 @@ lcford2,industry,,,temoaproject/temoa
 lchb000,unknown,,,"etsap-times/times_model,quintel/etmodel"
 lclflash,unknown,,,"mbheinen/bpa-ipf-tsp,powergridmodel/power-grid-model,pypsa/pypsa,sogno-platform/dpsim,thales1330/psp"
 lcosson,professional,silicom,France,powsybl/powsybl-core
+lcw95,academic,ministry of environment/ greenhouse gas inventory and research center of korea,,iiasa/message_ix
 lcxc2782,unknown,,,sanpen/gridcal
 ld2874,unknown,,,e2niee/pandapower
 ldemattos,unknown,,,"e2niee/pandapower,nrel/paraemt_public,pypsa/pypsa,sanpen/gridcal"
@@ -10434,9 +10670,11 @@ lhy-ux,unknown,,,prep-next/prep-shot
 li-dennis,unknown,,,pypsa/pypsa
 li-wilbur,unknown,,,pypsa/pypsa
 li100-atmocn,unknown,,,erf-model/erf
+liacodrington,unknown,,,iiasa/message_ix
 liam-veitch,unknown,,United Kingdom,susantoj/pypower-dynamics
 liamculligan,unknown,,South Africa,grid2op/grid2op
 liamwazherealso,unknown,,United States,lkruitwagen/global-fossil-fuel-supply-chain
+liangb612,unknown,,,pielube/messpy
 liangdong158,unknown,,,sanpen/gridcal
 liangpeng190113,unknown,,,"rwl/pypower,sanpen/gridcal"
 liangy396,unknown,,,prep-next/prep-shot
@@ -10486,7 +10724,9 @@ lingjiajie,academic,zhejiang university,China,grid-parity-exchange/egret
 lingkang95,academic,tu/e,,"e2niee/pandapower,powergridmodel/power-grid-model"
 lingo01,academic,,,future-power-networks/simplus-grid-tool
 linhthi,unknown,,Singapore,pypsa/pypsa
+linhx1999,professional,scut,China,e2niee/pandapower
 linluoran,unknown,,,pypsa/pypsa
+linmeng316,unknown,,,curent/andes
 linmumuzf,unknown,,,adgefficiency/energy-py
 linomp,industry,samotics,Netherlands,rebase-energy/enflow
 linsong,unknown,,,pypsa/pypsa
@@ -10597,6 +10837,7 @@ lnjlnj,unknown,,,matpower/matpower
 lnksz,industry,efr-gmbh,,"tum-ens/rivus,tum-ens/urbs"
 loanpal-engineering,unknown,,,"nrel/pysam,nrel/sam"
 lochotzke,unknown,,,akkudoktor-eos/eos
+locouc,unknown,,,iiasa/message_ix
 lodagro,unknown,,Belgium,pypsa/pypsa
 loderb,unknown,,,openipsl/openipsl
 lodersky,unknown,,,tum-ens/urbs
@@ -10629,6 +10870,7 @@ lord-william,unknown,,,oemof/oemof-solph
 lordleoo,unknown,,,"matpower/matpower,matpower/most"
 lorenzleutgeb,academic,max planck institute for informatics,,akkudoktor-eos/eos
 lorenzopilotti,unknown,,,"fzj-iek3-vsa/fine,grid-parity-exchange/egret,microgridspy/microgridspy"
+lorenzousai,unknown,,,iiasa/message_ix
 loriab,professional,georgia tech,,grid2op/grid2op
 loric2008,unknown,,,"e2niee/pandapower,matpower/matpower,pypsa/pypsa,sanpen/gridcal"
 loshmee,unknown,,,e2niee/pandapower
@@ -10644,6 +10886,7 @@ loumalouomega,industry,altair,France,gmlc-tdc/helics
 lourenko,unknown,,,gmlc-tdc/helics
 louyax,unknown,,,prep-next/prep-shot
 loveq369,unknown,,,thales1330/psp
+lovila,unknown,,,balmorelcommunity/balmorel
 lovinduw,unknown,,,fzj-iek3-vsa/fine
 loyoan1,unknown,,,pypsa/pypsa
 lpaging,unknown,,,"e2niee/pandapower,grid2op/grid2op,pypsa/pypsa"
@@ -10688,6 +10931,7 @@ lucanus42,unknown,,,akkudoktor-eos/eos
 lucarammel,academic,artelys,France,"antaressimulatorteam/antares_simulator,pypsa/pypsa"
 lucas-vivier,academic,cired,France,"csenkpiel/inve2st,energy-modelling-toolkit/dispa-set"
 lucas-vivier-cvegroup,unknown,,,adgefficiency/energy-py-linear
+lucascondeixa,academic,aalto university,Finland,iiasa/message_ix
 lucasgautheron,academic,university of missouri,United States,"antaressimulatorteam/antares_simulator,nrel-sienna/powersimulations.jl"
 lucasp0101,academic,uam,,grid2op/grid2op
 lucasschn,academic,uc3m,Spain,oemof/oemof-solph
@@ -10734,6 +10978,7 @@ lukasoldi,unknown,,,openego/ego
 lukasschirren,academic,imperial college london,,pypsa/pypsa
 luke-kiernan,unknown,,,nrel-sienna/powersimulations.jl
 luke-marshall,unknown,,,"adgefficiency/energy-py-linear,bje-/nemo,opencemorg/opencem"
+lukeggert,unknown,,,iiasa/message_ix
 lukeli1990,academic,university of michigan - ann arbor,United States,lanl-ansi/powermodels.jl
 lukelowry,academic,texas a&m university,,mzy2240/esa
 lukereed,professional,res,United States,nrel/pysam
@@ -10744,6 +10989,8 @@ lulezi,industry,elage gmbh,Switzerland,e2niee/pandapower
 luloenciso,industry,,Argentina,powergridmodel/power-grid-model
 lulzzz,unknown,,,"calliope-project/calliope,nreca-bts/omf,kth-desa/onsset-2016,osemosys/osemosys,switch-model/switch"
 lumbric,unknown,,,"inwe-boku/medea,pypsa/pypsa"
+luminitatian,academic,peking university,,iiasa/message_ix
+luminousluming,unknown,,,iiasa/message_ix
 luningsun,academic,university of notre dame,,grid2op/grid2op
 luobofeng,unknown,,,matpower/matpower
 lurpi,academic,eth zurich,Switzerland,oemof/oemof-solph
@@ -10819,6 +11066,8 @@ maartenelgar,professional,projetsolaire,France,"sei-international/nemomod.jl,tum
 mab-wien,unknown,,Austria,akkudoktor-eos/eos
 mabijkerk,unknown,,,"quintel/etengine,quintel/etmodel"
 mabote1,academic,oregon state univerisity,United States,lanl-ansi/powermodels.jl
+mabudz,academic,aalborg university,Denmark,iiasa/message_ix
+macflo8,unknown,,,iiasa/message_ix
 machagirimanoj,unknown,,,powsybl/pypowsybl
 machao1203,unknown,,,pypsa/pypsa
 macher627,unknown,,,akkudoktor-eos/eos
@@ -10877,6 +11126,7 @@ maipj,unknown,,,manuvarkey/gelectrical
 maiqiumaker,unknown,,,adgefficiency/energy-py
 maitrayadesai,unknown,,,nrel-sienna/powersimulationsdynamics.jl
 maitreyeemarathe,unknown,,,lanl-ansi/powermodelsannex.jl
+majdolleik,unknown,,,iiasa/message_ix
 majeau-bettez,academic,"ciraig, polytechnique montreal, and norwegian university of science and technology (ntnu)",Canada,tum-ens/urbs
 majj,professional,mabotech,China,pypsa/pypsa
 majkolaj,unknown,,,"pypsa/pypsa,rwl/pypower,sanpen/gridcal,susantoj/pypower-dynamics"
@@ -10916,9 +11166,11 @@ manfredsteger,unknown,,Germany,akkudoktor-eos/eos
 mangecoeur,unknown,,,"calliope-project/calliope,lvorspel/digripy"
 mangxier,unknown,,,"rwl/pypower,sanpen/gridcal"
 maniok098,unknown,,Germany,pypsa/pypsa
+manjinping,unknown,,,iiasa/message_ix
 mannanj,unknown,,,nreca-bts/omf
 mannershark,unknown,,,energytransition/esdl
 manoharp-vtu,unknown,,,"leonardgoeke/anymod.jl,switch-model/switch"
+manoharpotli,unknown,,,iiasa/message_ix
 manoj1511,government,idaholab,Jersey,gmlc-tdc/helics
 manojselvam,unknown,,United Kingdom,flexiblepower/powermatcher
 manolaz,unknown,,Viet Nam,lanl-ansi/powermodels.jl
@@ -10944,6 +11196,7 @@ maqingdawang,unknown,,,susantoj/pypower-dynamics
 mar6490,unknown,,,oemof/oemof-solph
 maraisro,unknown,,,future-power-networks/simplus-grid-tool
 marbackdtu,unknown,,,balmorelcommunity/balmorel
+marbodko,unknown,,,"curent/andes,sogno-platform/dpsim"
 marc-juanpera,unknown,,,rl-institut/multi-vector-simulator
 marc-resc,unknown,,,"pypsa/pypsa,sanpen/gridcal"
 marc9025,unknown,,,akkudoktor-eos/eos
@@ -10979,6 +11232,7 @@ marcus-voss,academic,birds on mars,Germany,"adgefficiency/energy-py,e2niee/panda
 marcusjwilliams,unknown,,,calliope-project/calliope
 marcuslima42,professional,42ad,United Kingdom,e2niee/pandapower
 marcussc,unknown,,Germany,akkudoktor-eos/eos
+marek-iiasa,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 marek705,unknown,,Poland,open-energy-transition/solver-benchmark
 marenat,unknown,,,nrel-sienna/powersimulationsdynamics.jl
 margot03,unknown,,,genxproject/genx.jl
@@ -11029,6 +11283,7 @@ markusfeyhsunrun,unknown,,,"nrel/pysam,nrel/sam"
 markushal,professional,oko-institut,,pypsa/pypsa
 markuslehner,unknown,,,"critical-infrastructure-systems-lab/pownet,sanpen/gridcal"
 markwagy,unknown,,,mesmo-dev/mesmo
+markxwang,unknown,,,iiasa/message_ix
 marliekeverweij,unknown,,,"quintel/etengine,quintel/etmodel"
 marlinarnz,unknown,,,leonardgoeke/anymod.jl
 marmer1,unknown,,,akkudoktor-eos/eos
@@ -11062,6 +11317,7 @@ martinriedel,industry,carl zeiss imt gmbh,Germany,akkudoktor-eos/eos
 martinscripts,unknown,,,"dynawo/dynawo,upb-lea/electricgrid.jl"
 martinstringer,unknown,,,energysystemsmodellinglab/muse_os
 marto12,unknown,,Australia,"etsap-times/times_model,genxproject/genx.jl,leonardgoeke/anymod.jl,opencemorg/opencem,optimal2050/energyrt,osemosys/osemosys,pypsa/pypsa,sei-international/nemomod.jl,spine-tools/spineopt.jl,temoaproject/temoa,tulipaenergy/tulipaenergymodel.jl,tum-ens/urbs,youngfaithful/capacityexpansion.jl"
+martonbardoly,unknown,,,iiasa/message_ix
 martymcenroe,industry,thrivetech.ai,United States,pypsa/pypsa
 martynvandijke,academic,eindhoven university of technology,Netherlands,"frkunz/stelmod,pypsa/pypsa"
 martyr37,unknown,,Australia,"pypsa/pypsa,unsw-ceem/nempy"
@@ -11082,6 +11338,7 @@ mashuping,unknown,,,prep-next/prep-shot
 maslennikovia,unknown,,,tum-ens/urbs
 masoninman,unknown,,United States,"oemof/oemof-solph,pypsa/pypsa,switch-model/switch"
 masonlee277,academic,brown university / nasa / pluto / stealth,United States,erf-model/erf
+masoomehBararzadeh,unknown,,,iiasa/message_ix
 masoudm94,unknown,,,oemof/oemof-solph
 masseramatteo,unknown,,,uu-er/adopt-net0
 massimo-ferraro,professional,techrain,,"powsybl/powsybl-core,powsybl/pypowsybl"
@@ -11102,6 +11359,7 @@ mathematiger,academic,,,grid2op/grid2op
 matheusblm,academic,,,lkruitwagen/global-fossil-fuel-supply-chain
 matheusduartedm,industry,psrenergy,,"e2niee/pandapower,grid2op/grid2op,matpower/matpower,psrenergy/sddpdso.jl,pypsa/pypsa"
 matheusfly,professional,datamaster,,akkudoktor-eos/eos
+mathewskyterror,unknown,,,iiasa/message_ix
 mathheusbueno,unknown,,Brazil,thales1330/psp
 mathiesbr,unknown,,,mosaik/mosaik
 mathieuroques,professional,giskard,,"antaressimulatorteam/antares_simulator,blue-marble/gridpath,critical-infrastructure-systems-lab/pownet,etsap-times/times_model,irena-flextool/flextool,open-energy-transition/open-tyndp,osemosys/osemosys,pypsa/pypsa,sanpen/veragrid"
@@ -11169,6 +11427,7 @@ maxiackner,unknown,,,e2niee/pandapower
 maximecharriere,industry,bfh,Switzerland,nrel/sam
 maximerden,unknown,,,mosaik/mosaik
 maximgc2m,unknown,,,e2niee/pandapower
+maximikos,academic,,,iiasa/message_ix
 maximilian-hoffmann,unknown,,,"fzj-iek3-vsa/fine,zen-universe/zen-garden"
 maximizzar,industry,hs-fulda,Germany,akkudoktor-eos/eos
 maxleitner,unknown,,,flixopt/flixopt
@@ -11297,6 +11556,7 @@ melon-99,unknown,,,prep-next/prep-shot
 melona98,unknown,,,prep-next/prep-shot
 meloncafe,academic,,,akkudoktor-eos/eos
 melvanapp,professional,melvan,,"bje-/nemo,frkunz/stelmod,pypsa/pypsa,richard-weinhold/pomato,unsw-ceem/nempy,vub-hydr/revub"
+meng25meng,unknown,,,iiasa/message_ix
 mengchangma,unknown,,,nrel/sam
 mengfei2005,unknown,,,"pielube/messpy,rheia-framework/rheia"
 mengfeimu,academic,chinese academy of sciences,China,critical-infrastructure-systems-lab/pownet
@@ -11306,6 +11566,7 @@ mengjingyouling,unknown,,,chrisyeh96/sustaingym
 mengke-mk,professional,"cas, ict",China,pypsa/pypsa
 mengqi-z,research,pacific northwest national laboratory,,pypsa/pypsa
 mengyao0412,unknown,,,adgefficiency/energy-py
+mengyuliisa,unknown,,,iiasa/message_ix
 mengziwen2000,academic,dalian university of technology,China,prep-next/prep-shot
 meniku,professional,blackforestgames.com,,akkudoktor-eos/eos
 menkej,unknown,,Germany,akkudoktor-eos/eos
@@ -11471,6 +11732,7 @@ minix1234,unknown,,,"nrel/reopt_api,nrel/reopt_lite_api"
 minixalpha,unknown,,,akkudoktor-eos/eos
 minjeongJho,industry,google,,matpower/matpower
 minmaxat,unknown,,,akkudoktor-eos/eos
+minovsor,industry,,,iiasa/message_ix
 minseok-ryu,academic,arizona state university,,lanl-ansi/powermodels.jl
 minshudeng,unknown,,,energyinnovation/eps-us
 minsoo2018,unknown,,,"lanl-ansi/powermodels.jl,matpower/matpower,matpower/most"
@@ -11479,6 +11741,7 @@ miq,industry,softwareschneiderei gmbh,Germany,akkudoktor-eos/eos
 miraStud,unknown,,,"calliope-project/calliope,oemof/oemof-solph"
 miratepuffin,academic,pometry/qmul/ldbc,United Kingdom,grid2op/grid2op
 mirayercan,unknown,,,nrel/pysam
+mircal12,unknown,,,pypsa/pypsa
 mircopesent,unknown,,,"energyscope/energyscope,ipese/reho"
 mirelle-r,professional,a3data,,thales1330/psp
 mirjabbarbadalov,academic,,Czechia,"e2niee/pandapower,pypsa/pypsa"
@@ -11495,6 +11758,7 @@ misyntropy,unknown,,,"blue-marble/gridpath,nrel/sam"
 mit456,unknown,,,adgefficiency/energy-py
 mitchgrids,unknown,,,genxproject/genx.jl
 mitrinvivo,unknown,,,e2niee/pandapower
+mitterrutzner,unknown,,,iiasa/message_ix
 mizucloud,unknown,,,kiedanski/pymarket
 mj00712,unknown,,,matpower/matpower
 mjamei19,unknown,,,"lanl-ansi/powermodels.jl,lanl-ansi/powermodelsannex.jl"
@@ -11575,7 +11839,7 @@ moazzamfarid,industry,redcoast corporation,Pakistan,e2niee/pandapower
 mobbl,unknown,,Germany,akkudoktor-eos/eos
 mocisly,unknown,,,gmlc-tdc/helics
 mocn26169,unknown,,,prep-next/prep-shot
-modelica-3rdparty,unknown,,,"openipsl/openipsl"
+modelica-3rdparty,unknown,,,openipsl/openipsl
 modesitt-sesco,unknown,,,e2niee/pandapower
 moegge,unknown,,,uu-er/adopt-net0
 moelllerniklas,unknown,,,pypsa/pypsa
@@ -11604,6 +11868,7 @@ molzahn,academic,georgia institute of technology,United States,"lanl-ansi/powerm
 monabf,academic,,France,pypsa/pypsa
 monikasyed,unknown,,,tum-ens/urbs
 monisharaju,unknown,,,matpower/matpower
+monistowl,unknown,,,oemof/oemof-solph
 monkebusinessai,unknown,,,"nrel/reeds-2.0,pnnl/exago"
 monoxy,unknown,,,prep-next/prep-shot
 monrozierb,unknown,,,roseautechnologies/roseau_load_flow
@@ -11616,6 +11881,7 @@ moosebuild,government,idaho national laboratory,United States,idaholab/heron
 moreknowledge123,unknown,,,prep-next/prep-shot
 morganpare,academic,habitatenergy,Australia,"pypsa/pypsa,unsw-ceem/nempy"
 moritz-weber,unknown,,Germany,"curent/andes,e2niee/pandapower,matpower/matpower,villasframework/node"
+moritzpschwarz,academic,university of oxford,,iiasa/message_ix
 moriyasukowa,unknown,,,rwl/pypower
 morje-datta,unknown,,,"sogno-platform/dpsim,villasframework/node"
 morphli,unknown,,,chengts95/rustpower
@@ -11658,6 +11924,7 @@ mrbooOoo,unknown,,Portugal,e2niee/pandapower
 mrc13,unknown,,,openego/ego
 mrcaio,industry,,Brazil,rwl/pypower
 mrchrisadams,academic,product science,,"ahalev/python-microgrid,genxproject/genx.jl,pencleanenergy/match-model"
+mrcloud996,unknown,,,iiasa/message_ix
 mrcsantos1,academic,,,e2niee/pandapower
 mrftt12,unknown,,,manuvarkey/gelectrical
 mrifraunhofer,unknown,,,e2niee/pandapower
@@ -11720,6 +11987,7 @@ mttb91,professional,ricerca sul sistema energetico - rse,Italy,"e2niee/pandapowe
 mtthwgrvn,unknown,,United States,nrel/reeds-2.0
 mtysf,unknown,,,rwl/pypower
 muasiq,unknown,,,ahalev/python-microgrid
+mubarik815,academic,worabe comprhensive specialized hospital,Ethiopia,gridfm/gridfm-graphkit
 muchtrees,unknown,,,prep-next/prep-shot
 mudomau,industry,,,nrel/sam
 muellerbernd,academic,fraunhofer iosb-ast,Germany,akkudoktor-eos/eos
@@ -11743,6 +12011,7 @@ murari-goswami,industry,siemens,,pypsa/pypsa
 murgeyseb,unknown,,France,"powsybl/powsybl-core,powsybl/powsybl-open-loadflow,powsybl/pypowsybl,pypsa/pypsa"
 murilo-ma,professional,typhoon hil,,rwl/pypower
 murkelmurks,unknown,,,pypsa/pypsa
+murliramki,unknown,,,iiasa/message_ix
 murzua7,professional,,Chile,"energysystemsmodellinglab/muse_os,sanpen/gridcal"
 mus3na,industry,,Malaysia,"e2niee/pandapower,thales1330/psp"
 mush03,unknown,,,e2niee/pandapower
@@ -11757,6 +12026,7 @@ mvivienneliu,unknown,,,"nrel-sienna/powersimulations.jl,nrel-sienna/powersystems
 mw23,professional,sparkmeter,United States,"nreca-bts/omf,pnnl/exago"
 mwasm,unknown,,,"lanl-ansi/powermodels.jl,matpower/matpower"
 mway,professional,"groq; previously uber, uberatg, rockstargames",,lkruitwagen/global-fossil-fuel-supply-chain
+mwdalyn,unknown,,United States,"nrel/reeds-2.0,powergridmodel/power-grid-model"
 mweinelt,unknown,,Bulgaria,akkudoktor-eos/eos
 mwmccormick,unknown,,,"genxproject/genx.jl,nrel/sam"
 mwmeyer,industry,,United States,nrel/sam
@@ -11815,6 +12085,7 @@ nanoq66,unknown,,,akkudoktor-eos/eos
 nanyaD,unknown,,,nreca-bts/omf
 nao1345678,academic,,,"powsybl/powsybl-core,powsybl/pypowsybl"
 naohiro701,academic,,Japan,"calliope-project/calliope,pypsa/pypsa"
+naomi-simumba,unknown,,,gridfm/gridfm-graphkit
 naouess,unknown,,,"autarky-power/minigrid-jcc,calliope-project/calliope,tum-ens/urbs"
 naplo2021,unknown,,,nrel/reeds-2.0
 napp-technologies,unknown,,,rebase-energy/enflow
@@ -11833,6 +12104,7 @@ nataraj2,academic,lawrence berkeley national laboratory,United States,erf-model/
 nateagarwal,unknown,,,nrel/pras
 nathaliamdc,unknown,,,"curent/andes,dynawo/dynawo,e2niee/pandapower,juliaenergy/powerdynamics.jl,nrel-sienna/powersimulationsdynamics.jl,nrel/paraemt_public,pnnl/exago,powsybl/powsybl-core,powsybl/pypowsybl,sanpen/gridcal,sogno-platform/dpsim"
 nathantgray,research,pacific northwest national laboratory,United States,"e2niee/pandapower,gmlc-tdc/helics,pnnl/tesp"
+natiweber,unknown,,,iiasa/message_ix
 natmaka,unknown,,France,pypsa/pypsa
 naudloomans,academic,eindhoven university of technology,,"energysystemsmodellinglab/muse_os,leonardgoeke/anymod.jl"
 naurismikulskis,unknown,,,akkudoktor-eos/eos
@@ -11854,6 +12126,7 @@ necaspiro,unknown,,,akkudoktor-eos/eos
 ned2,academic,thoughtworks,Australia,unsw-ceem/nempy
 nedpfeiffer,unknown,,,pnnl/exago
 needcare,academic,leibniz universitat hannover,Germany,prep-next/prep-shot
+neetisinha,unknown,,,iiasa/message_ix
 nefertari1976,unknown,,,akkudoktor-eos/eos
 nefkarpi,unknown,,,e2niee/pandapower
 negin513,academic,national center for atmospheric research (ncar),United States,erf-model/erf
@@ -11998,6 +12271,7 @@ ninia99,industry,energiedock,Germany,e2niee/pandapower
 niquepolice,unknown,,,flexiblepower/powermatcher
 niroce,unknown,,,nrel/sam
 nis-bucr,unknown,,,"derrickoswald/cimapplication,e2niee/pandapower"
+nis-nurr,unknown,,,derrickoswald/cimapplication
 nis-sapl,unknown,,,derrickoswald/cimapplication
 nisango,professional,privat,Germany,pypsa/pypsa
 nit1995,utility,,India,calliope-project/calliope
@@ -12079,6 +12353,7 @@ nrgeen,unknown,,,akkudoktor-eos/eos
 nrhein,unknown,,,akkudoktor-eos/eos
 nricco,unknown,,,nrel/hopp
 nrlearn,unknown,,,curent/andes
+nroming,unknown,,Germany,iiasa/message_ix
 nryan100,unknown,,Taiwan,gmlc-tdc/helics
 nsanina,unknown,,,e2niee/pandapower
 nschlemm,industry,coder nostra gmbh,Germany,"adamgreenhall/minpower,e2niee/pandapower,oemof/oemof-solph,pypsa/pypsa"
@@ -12106,6 +12381,7 @@ nvimts,unknown,,,nrel-sienna/powersimulationsdynamics.jl
 nwillems94,unknown,,,eiagov/bluesky
 nworbmot,academic,technische universitat berlin,,"antaressimulatorteam/antares_simulator,calliope-project/calliope,curent/andes,e2niee/pandapower,eiagov/bluesky,etsap-times/times_model,genxproject/genx.jl,lanl-ansi/powermodels.jl,matpower/matpower,matpower/most,nrel-sienna/powersimulations.jl,oemof/oemof-solph,open-energy-transition/open-tyndp,openego/edisgo,openipsl/openipsl,pypsa/pypsa,robbiemorrison/deeco,sanpen/gridcal,sanpen/veragrid,switch-model/switch"
 nwt-patrick,unknown,,,osemosys/osemosys
+nxZhai,academic,university of science and technology of china,China,grid2op/grid2op
 nxshi,unknown,,,genxproject/genx.jl
 nxtrung87,unknown,,,emma-model/emma
 nyahn01,unknown,,,fzj-iek3-vsa/fine
@@ -12195,9 +12471,11 @@ omalleyconor,unknown,,,e2niee/pandapower
 omar49san,unknown,,,e2niee/pandapower
 omarbay,unknown,,,ipese/reho
 omarmoh272001,unknown,,,"sesit/copper,sesit/silver"
+omarshoura,unknown,,Egypt,iiasa/message_ix
 omasanori,unknown,,Japan,manuvarkey/gelectrical
 omega1644,professional,voltarocks,,unsw-ceem/nempy
 omercaylan,academic,omer-ceylan17 hotmail.com,Germany,gmlc-tdc/helics
+omoafe,unknown,,,onsset/onsset
 omus,professional,beacon-biosignals,Canada,"e2niee/pandapower,lanl-ansi/powermodels.jl,lanl-ansi/powermodelsannex.jl"
 onceuponatime78,unknown,,,akkudoktor-eos/eos
 ondrejch,academic,,United States,epri-dev/opender
@@ -12281,6 +12559,7 @@ oyshiyu,unknown,,,pypsa/pypsa
 oysteinsolheim,unknown,,Norway,lanl-ansi/powermodels.jl
 oyurdakul,research,,United States,anl-ceeesa/unitcommitment.jl
 ozgurcansakinci,unknown,,,emlab/emlab-generation
+ozgursarhan,unknown,,,esmap-world-bank-group/epm
 ozkibr,unknown,,Jordan,"nrel/reopt_api,nrel/reopt_lite_api"
 ozsolarwind,unknown,,,nrel/sam
 ozza-g,unknown,,,matpower/matpower
@@ -12300,6 +12579,7 @@ pRohrbeck,unknown,,,assume-framework/assume
 pa56,academic,,,e2niee/pandapower
 pablo-ta,unknown,,,grid2op/grid2op
 pablormier,academic,heidelberg university,Germany,pypsa/pypsa
+pablrome,unknown,,,iit-energysystemmodels/opensduc
 pacog,professional,polarsteps,,"quintel/etengine,quintel/etmodel"
 pacomunuera,unknown,,Spain,nrel/sam
 pacowong,industry,,Hong Kong,critical-infrastructure-systems-lab/pownet
@@ -12318,6 +12598,7 @@ palob,unknown,,,manuvarkey/gelectrical
 panademo,unknown,,,"epri-dev/opender,flexiblepower/powermatcher,grid2op/grid2op,nrel/sam,powergridmodel/power-grid-model"
 panchi64,unknown,,Puerto Rico,nrel/sam
 panciatici,unknown,,France,lanl-ansi/powermodels.jl
+panday1995,academic,aalborg university,Denmark,iiasa/message_ix
 panggah22,academic,chung-ang university (cau),South Korea,rwl/pypower
 pangmen,unknown,,,"powergridmodel/power-grid-model,pypsa/pypsa"
 pankajragmy,unknown,,,fzj-iek3-vsa/fine
@@ -12370,6 +12651,7 @@ patepelo,industry,,Spain,akkudoktor-eos/eos
 path2019,unknown,,,pypsa/pypsa
 pathiran22,academic,uclouvain,Belgium,energyscope/energyscope
 patlinGER,unknown,,,akkudoktor-eos/eos
+patnconnolly,unknown,,,iiasa/message_ix
 pato-gg,professional,,Mexico,eiagov/bluesky
 patrickbrown4,unknown,,,"gmlc-tdc/helics,nrel-sienna/powersimulations.jl,nrel-sienna/powersystemsinvestments.jl,nrel/pras,nrel/pysam,nrel/reeds-2.0,nrel/reopt.jl,nrel/reopt_api,nrel/reopt_lite_api,nrel/sam,switch-model/switch"
 patrickbryant,academic,aaas stpf fellow,United States,"genxproject/genx.jl,nrel/reeds-2.0"
@@ -12453,11 +12735,13 @@ peter279k,academic,institute for information industry,"Taiwan, Province of China
 peter890331,academic,,"Taiwan, Province of China","e2niee/pandapower,pielube/messpy"
 peterdudfield,unknown,,,adgefficiency/energy-py-linear
 peterkarlhuber,unknown,,,grid2op/grid2op
+peterkolp,professional,uniqa it services,Austria,iiasa/message_ix
 peterkulik-navitasoft,unknown,,,sanpen/gridcal
 peterkuria,academic,softavnetworks,Kenya,osemosys/osemosys
 petersalemink95,unknown,,,powergridmodel/power-grid-model
 peterw-hub,unknown,,,prep-next/prep-shot
 petitrenaudseb,unknown,,,"dynawo/dynawo,powsybl/powsybl-core"
+petrareisz,unknown,,,ait-energy/iesopt.jl
 pettyk,unknown,,United States,pypsa/pypsa
 pex0icu812,unknown,,,eiagov/bluesky
 peytonmcnully,unknown,,,"blue-marble/gridpath,e2niee/pandapower,lanl-ansi/powermodels.jl,manuvarkey/gelectrical,nrel-sienna/powersimulationsdynamics.jl,oemof/oemof-thermal,powergridmodel/power-grid-model,sanpen/gridcal,switch-model/switch,tum-ens/urbs"
@@ -12471,6 +12755,7 @@ pgoiporia,unknown,,,iit-energysystemmodels/opentepes
 pgtariq,unknown,,,nreca-bts/omf
 pguenz,unknown,,,leonardgoeke/anymod.jl
 ph-copa,unknown,,,"e2niee/pandapower,pypsa/pypsa,roseautechnologies/roseau_load_flow,rwl/pypower"
+phackstock,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 phannebohm,unknown,,,dynawo/dynawo
 phantastically,unknown,,United States,sanpen/gridcal
 phantom-balance,unknown,,,fzj-iek3-vsa/fine
@@ -12543,6 +12828,7 @@ pixlcode,unknown,,,"akkudoktor-eos/eos,nrel/sam"
 pjalet,unknown,,,switch-model/switch
 pjanecek0,academic,university of west bohemia,Czechia,powsybl/powsybl-core
 pjared,unknown,,,akkudoktor-eos/eos
+pjbarjhoux,unknown,,,iiasa/message_ix
 pjeanmarie,unknown,,,"powsybl/powsybl-core,powsybl/powsybl-open-loadflow,powsybl/pypowsybl"
 pjhansen,unknown,,,oemof/oemof-solph
 pjjennings,unknown,,United States,calliope-project/calliope
@@ -12628,6 +12914,7 @@ pps94,unknown,,,pypsa/pypsa
 ppsingh07,unknown,,,"balmorelcommunity/balmorel,pypsa/pypsa"
 pqkisvery666,unknown,,,grid2op/grid2op
 praba230890,unknown,,,rwl/pypower
+pracherla9,unknown,,,genxproject/genx.jl
 pradhanojas,unknown,,,rebase-energy/enflow
 pradumnj,unknown,,,lkruitwagen/global-fossil-fuel-supply-chain
 pragadeeshm,unknown,,,"nrel/reopt_api,nrel/reopt_lite_api"
@@ -12648,8 +12935,10 @@ prateek-joshi-31,research,national renewable energy laboratory,United States,nre
 pratikvn,academic,,Germany,erf-model/erf
 pravussum,unknown,,,akkudoktor-eos/eos
 pre-commit-ci,unknown,,,"ait-energy/iesopt.jl,calliope-project/calliope,energysystemsmodellinglab/muse_os,gmlc-tdc/helics,pypsa/pypsa"
+pre-commit-ci-lite[bot],unknown,,,energysystemsmodellinglab/muse2
 pre-commit-ci[bot],unknown,,,"ait-energy/iesopt.jl,calliope-project/calliope,energysystemsmodellinglab/muse_os,gmlc-tdc/helics,pypsa/pypsa"
 predictionengineer,unknown,,,"nrel/sam,pypsa/pypsa"
+preisz,unknown,,,ait-energy/iesopt.jl
 premsramachandran,unknown,,,pypsa/pypsa
 prenmat,industry,,,matpower/matpower
 prenzlauerberg,industry,,,nrel/pysam
@@ -12781,6 +13070,7 @@ quit2030,unknown,,,"curent/andes,e2niee/pandapower,powergridmodel/power-grid-mod
 quocthainguyenle14,unknown,,,lanl-ansi/powermodels.jl
 ququ454643,unknown,,,ahalev/python-microgrid
 qureshi98,unknown,,Germany,e2niee/pandapower
+quyennguyen2201,academic,earth sciences new zealand & university of otago,New Zealand,iiasa/message_ix
 qwang-EPRI,unknown,,,grid2op/chronix2grid
 qwertypi,unknown,,United States,nrel/pysam
 qwjhvbxi,utility,tensor energy,,nrel/sam
@@ -12863,6 +13153,7 @@ ran1988,unknown,,,"genxproject/genx.jl,grid2op/grid2op,nrel/reeds-2.0,pypsa/pyps
 randybb,unknown,,Slovakia,manuvarkey/gelectrical
 ranjanan,industry,juliahub inc.,United States,nrel-sienna/powersimulationsdynamics.jl
 ranjitster,academic,university of california santa barbara,,"blue-marble/gridpath,switch-model/switch"
+ranmione,unknown,,,iiasa/message_ix
 raodnik,academic,,India,powsybl/powsybl-core
 raoulkalkman,academic,dc-opportunities,Netherlands,rwl/pypower
 raphaeljuwe,industry,,,powergridmodel/power-grid-model
@@ -13017,6 +13308,7 @@ rishigurnani,industry,,,akkudoktor-eos/eos
 rishikeshsreehari,unknown,,,"fzj-iek3-vsa/fine,pypsa/pypsa"
 rishirelan,unknown,,,"grid-parity-exchange/egret,pypsa/pypsa"
 risosoky,unknown,,,emma-model/emma
+ritaner,unknown,,,iiasa/message_ix
 ritou11,unknown,,,"grid2op/grid2op,rwl/pypower,susantoj/pypower-dynamics,tum-ens/urbs"
 riverflows2333,unknown,,,curent/andes
 riw50hzt,unknown,,,richard-weinhold/pomato
@@ -13059,6 +13351,7 @@ robeg,unknown,,,epri-dev/opender
 robert1martin,unknown,,,akkudoktor-eos/eos
 robertkck,academic,teach for austria,Austria,kth-desa/onsset-2016
 robertobarrio98,unknown,,,e2niee/pandapower
+robertvava,industry,,United Kingdom,pypsa/pypsa
 robinmuhia,unknown,,Kenya,"e2niee/pandapower,pypsa/pypsa"
 robinroche,professional,umlp / femto-st,France,"adamgreenhall/minpower,calliope-project/calliope,curent/andes,nreca-bts/omf,e2niee/pandapower,eiagov/bluesky,energysystemsmodellinglab/muse_os,genxproject/genx.jl,grid-parity-exchange/egret,marvinler/pypownet,matpower/matpower,microgrids-x/microgrids.py,microgridspy/microgridspy,mzy2240/esa,nrel/h2integrate,oemof/oemof-solph,osemosys/osemosys,pypsa/pypsa,rwl/pypower,sanpen/gridcal,tum-ens/urbs"
 robinschucker,unknown,,United States,pypsa/pypsa
@@ -13073,6 +13366,7 @@ robstallman,unknown,,,nrel-sienna/powersimulationsdynamics.jl
 robweber,unknown,,United States,nreca-bts/omf
 rocdat,unknown,,,gmlc-tdc/helics
 rockg,unknown,,,rwl/pypower
+rockinglama,unknown,,,akkudoktor-eos/eos
 rockleee666,unknown,,,frkunz/stelmod
 rockstaedt,unknown,,Germany,"calliope-project/calliope,e2niee/pandapower,leonardgoeke/anymod.jl,oemof/oemof-solph,pypsa/pypsa,richard-weinhold/pomato,sanpen/gridcal"
 rodrigo-bonadia,academic,era energy research and analytics,Brazil,"dss-extensions/dss_capi,e2niee/pandapower,sanpen/gridcal"
@@ -13125,9 +13419,11 @@ roycohen2013,unknown,,,switch-model/switch
 roymir,unknown,,,"ancillaryservicesacquisitionmodel/asam,emlab/emlab-generation,emma-model/emma,richard-weinhold/pomato,sei-international/nemomod.jl"
 roza,unknown,,France,nrel-sienna/powersimulations.jl
 rozsasarpi,utility,equilibrium-energy,Italy,"lanl-ansi/powermodels.jl,pypsa/pypsa"
+rp9823,unknown,,,iiasa/message_ix
 rpadams,academic,princeton university,United States,e2niee/pandapower
 rpardas,academic,,United States,pnnl/exago
 rpiatt,unknown,,,"e3-/resolve,pypsa/pypsa"
+rplzzz,academic,university of virginia,United States,iiasa/message_ix
 rprusacki1,utility,pjm interconnection,United States,pnnl/exago
 rputris,academic,,,spine-tools/spineopt.jl
 rqussous,academic,department of sustainable systems engineering - albert-ludwigs-universitat freiburg,Germany,"ancillaryservicesacquisitionmodel/asam,assume-framework/assume,richard-weinhold/pomato"
@@ -13139,6 +13435,7 @@ rs-singh,unknown,,,"sanpen/gridcal,susantoj/pypower-dynamics"
 rschell,professional,dispatch analytics,United States,adamgreenhall/minpower
 rschueler,professional,tobrain,Germany,akkudoktor-eos/eos
 rschwarz,professional,doing the math,Germany,"energytransition/esdl,genxproject/genx.jl,lanl-ansi/powermodels.jl,pypsa/pypsa"
+rse-ci-imperial,academic,imperial college london,United Kingdom,energysystemsmodellinglab/muse2
 rsegur,academic,supergrid institute,France,"dynawo/dynawo,openipsl/openipsl"
 rskew,unknown,,Australia,e2niee/pandapower
 rsmith54,utility,trailstone,United States,"matpower/matpower,pypsa/pypsa"
@@ -13212,6 +13509,7 @@ s2111354,unknown,,,e2niee/pandapower
 s2192924,unknown,,,pypsa/pypsa
 s807861726,unknown,,,ahalev/python-microgrid
 sBouzols,unknown,,,"powsybl/powsybl-core,powsybl/powsybl-open-loadflow,powsybl/pypowsybl"
+sa-ccr,financial,,,iiasa/message_ix
 sa-moharrami,utility,,,hope-model-project/hope
 sa1244,unknown,,,sesit/copper
 saadmahboob,industry,,Singapore,pypsa/pypsa
@@ -13235,7 +13533,9 @@ safaarjdal,unknown,,,pypsa/pypsa
 safistaer,unknown,,,prep-next/prep-shot
 sagacitysite,unknown,,Sweden,akkudoktor-eos/eos
 sage0711,professional,independent consultant,,akkudoktor-eos/eos
+sageneox,unknown,,,pypsa/pypsa
 saghaem,unknown,,,andrewlyden/pylesa
+sagueret,professional,climate analytics,Australia,iiasa/message_ix
 sahand68,unknown,,Canada,"adgefficiency/energy-py,marvinler/pypownet"
 sahasubhajit,unknown,,,pypsa/pypsa
 saheb26-dev,unknown,,,gmlc-tdc/helics
@@ -13253,6 +13553,7 @@ saisumanv,academic,university of nebraska-lincoln,,openipsl/openipsl
 saizhaoyang0903,unknown,,,future-power-networks/simplus-grid-tool
 sajad95,academic,,,tum-ens/rivus
 sajed-zarrinpour,industry,,,lanl-ansi/powermodels.jl
+sajid209,unknown,,,iiasa/message_ix
 sajidali1996,academic,"skyelectric, pakistan",Pakistan,matpower/matpower
 sajit-banpu,utility,banpu energy,Australia,unsw-ceem/nempy
 sakares,unknown,,,adgefficiency/energy-py
@@ -13412,6 +13713,7 @@ scotiow,academic,epgoxford,United Kingdom,epgoxford/open
 scottcha,industry,snowy mountain works,,"nrel-sienna/powersimulations.jl,pypsa/pypsa"
 scottjbenner,utility,pjm interconnection,United States,nrel/reeds-2.0
 scottweber88,unknown,,,lkruitwagen/global-fossil-fuel-supply-chain
+scparkinson,unknown,,,iiasa/message_ix
 scra88le,unknown,,Singapore,lkruitwagen/global-fossil-fuel-supply-chain
 scribbler00,academic,,Germany,e2niee/pandapower
 scruss,unknown,,Canada,adamgreenhall/minpower
@@ -13441,6 +13743,7 @@ sebastian-peter,unknown,,Germany,"ie3-institute/powersystemdatamodel,ie3-institu
 sebastianPsm,industry,dspace,Germany,akkudoktor-eos/eos
 sebastiandeppisch,industry,swannekke.de,Germany,akkudoktor-eos/eos
 sebastiankozub,unknown,,Poland,matpower/matpower
+sebastianobusch,unknown,,,iiasa/message_ix
 sebastiansterl,academic,vrije universiteit brussel,,"irena-flextool/flextool,vub-hydr/revub"
 sebglom,academic,,,transient-official/transient-lib
 sebhulse,industry,,,pypsa/pypsa
@@ -13512,12 +13815,14 @@ sgfractal,industry,refiant-labs,United States,unsw-ceem/nempy
 sgiarols,unknown,,,energysystemsmodellinglab/muse_os
 sgiove,unknown,,,akkudoktor-eos/eos
 sgoelz,unknown,,,akkudoktor-eos/eos
+sgoggins,academic,university of missouri & linux foundation chaoss project,Greenland,pypsa/pypsa
 sgoodman65,unknown,,,"adamgreenhall/minpower,calliope-project/calliope,energy-modelling-toolkit/dispa-set,nrel-sienna/powersimulations.jl,oemof/oemof-solph,pypsa/pypsa,tum-ens/urbs"
 sgpinkus,unknown,,Australia,"flexiblepower/powermatcher,osemosys/osemosys,pypsa/pypsa,unsw-ceem/nempy"
 sh05550,unknown,,,pypsa/pypsa
 sha0urya,industry,,,oemof/oemof-solph
 sha8946,unknown,,,pypsa/pypsa
 shabansatti,academic,arizona state university,United States,grid2op/grid2op
+shabdaly,unknown,,,iiasa/message_ix
 shadowfaxjc,unknown,,,balmorelcommunity/balmorel
 shadowingeffect,industry,bay information technologies,United States,nrel/sam
 shadowthr,unknown,,Brazil,e2niee/pandapower
@@ -13547,6 +13852,7 @@ shao130,unknown,,,oemof/oemof-solph
 shaohuizhang,research,international institute for applied systems analysis,Austria,"balmorelcommunity/balmorel,etsap-times/times_model,oemof/oemof-solph"
 shaoni-wang,unknown,,,emlab/emlab-generation
 sharabhshukla,professional,myown,United States,"grid2op/grid2op,sogno-platform/dpsim"
+sharijide,unknown,,,iiasa/message_ix
 sharmaswastik,academic,,India,"gmlc-tdc/helics,sanpen/gridcal"
 sharwaridixit,unknown,,,energysystemsmodellinglab/muse_os
 sharyalZ,academic,artelys,France,"powsybl/powsybl-core,powsybl/powsybl-open-loadflow,powsybl/pypowsybl"
@@ -13677,6 +13983,7 @@ simao0620,unknown,,,"adgefficiency/energy-py,adgefficiency/energy-py-linear"
 simaosr,unknown,,,"ahalev/python-microgrid,oemof/oemof-solph"
 simcup,unknown,,,akkudoktor-eos/eos
 siminh86,unknown,,Sweden,spine-tools/spineopt.jl
+simithambi,unknown,,,iiasa/message_ix
 simjunky,unknown,,,simjunky/leelo
 simnh,academic,znes fgres oemof,Germany,"oemof/oemof-solph,oemof/oemof-thermal"
 simobu,unknown,,,inwe-boku/medea
@@ -13695,11 +14002,13 @@ simonzollner,unknown,,,"e2niee/pandapower,energymodelsx/energymodelsbase.jl,juli
 simscr,unknown,,,nreca-bts/omf
 simsurace,unknown,,,tulipaenergy/tulipaenergymodel.jl
 simularis,industry,solaris technical llc,United States,nrel/pysam
+simulate111,unknown,,,balmorelcommunity/balmorel
 simulkade,academic,technical university of denmark,Denmark,"balmorelcommunity/balmorel,osemosys/osemosys"
 simxopt,unknown,,,"adgefficiency/energy-py-linear,critical-infrastructure-systems-lab/pownet,future-power-networks/simplus-grid-tool"
 sin,unknown,,Poland,genxproject/genx.jl
 sinaatalay,unknown,,,genxproject/genx.jl
 sinagss,industry,,United States,pypsa/pypsa
+sinahp1372,unknown,,,iiasa/message_ix
 sinasinai,professional,,,"calliope-project/calliope,oemof/oemof-solph"
 sinclairwan,academic,beijing institute of petrochemical technology,,nrel/sam
 sindibadthesailor2013,unknown,,,powsybl/powsybl-core
@@ -13750,8 +14059,10 @@ skyjamqls-spec,unknown,,,blue-marble/gridpath
 skyk23187,unknown,,,matpower/matpower
 skyking363,unknown,,,akkudoktor-eos/eos
 skylerreid,research,,United States,lanl-ansi/powermodels.jl
+skymagician,unknown,,,iiasa/message_ix
 sl4ven,unknown,,,gridoptics/gridpack
 slashgk,industry,,India,gmlc-tdc/helics
+slaughtering,unknown,,,iiasa/message_ix
 slavictoire,unknown,,,blue-marble/gridpath
 slazar394,unknown,,,e2niee/pandapower
 slinshady89,unknown,,,akkudoktor-eos/eos
@@ -13892,6 +14203,7 @@ squoilin,academic,university of liege,,"energy-modelling-toolkit/dispa-set,energ
 sr-abay,unknown,,India,gridoptics/gridpack
 sraddhanjali,academic,,United States,susantoj/pypower-dynamics
 srerickson,unknown,,United States,lkruitwagen/global-fossil-fuel-supply-chain
+sreyam-sengupta,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 srforever,academic,chuzhou university,China,flexigis/flexigis
 srhbrnds,unknown,,,oemof/oemof-solph
 srieger1,academic,fulda university of applied sciences,Germany,akkudoktor-eos/eos
@@ -13922,6 +14234,7 @@ ssldk83,professional,g4ie,Denmark,pypsa/pypsa
 ssmil,unknown,,,temoaproject/temoa
 ssolheart,unknown,,,nrel/wpgnn
 ssonniaa,unknown,,,energyinnovation/eps-us
+ssriram1992,academic,indian school of business,India,iiasa/message_ix
 ssshah86,unknown,,,"calliope-project/calliope,oemof/oemof-solph,pypsa/pypsa,sanpen/gridcal,tum-ens/urbs"
 sstroemer,academic,ait austrian institute of technology gmbh,Austria,"ait-energy/iesopt.jl,antaressimulatorteam/antares_simulator,calliope-project/calliope"
 ssuffian,unknown,,,matpower/matpower
@@ -13937,6 +14250,8 @@ stamatisg4,unknown,,,e2niee/pandapower
 standardgalactic,industry,xanadu,Canada,"lanl-ansi/powermodels.jl,nrel-sienna/powersimulations.jl"
 standon41,unknown,,,"matpower/matpower,matpower/most"
 stanlee321,industry,deepmicrosystems.com,"Bolivia, Plurinational State of","adamgreenhall/minpower,e2niee/pandapower,pypsa/pypsa,sanpen/gridcal"
+stanley98745,unknown,,"Taiwan, Province of China",pypsa/pypsa
+stanzhai,industry,haizhi holding inc.,China,chengts95/rustpower
 stargieg,unknown,,Germany,akkudoktor-eos/eos
 starlight1540,unknown,,,akkudoktor-eos/eos
 staudtMarius,unknown,,,"ie3-institute/powersystemdatamodel,ie3-institute/simona"
@@ -14001,6 +14316,7 @@ sttarajor,unknown,,,e2niee/pandapower
 stuartcohen8,research,national renewable energy laboratory,,nrel/reeds-2.0
 studarus,unknown,,,adamgreenhall/minpower
 stuffsearcher,unknown,,,"e2niee/pandapower,eiagov/bluesky,energy-modelling-toolkit/dispa-set,etsap-times/times_model,genxproject/genx.jl,irena-flextool/flextool,osemosys/osemosys,powergridmodel/power-grid-model,pypsa/pypsa"
+stujen,unknown,,,iiasa/message_ix
 stumbaumr,professional,godmodelabs,Germany,akkudoktor-eos/eos
 stupidguy176,unknown,,Vietnam,akkudoktor-eos/eos
 stuttgart917,unknown,,,sanpen/gridcal
@@ -14139,6 +14455,7 @@ t1user,unknown,,,akkudoktor-eos/eos
 t3mschm2d,unknown,,,akkudoktor-eos/eos
 tFaster,professional,open text,Germany,akkudoktor-eos/eos
 ta7mid,professional,"nordicimaginglab, cefalo, cpslab-nsu",Bangladesh,gridoptics/gridpack
+tabeni,academic,nies,Japan,iiasa/message_ix
 tabholt,unknown,,Switzerland,pnnl/exago
 tablerst,unknown,,,pypsa/pypsa
 tadam50,professional,silicom,France,"powsybl/powsybl-core,powsybl/powsybl-open-loadflow,powsybl/pypowsybl"
@@ -14162,6 +14479,7 @@ tamkung555,professional,pea,Thailand,e2niee/pandapower
 tamura3747,unknown,,,nrel-sienna/powersimulationsdynamics.jl
 tamuraap,unknown,,,e2niee/pandapower
 tandin1,unknown,,,thales1330/psp
+taneugene,academic,columbia sipa,United States,iiasa/message_ix
 tangdou1,unknown,,,"matpower/matpower,pypsa/pypsa,rwl/pypower,sanpen/gridcal"
 tangjizheng,unknown,,,prep-next/prep-shot
 tangruiy,unknown,,,prep-next/prep-shot
@@ -14172,6 +14490,7 @@ tank723,unknown,,,"gridoptics/gridpack,pnnl/exago"
 tanmaysahay94,industry,google,,lkruitwagen/global-fossil-fuel-supply-chain
 tanushBee,unknown,,,e2niee/pandapower
 tanyabarham,industry,community energy labs,,flexiblepower/powermatcher
+tanzeli1982,academic,,,erf-model/erf
 tanzhongtan,professional,Guo Wang (Su Zhou )Cheng Shi Neng Yuan Yan Jiu Yuan ,,matpower/most
 taoyuanwei,academic,,,etsap-times/times_model
 taozuoqiao,unknown,,,genxproject/genx.jl
@@ -14251,12 +14570,14 @@ tfh8fe,academic,university of technology vienna,Austria,ait-energy/iesopt.jl
 tfoesch,unknown,,,zen-universe/zen-garden
 tgi-climact,professional,climact,,"energy-modelling-toolkit/dispa-set,pypsa/pypsa,quintel/etengine,quintel/etmodel"
 tgilon,professional,open energy transition,Belarus,"energy-modelling-toolkit/dispa-set,pypsa/pypsa,quintel/etengine,quintel/etmodel,sei-international/nemomod.jl"
+tgoessel,academic,mines paristech psl,France,iiasa/message_ix
 tgoforth27,unknown,,,nrel/reeds-2.0
 tgolubev,academic,thermoanalytics,United States,"nrel/pysam,nrel/sam"
 tgowthambits,unknown,,,"nrel/reopt_api,nrel/reopt_lite_api"
 tgr-lbd,unknown,,,"reegis/deflex,rl-institut/multi-vector-simulator"
 tgraulich,academic,technical university of denmark,Denmark,balmorelcommunity/balmorel
 tgrelka,industry,indibit-eu,Germany,akkudoktor-eos/eos
+th-hara,research,international institute for applied systems analysis,,iiasa/message_ix
 th1275,unknown,,,curent/andes
 thaewrapt,industry,"self-employment, inc.",Ukraine,lanl-ansi/powermodels.jl
 thaitranp,unknown,,,dss-extensions/dss_capi
@@ -14383,6 +14704,7 @@ tiloburgey,unknown,,Germany,akkudoktor-eos/eos
 tilseb,unknown,,,"balmorelcommunity/balmorel,etsap-times/times_model"
 tim-powersystems,unknown,,,"assume-framework/assume,nrel/pras"
 tim-x-y-z,unknown,,United States,"adgefficiency/energy-py-linear,pypsa/pypsa"
+timartlaw,unknown,,,pypsa/pypsa
 timebis,unknown,,France,"e2niee/pandapower,osemosys/osemosys,pypsa/pypsa,sanpen/gridcal,sanpen/veragrid"
 timfpark,industry,microsoft,United States,powergridmodel/power-grid-model
 timgassmann,unknown,,,quintel/etmodel
@@ -14435,6 +14757,7 @@ tkli,unknown,,,rwl/pypower
 tkneiske,unknown,,,"e2niee/pandapower,openego/edisgo,pypsa/pypsa"
 tkolarov,unknown,,,e2niee/pandapower
 tkoym,unknown,,,nrel/hopp
+tkrss,professional,csiro,,iiasa/message_ix
 tkwn2080,unknown,,Australia,nrel/sam
 tlarock,unknown,,,matpower/matpower
 tmakowka,industry,,Germany,akkudoktor-eos/eos
@@ -14492,6 +14815,7 @@ tommasomiori,unknown,,,osemosys/osemosys
 tommasoorlandini,unknown,,,e2niee/pandapower
 tommyjiang,professional,momenta,China,"e2niee/pandapower,matpower/matpower"
 tomogwen,academic,alan-turing-institute,,grid2op/grid2op
+tomoki-nishi,professional,toyota crdl,,iiasa/message_ix
 tomorrowblue,unknown,,,"e2niee/pandapower,nrel-sienna/powersimulationsdynamics.jl,nrel/paraemt_public,sanpen/gridcal,sogno-platform/dpsim"
 tomrfitz,industry,meta,United States,genxproject/genx.jl
 tomschelo,unknown,,,mesmo-dev/mesmo
@@ -14580,6 +14904,7 @@ tso-martin,industry,50hertz transmission gmbh,,"lanl-ansi/powermodels.jl,powsybl
 tsruban,industry,dunrose lunar technologies,Sri Lanka,"e2niee/pandapower,pypsa/pypsa,sanpen/gridcal"
 tstoker31,unknown,,,"nrel/reopt_api,nrel/reopt_lite_api"
 tstran155,research,national renewable energy laboratory,United States,nrel/sam
+tsybinae,unknown,,,pnnl/exago
 ttinoco,unknown,,United States,"e2niee/pandapower,lanl-ansi/powermodels.jl,matpower/matpower,powsybl/powsybl-core,pypsa/pypsa,sanpen/gridcal,sanpen/veragrid"
 ttjaden,unknown,,,oemof/oemof-thermal
 ttolhurst,unknown,,,gridfm/gridfm-graphkit
@@ -14607,6 +14932,7 @@ tut666-27,unknown,,,matpower/most
 tutu329,professional,zepdi,China,pypsa/pypsa
 tuxbox,unknown,,,akkudoktor-eos/eos
 tuxify,unknown,,,"ahalev/python-microgrid,balmorelcommunity/balmorel,fzj-iek3-vsa/fine,nrel/reopt.jl,pencleanenergy/match-model"
+tuyet2wgggo10272-lang,unknown,,,iiasa/message_ix
 tuyucheng7,industry,,China,"powsybl/powsybl-core,powsybl/powsybl-open-loadflow,powsybl/pypowsybl"
 tuyucheng777,industry,,China,"ie3-institute/powersystemdatamodel,ie3-institute/simona,powsybl/powsybl-core,powsybl/powsybl-open-loadflow,powsybl/pypowsybl"
 tviegut,unknown,,,powsybl/powsybl-core
@@ -14645,6 +14971,7 @@ tzmara,unknown,,,akkudoktor-eos/eos
 u11c54,unknown,,,pielube/messpy
 u17101229,unknown,,,nrel/sam
 u1946589,unknown,,,sanpen/gridcal
+u2yu,unknown,,,curent/andes
 u5288104,unknown,,,e2niee/pandapower
 ub1999,unknown,,,fzj-iek3-vsa/fine
 ubdussamad,academic,the george washington university,,switch-model/switch
@@ -14746,6 +15073,7 @@ vari0nce,unknown,,,akkudoktor-eos/eos
 variemai,academic,technische universitat wien,Austria,erf-model/erf
 varnith-as,unknown,,,pypsa/pypsa
 varris,unknown,,,akkudoktor-eos/eos
+varsey,industry,,United States,iiasa/message_ix
 varshadasoroju,industry,google,Singapore,epgoxford/open
 varun701,unknown,,,akkudoktor-eos/eos
 varunjyothiprakash,academic,indian institute of science,India,"blue-marble/gridpath,optimal2050/energyrt"
@@ -14889,6 +15217,7 @@ vmuthuk4,industry,exelon corporation,,pnnl/exago
 vnhg1703,unknown,,,osemosys/osemosys
 vo5tr0,unknown,,Germany,akkudoktor-eos/eos
 vogt31337,unknown,,,"chengts95/rustpower,e2niee/pandapower,sanpen/gridcal"
+volker-krey,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 volviq,unknown,,,akkudoktor-eos/eos
 voomdoon,unknown,,Germany,akkudoktor-eos/eos
 vor115384876,academic,marei-epmg,,pypsa/pypsa
@@ -14897,6 +15226,7 @@ vousmevoyess,unknown,,China,"adgefficiency/energy-py,e2niee/pandapower"
 vpotashnikov,unknown,,,optimal2050/energyrt
 vrabant,professional,vrabtech,United States,akkudoktor-eos/eos
 vrojkova,unknown,,,grid2op/grid2op
+vruijven,research,international institute for applied systems analysis,,iiasa/message_ix
 vsisl,unknown,,,pypsa/pypsa
 vsmawoex,professional,venomax,,"lanl-ansi/powermodels.jl,nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl"
 vtulus,academic,eth zurich,Switzerland,calliope-project/calliope
@@ -15013,6 +15343,7 @@ websb,unknown,,,e2niee/pandapower
 webwanging,professional,cqsq,China,"e2niee/pandapower,matpower/matpower,pypsa/pypsa,rwl/pypower"
 weggetor,industry,bitboxx solutions,Germany,akkudoktor-eos/eos
 wehrad,unknown,,,lkruitwagen/global-fossil-fuel-supply-chain
+weiainizhou,unknown,,,genxproject/genx.jl
 weibezahn,academic,copenhagen business school,Denmark,"etsap-times/times_model,juliaenergy/joulia.jl,leonardgoeke/anymod.jl,richard-weinhold/pomato,spine-tools/spineopt.jl"
 weichensw,unknown,,,lkruitwagen/global-fossil-fuel-supply-chain
 weigao-123,research,argonne national laboratory,United States,"curent/andes,e2niee/pandapower,gmlc-tdc/helics,mzy2240/esa,pypsa/pypsa,sanpen/gridcal"
@@ -15035,6 +15366,7 @@ werner-castro,professional,estudante,Brazil,"juliaenergy/powerdynamics.jl,lanl-a
 wesenu,unknown,,,adgefficiency/energy-py-linear
 wesleyjcole,research,national renewable energy laboratory,,nrel/reeds-2.0
 weslowrie,unknown,,,"pypsa/pypsa,sanpen/gridcal"
+weymann,unknown,,,akkudoktor-eos/eos
 wezardlza,unknown,,,matpower/matpower
 wfajber,unknown,,,manuvarkey/gelectrical
 wfjvdham,unknown,,Netherlands,powergridmodel/power-grid-model
@@ -15146,6 +15478,7 @@ wooyoungp,unknown,,,"genxproject/genx.jl,juliaenergy/powerdynamics.jl,pypsa/pyps
 workyz,unknown,,,prep-next/prep-shot
 wormyrocks,unknown,,,nrel/sam
 worseliz,unknown,,,"gmlc-dispatches/dispatches,idaholab/heron"
+woshare,unknown,,,iiasa/message_ix
 woshimanong1990,unknown,,Norway,akkudoktor-eos/eos
 woshoufuwufeika,unknown,,,prep-next/prep-shot
 wouterterlouw,unknown,,,"quintel/etengine,quintel/etmodel"
@@ -15183,6 +15516,7 @@ wumingjc0,unknown,,,oemof/oemof-thermal
 wuriyanto48,unknown,,Indonesia,sogno-platform/dpsim
 wusun1998,unknown,,,idaholab/heron
 wuxl7,unknown,,,grid2op/grid2op
+wuyi0614,academic,nanyang technological university,Singapore,iiasa/message_ix
 wuyongyi,professional,lambdax,,lanl-ansi/powermodels.jl
 wuyou33,unknown,,,"calliope-project/calliope,nreca-bts/omf,e2niee/pandapower,frkunz/stelmod,grid-parity-exchange/egret,lanl-ansi/powermodels.jl,matpower/matpower,matpower/most,osemosys/osemosys,pnnl/tesp,pypsa/pypsa,switch-model/switch,tum-ens/urbs"
 wviviw,unknown,,,prep-next/prep-shot
@@ -15276,6 +15610,7 @@ xiehaipeng,unknown,,,anl-ceeesa/unitcommitment.jl
 xiers819,unknown,,,e2niee/pandapower
 xieruijx,academic,the chinese university of hong kong,Hong Kong,lanl-ansi/powermodels.jl
 xieshuai13,unknown,,,prep-next/prep-shot
+xiewei18,academic,fudan university,China,iiasa/message_ix
 xiliumz,industry,,Indonesia,akkudoktor-eos/eos
 ximex,industry,ms.gis gmbh,Austria,akkudoktor-eos/eos
 xingyu-yan,industry,,China,pypsa/pypsa
@@ -15343,6 +15678,7 @@ xuzhiqi1997,unknown,,,"curent/andes,e2niee/pandapower,nrel-sienna/powersimulatio
 xv235,unknown,,,"manuvarkey/gelectrical,sanpen/gridcal"
 xwen-github,unknown,,,etsap-times/times_model
 xwu123,unknown,,,dlr-ve/esy/amiris/amiris
+xxDr34dxx,unknown,,,manuvarkey/gelectrical
 xxchen1,unknown,,,"adgefficiency/energy-py-linear,nrel/sam"
 xxh0523,academic,tsinghua university,,changgang/steps
 xxhgkyw,unknown,,,matpower/matpower
@@ -15400,7 +15736,9 @@ yaodexin,unknown,,,sanpen/veragrid
 yaowenqiang,professional,t8t,China,pypsa/pypsa
 yapanliu,academic,fraunhofer usa,United States,"akkudoktor-eos/eos,matpower/matpower"
 yaramasv,academic,university of colorado denver,United States,lanl-ansi/powermodels.jl
+yaruzhangiiasa,unknown,,,iiasa/message_ix
 yasaman-nt,unknown,,,pypsa/pypsa
+yashgk,industry,,India,iiasa/message_ix
 yashsamit,unknown,,,temoaproject/temoa
 yashvimalhotra,unknown,,,nrel/reeds-2.0
 yasirroni,academic,university of melbourne | arpst-unimelb,Australia,"ames-market/psst,anl-ceeesa/unitcommitment.jl,changgang/steps,curent/andes,e2niee/pandapower,epri-dev/opender,future-power-networks/simplus-grid-tool,genxproject/genx.jl,gmlc-tdc/helics,gridoptics/gridpack,juliaenergy/powerdynamics.jl,lanl-ansi/powermodels.jl,matpower/matpower,mzy2240/esa,nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl,nrel/paraemt_public,nrel/pras,nrel/reopt_api,nrel/reopt_lite_api,osemosys/osemosys,pnnl/exago,pnnl/tesp,powergridmodel/power-grid-model,powsybl/powsybl-core,powsybl/powsybl-open-loadflow,pypsa/pypsa,rwl/pypower,sanpen/gridcal,sanpen/veragrid,sogno-platform/dpsim"
@@ -15447,6 +15785,7 @@ yibaoj,academic,shandong university,China,"blue-marble/gridpath,curent/andes,e2n
 yichen88,unknown,,,"powsybl/powsybl-core,powsybl/powsybl-open-loadflow,powsybl/pypowsybl"
 yidan888,unknown,,,"adgefficiency/energy-py,grid2op/grid2op"
 yidouqi,unknown,,,energyinnovation/eps-us
+yifang-zhu-pge,industry,general electric,United States,blue-marble/gridpath
 yifanz1125,academic,imperial college london,,"curent/andes,future-power-networks/simplus-grid-tool"
 yifeihsu,academic,new york university,United States,"matpower/matpower,sanpen/gridcal"
 yifengzhong98,unknown,,,"e2niee/pandapower,osemosys/osemosys"
@@ -15471,6 +15810,7 @@ yiujams,unknown,,,pnnl/tesp
 yiwanba,unknown,,,pypsa/pypsa
 yixingxu,unknown,,,breakthrough-energy/reise.jl
 yiyaayiy,academic,,,"lkruitwagen/global-fossil-fuel-supply-chain,nrel/reeds-2.0"
+yiyi1991,unknown,,,iiasa/message_ix
 yizhi37,academic,the pennsylvania state university,United States,flexigis/flexigis
 yji0728,unknown,,,akkudoktor-eos/eos
 yjy18291405285,unknown,,,genxproject/genx.jl
@@ -15588,9 +15928,11 @@ yuzhilin666,unknown,,,prep-next/prep-shot
 yuzhuof,unknown,,,lanl-ansi/powermodels.jl
 yuzuoxie,academic,wuhan university,China,prep-next/prep-shot
 yveslethieis,unknown,,,open-energy-transition/open-tyndp
+yvesmbayi-ui,unknown,,,"e2niee/pandapower,powsybl/powsybl-open-loadflow,powsybl/pypowsybl,pypsa/pypsa,roseautechnologies/roseau_load_flow"
 ywan2679,unknown,,,"curent/andes,e2niee/pandapower,electa-git/flexplan.jl,epgoxford/open,genxproject/genx.jl,lanl-ansi/powermodels.jl,mesmo-dev/mesmo,nrel-sienna/powersimulationsdynamics.jl,nrel-sienna/powersystemsinvestments.jl,nrel/pras,opencemorg/opencem,pypsa/pypsa"
 ywangee,unknown,,,powergridmodel/power-grid-model
 ywlgy,unknown,,,matpower/matpower
+ywpratama,unknown,,,iiasa/message_ix
 yxq953,unknown,,,akkudoktor-eos/eos
 yxu138,academic,massachusetts institute of technology,United States,"pypsa/pypsa,switch-model/switch"
 yy-Hu-ee-xjtu,academic,xi'an jiaotong university,,future-power-networks/simplus-grid-tool
@@ -15633,6 +15975,7 @@ zaneselvans,professional,catalyst-cooperative,Mexico,"blue-marble/gridpath,calli
 zappience,industry,,Germany,akkudoktor-eos/eos
 zaramessy,unknown,,,"energymodelsx/energymodelsbase.jl,lanl-ansi/powermodels.jl,nrel-sienna/powersimulations.jl,nrel-sienna/powersimulationsdynamics.jl,nrel-sienna/powersystemsinvestments.jl"
 zayanali3,unknown,,Pakistan,sanpen/gridcal
+zazaferjancsik,professional,kalavasta,Netherlands,quintel/pyetm
 zbb3211,unknown,,,genxproject/genx.jl
 zbeucler2018,industry,,,"chrisyeh96/sustaingym,grid2op/grid2op"
 zbliu0928-design,unknown,,,prep-next/prep-shot
@@ -15735,6 +16078,7 @@ zhouk2020,unknown,,,grid2op/grid2op
 zhoupeng1982,unknown,,,"mbheinen/bpa-ipf-tsp,nrel/paraemt_public,sogno-platform/dpsim"
 zhouqun8508,unknown,,,e2niee/pandapower
 zhousihua666,unknown,,,prep-next/prep-shot
+zhouwenji,unknown,,,iiasa/message_ix
 zhouxiangni,academic,city university of hong kong,Hong Kong,rwl/pypower
 zhp66,unknown,,,"critical-infrastructure-systems-lab/pownet,pypsa/pypsa"
 zhsain,unknown,,,"nrel/h2integrate,nrel/hopp"
@@ -15750,10 +16094,12 @@ zhuli888,unknown,,,prep-next/prep-shot
 zhuwenxing,research,milvus-io mmga-lab,China,adgefficiency/energy-py
 zhuyuanzhen,unknown,,,changgang/steps
 zhxn30663,unknown,,,pypsa/pypsa
+zhxyang,unknown,,,iiasa/message_ix
 ziermmar,unknown,,,akkudoktor-eos/eos
 zihengh1,academic,,United States,kiedanski/pymarket
 zijin-huang,unknown,,,prep-next/prep-shot
 zijin2,unknown,,,adgefficiency/energy-py
+zikolach,professional,prewave,Austria,iiasa/message_ix
 zilinxiao,unknown,,,"e2niee/pandapower,rwl/pypower"
 zilinzhuang,unknown,,,"curent/andes,gmlc-tdc/helics"
 zinzli,unknown,,,fzj-iek3-vsa/fine
@@ -15764,6 +16110,7 @@ zixiaoo,unknown,,,"rwl/pypower,sanpen/gridcal"
 ziyadsaeed,unknown,,Pakistan,nrel/sam
 zizaijiyigong,unknown,,,gridfm/gridfm-graphkit
 zizigoolooasipasi,unknown,,,epgoxford/open
+zjacob333,academic,shanghaitech university,,sanpen/veragrid
 zjtone,unknown,,,rwl/pypower
 zjuChenW,unknown,,,pypsa/pypsa
 zjy243352154,unknown,,,prep-next/prep-shot
@@ -15783,6 +16130,7 @@ zockr,unknown,,Germany,akkudoktor-eos/eos
 zoe2121,unknown,,,adgefficiency/energy-py
 zoe667,academic,massachusetts institute of technology,,"genxproject/genx.jl,hope-model-project/hope"
 zoefarre,unknown,,,roseautechnologies/roseau_load_flow
+zoke,unknown,,,genxproject/genx.jl
 zolanaj,government,national renewable energy laboratory,United States,"nrel/reopt.jl,nrel/reopt_api,nrel/reopt_lite_api"
 zoltanmaric,industry,1.21 gigawatts,Croatia,"calliope-project/calliope,e2niee/pandapower,pypsa/pypsa"
 zongqihu2000,unknown,,,anl-ceeesa/unitcommitment.jl
@@ -15798,6 +16146,7 @@ zqq123321,unknown,,,tum-ewk/ficus
 zrc357,unknown,,,"e2niee/pandapower,pypsa/pypsa"
 zrg1993,unknown,,,powergridmodel/power-grid-model
 zry0611,unknown,,,open-energy-transition/solver-benchmark
+zsalimian,unknown,,,iiasa/message_ix
 zsalimian1359,unknown,,,ames-market/psst
 zsg1990ok,unknown,,,"e2niee/pandapower,grid2op/grid2op,marvinler/pypownet"
 zsgvivo,unknown,,,"e2niee/pandapower,lanl-ansi/powermodels.jl,nrel-sienna/powersimulations.jl"
@@ -15830,9 +16179,11 @@ zxpower,academic,estivador,Latvia,pnnl/exago
 zxr0007,unknown,,,"matpower/matpower,pypsa/pypsa"
 zxy001112,unknown,,,blue-marble/gridpath
 zxy7777,unknown,,,curent/andes
+zxzhuys,academic,the university of tokyo,Japan,pypsa/pypsa
 zxzzf,unknown,,,curent/andes
 zyamg,unknown,,,grid2op/grid2op
 zyanan0,unknown,,,pnnl/tesp
+zyankarli,research,international institute for applied systems analysis,Austria,iiasa/message_ix
 zyeelan,academic,,,unsw-ceem/nempy
 zyh88,unknown,,,pypsa/pypsa
 zyj0704033,unknown,,,"pypsa/pypsa,sanpen/gridcal"
