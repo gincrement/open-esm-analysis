@@ -61,7 +61,7 @@ energysystemmodelling_jl,https://github.com/gamma-opt/energysystemmodelling.jl,E
 enflow,https://github.com/rebase-energy/enflow,enflow,"opensustain-tech,pre-compiled",
 eoles_elecres,https://github.com/behrangshirizadeh/eoles_elecres,EOLES elecRES,openmod,
 eoles_mv,https://github.com/behrangshirizadeh/eoles_mv,EOLES_mv,pre-compiled,
-erad,https://github.com/nrel-distribution-suites/erad,erad,pre-compiled,
+erad,https://github.com/nrel-distribution-suites/erad,"ERAD,erad","opensustain-tech,pre-compiled",
 erf,https://github.com/erf-model/erf,ERF,lf-energy-landscape,
 esdl,https://github.com/energytransition/esdl,ESDL,"lf-energy-landscape,opensustain-tech",
 etm_pro,https://github.com/quintel/etmodel,ETM Pro,opensustain-tech,
@@ -85,7 +85,7 @@ gridlab_d,https://github.com/arras-energy/gridlabd,"GridLAB-D,gridlab-d ","opens
 gridpack,https://github.com/gridoptics/gridpack,GridPACK,opensustain-tech,power-flow
 gridpath,https://github.com/blue-marble/gridpath,"GridPath,gridpath","lf-energy-landscape,opensustain-tech,pre-compiled","capacity-expansion,production-cost"
 grimsel_flex,https://github.com/arthurrinaldi/grimsel,GRIMSEL-FLEX,openmod,
-h2integrate,https://github.com/nrel/h2integrate,H2Integrate,opensustain-tech,
+h2integrate,https://github.com/natlabrockies/h2integrate,H2Integrate,opensustain-tech,
 heat4future,https://gitlab.com/c4dht/strategic-heat-planning-project,Heat4Future,openmod,
 heron,https://github.com/idaholab/heron,HERON,pre-compiled,
 highres_europe,https://github.com/highres-model/highres-europe,highRES-Europe,pre-compiled,
@@ -176,6 +176,7 @@ pypower_dynamics,https://github.com/susantoj/pypower-dynamics,PYPOWER-Dynamics,p
 pypownet,https://github.com/marvinler/pypownet,pypownet,"opensustain-tech,pre-compiled",
 pypowsybl,https://github.com/powsybl/pypowsybl,PyPowSyBl,opensustain-tech,power-flow
 pypsa,https://github.com/pypsa/pypsa,PyPSA,"g-pst,lf-energy-landscape,openmod,opensustain-tech,pre-compiled","capacity-expansion,production-cost"
+pypsa_spice,https://github.com/agoenergy/pypsa-spice,PyPSA-SPICE,opensustain-tech,
 pysam,https://github.com/nrel/pysam,pysam,pre-compiled,"capacity-expansion,production-cost"
 python_ehub,https://gitlab.com/energyincities/python-ehub,python-ehub,pre-compiled,
 python_microgrid,https://github.com/ahalev/python-microgrid,python-microgrid,pre-compiled,
@@ -186,14 +187,16 @@ reise_jl,https://github.com/breakthrough-energy/reise.jl,REISE.jl,"lf-energy-lan
 remix,https://gitlab.com/dlr-ve/esy/remix/framework,"REMix,REMix,remix","g-pst,pre-compiled,lf-energy-landscape,opensustain-tech","capacity-expansion,production-cost"
 renpass,https://github.com/fraukewiese/renpass,"Renpass,renpass","openmod,pre-compiled",
 reopt_jl,https://github.com/nrel/reopt.jl,REopt.jl,pre-compiled,capacity-expansion
+reopt_lite_api,https://github.com/nrel/reopt_api,REopt_Lite_API,lf-energy-landscape,
 resolve,https://github.com/e3-/resolve,resolve,"opensustain-tech,pre-compiled",
 revub,https://github.com/vub-hydr/revub,REVUB,lf-energy-landscape,
 rheia,https://github.com/rheia-framework/rheia,RHEIA,openmod,
 rivus,https://github.com/tum-ens/rivus,rivus,pre-compiled,
 rodeo,https://github.com/nrel/rodeo,RODeO,pre-compiled,
 roseau_load_flow,https://github.com/roseautechnologies/roseau_load_flow,Roseau Load Flow,opensustain-tech,
+rumi,https://github.com/prayas-energy/rumi,Rumi,opensustain-tech,
 rustpower,https://github.com/chengts95/rustpower,rustpower,pre-compiled,
-sam,https://github.com/nrel/sam,"SAM,System Advisor Model,System Advisor Model (SAM)","lf-energy-landscape,openmod,opensustain-tech,pre-compiled","capacity-expansion,production-cost"
+sam,https://github.com/nrel/sam,"SAM,System Advisor Model,System Advisor Model (SAM)","lf-energy-landscape,openmod,pre-compiled","capacity-expansion,production-cost"
 sddpdso_jl,https://github.com/psrenergy/sddpdso.jl,SDDPDSO.jl,pre-compiled,
 secmod,https://git-ce.rwth-aachen.de/ltt/secmod,secmod,pre-compiled,
 sienna,https://github.com/nrel-sienna,Sienna,openmod,
