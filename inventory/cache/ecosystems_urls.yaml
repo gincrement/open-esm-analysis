@@ -10,6 +10,7 @@ https://git.tu-berlin.de/genesysmod/genesys-mod-public: https://repos.ecosyste.m
 https://github.com/adamgreenhall/minpower: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/adamgreenhall%2Fminpower
 https://github.com/adgefficiency/energy-py: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ADGEfficiency%2Fenergy-py
 https://github.com/adgefficiency/energy-py-linear: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ADGEfficiency%2Fenergy-py-linear
+https://github.com/agoenergy/pypsa-spice: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/agoenergy%2Fpypsa-spice
 https://github.com/ahalev/python-microgrid: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ahalev%2Fpython-microgrid
 https://github.com/ait-energy/iesopt.jl: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ait-energy%2FIESopt.jl
 https://github.com/akkudoktor-eos/eos: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/Akkudoktor-EOS%2FEOS
@@ -128,6 +129,7 @@ https://github.com/mesmo-dev/mesmo: https://repos.ecosyste.ms/api/v1/hosts/GitHu
 https://github.com/microgrids-x/microgrids.py: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/Microgrids-X%2FMicrogrids.py
 https://github.com/microgridspy/microgridspy: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/MicroGridsPy%2FMicroGridsPy
 https://github.com/mzy2240/esa: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/mzy2240%2FESA
+https://github.com/natlabrockies/h2integrate: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/NatLabRockies%2FH2Integrate
 https://github.com/niclasmattsson/supergrid: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/niclasmattsson%2FSupergrid
 https://github.com/nreca-bts/omf: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/nreca-bts%2Fomf
 https://github.com/nrel-distribution-suites/erad: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/NREL-Distribution-Suites%2Ferad
@@ -175,6 +177,7 @@ https://github.com/powsybl: not-found
 https://github.com/powsybl/powsybl-core: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/powsybl%2Fpowsybl-core
 https://github.com/powsybl/powsybl-open-loadflow: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/powsybl%2Fpowsybl-open-loadflow
 https://github.com/powsybl/pypowsybl: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/powsybl%2Fpypowsybl
+https://github.com/prayas-energy/rumi: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/prayas-energy%2FRumi
 https://github.com/prep-next/prep-shot: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/PREP-NexT%2FPREP-SHOT
 https://github.com/psrenergy/sddpdso.jl: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/psrenergy%2FSDDPDSO.jl
 https://github.com/pypsa/pypsa: https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/PyPSA%2FPyPSA
