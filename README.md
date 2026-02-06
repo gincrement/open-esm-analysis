@@ -120,7 +120,7 @@ These are automated with a Github action which runs once a month but you can for
 
 >[!NOTE]
 >The below steps leverage [pixi tasks](https://pixi.sh/dev/workspace/advanced_tasks/) which will run all steps in the sequence if there have been changes to the source code or it is the first time you are running the command.
->If you want to just run one step in isolation you will need to call the Python script directly, e.g., `pixi run python inventory/get-stats.py inventory/output/filtered.csv inventory/output/stats.csv`.
+>If you want to just run one step in isolation you will need to call the Python script directly, e.g., `pixi run python inventory/get_stats.py inventory/output/filtered.csv inventory/output/stats.csv`.
 >See `pixi.toml` for the command to run for each step.
 
 #### Tool stats
